@@ -1,0 +1,19 @@
+{
+  "name": "1 boruda izolasyon",
+  "failures": [
+    {
+      "pipe_id": "137",
+      "repair_hours": 2
+    }
+  ],
+  "crews": 1,
+  "failure_start_hour": 2,
+  "horizon_hours": 12,
+  "step_minutes": 15,
+  "required_pressure_m": 20,
+  "low_pressure_m": 15,
+  "critical_weights": {
+    "203": 3,
+    "215": 2
+  }
+}

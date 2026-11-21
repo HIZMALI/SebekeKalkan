@@ -1,0 +1,270 @@
+{
+  "status": "PASS",
+  "methods": {
+    "fifo": {
+      "status": "PASS",
+      "order": [
+        "17",
+        "9",
+        "18",
+        "12"
+      ],
+      "metrics": {
+        "weighted_unmet_volume_m3": 1538.9776075099503,
+        "unmet_demand_volume_m3": 1130.8408684508672,
+        "critical_low_pressure_node_hours": 34.75,
+        "repair_completion_hour": 16.0
+      },
+      "record": "fifo-candidate",
+      "verification": [
+        "fifo-fresh",
+        "fifo-repeat"
+      ],
+      "physical_pass": true,
+      "oracle_same_order_match": true,
+      "oracle_gap_m3": 101.94928171183687
+    },
+    "greedy": {
+      "status": "PASS",
+      "order": [
+        "9",
+        "12",
+        "18",
+        "17"
+      ],
+      "metrics": {
+        "weighted_unmet_volume_m3": 1509.0156231772833,
+        "unmet_demand_volume_m3": 1126.1324714695052,
+        "critical_low_pressure_node_hours": 34.5,
+        "repair_completion_hour": 16.0
+      },
+      "record": "greedy-candidate",
+      "verification": [
+        "greedy-fresh",
+        "greedy-repeat"
+      ],
+      "physical_pass": true,
+      "single_scores_m3_per_h": {
+        "17": -1.3837519768911122e-07,
+        "9": 472.48566332597267,
+        "18": 2.4879542870337445e-12,
+        "12": 307.666563568919
+      },
+      "oracle_same_order_match": true,
+      "oracle_gap_m3": 71.98729737916983
+    },
+    "s02_b6": {
+      "status": "PASS",
+      "order": [
+        "12",
+        "9",
+        "17",
+        "18"
+      ],
+      "metrics": {
+        "weighted_unmet_volume_m3": 1437.0283257981134,
+        "unmet_demand_volume_m3": 1096.4859436764978,
+        "critical_low_pressure_node_hours": 31.5,
+        "repair_completion_hour": 16.0
+      },
+      "record": "s02_b6-candidate05",
+      "verification": [
+        "s02_b6-fresh",
+        "s02_b6-repeat"
+      ],
+      "physical_pass": true,
+      "budget": 6,
+      "unique_candidates": 6,
+      "unique_available": 24,
+      "mandatory_reference_signatures_included": true,
+      "oracle_same_order_match": true,
+      "oracle_gap_m3": 0.0
+    },
+    "s02_b12": {
+      "status": "PASS",
+      "order": [
+        "12",
+        "9",
+        "17",
+        "18"
+      ],
+      "metrics": {
+        "weighted_unmet_volume_m3": 1437.0283257981134,
+        "unmet_demand_volume_m3": 1096.4859436764978,
+        "critical_low_pressure_node_hours": 31.5,
+        "repair_completion_hour": 16.0
+      },
+      "record": "s02_b12-candidate05",
+      "verification": [
+        "s02_b12-fresh",
+        "s02_b12-repeat"
+      ],
+      "physical_pass": true,
+      "budget": 12,
+      "unique_candidates": 12,
+      "unique_available": 24,
+      "mandatory_reference_signatures_included": true,
+      "oracle_same_order_match": true,
+      "oracle_gap_m3": 0.0
+    }
+  },
+  "oracle": {
+    "status": "PASS",
+    "order": [
+      "12",
+      "9",
+      "17",
+      "18"
+    ],
+    "metrics": {
+      "weighted_unmet_volume_m3": 1437.0283257981134,
+      "unmet_demand_volume_m3": 1096.4859436764978,
+      "critical_low_pressure_node_hours": 31.5,
+      "repair_completion_hour": 16.0
+    },
+    "record": "oracle-candidate05",
+    "verification": [
+      "oracle-fresh",
+      "oracle-repeat"
+    ],
+    "physical_pass": true,
+    "count": 24,
+    "valid": 24,
+    "unique": 24,
+    "minimum_weighted_unmet_volume_m3": 1437.0283257981134
+  },
+  "costs": {
+    "fifo": {
+      "physical_trials": 3,
+      "wntr_calls": 6,
+      "solver_returns": 6,
+      "valid_trials": 3,
+      "invalid_trials": 0,
+      "preliminary_trials": 0,
+      "candidate_trials": 1,
+      "verification_trials": 2,
+      "wall_s": 1.581411899998784,
+      "cpu_s": 1.078125,
+      "solver_cpu_s": 0.78125,
+      "solver_wall_s": 0.7914965000236407
+    },
+    "greedy": {
+      "physical_trials": 8,
+      "wntr_calls": 16,
+      "solver_returns": 16,
+      "valid_trials": 8,
+      "invalid_trials": 0,
+      "preliminary_trials": 5,
+      "candidate_trials": 1,
+      "verification_trials": 2,
+      "wall_s": 3.761378600029275,
+      "cpu_s": 2.609375,
+      "solver_cpu_s": 1.84375,
+      "solver_wall_s": 1.8759004999883473
+    },
+    "s02_b6": {
+      "physical_trials": 13,
+      "wntr_calls": 26,
+      "solver_returns": 26,
+      "valid_trials": 13,
+      "invalid_trials": 0,
+      "preliminary_trials": 5,
+      "candidate_trials": 6,
+      "verification_trials": 2,
+      "wall_s": 5.997529499989469,
+      "cpu_s": 4.0625,
+      "solver_cpu_s": 2.96875,
+      "solver_wall_s": 3.0312770999153145
+    },
+    "s02_b12": {
+      "physical_trials": 19,
+      "wntr_calls": 38,
+      "solver_returns": 38,
+      "valid_trials": 19,
+      "invalid_trials": 0,
+      "preliminary_trials": 5,
+      "candidate_trials": 12,
+      "verification_trials": 2,
+      "wall_s": 8.788937799981795,
+      "cpu_s": 6.109375,
+      "solver_cpu_s": 4.375,
+      "solver_wall_s": 4.41773139993893
+    },
+    "oracle": {
+      "physical_trials": 26,
+      "wntr_calls": 52,
+      "solver_returns": 52,
+      "valid_trials": 26,
+      "invalid_trials": 0,
+      "preliminary_trials": 0,
+      "candidate_trials": 24,
+      "verification_trials": 2,
+      "wall_s": 12.104834400000982,
+      "cpu_s": 8.25,
+      "solver_cpu_s": 5.96875,
+      "solver_wall_s": 6.109315499954391
+    }
+  },
+  "decisions_sha256": "bc2de2c35f7c673c650f7e194fcd2d8c3bb8f2487085a350239f3e5a3dcec71f",
+  "recover_service": "not_evaluated",
+  "worker_cpu_s": 22.109375,
+  "physical_trials": 69,
+  "trial_statuses": {
+    "PASS": 69
+  },
+  "wntr_calls": 138,
+  "started_calls": 138,
+  "finished_calls": 138,
+  "run_id": "efef66dd0e384da19b9dfaac2ca3445a",
+  "batch": "bd6bc280d8524f91810cb03b6589fccd",
+  "task": {
+    "case_id": "Net2_G4_C1",
+    "group": "internal_holdout",
+    "stage": "comparison",
+    "model_id": "Net2",
+    "model_sha256": "7c140a40f9d43ec54c155783085f9f6403df6ea7e93df1f9ad4bbf35b6c28fb0",
+    "scenario": {
+      "name": "Net2_G4_C1",
+      "failures": [
+        {
+          "pipe_id": "17",
+          "repair_hours": 2.0
+        },
+        {
+          "pipe_id": "9",
+          "repair_hours": 3.0
+        },
+        {
+          "pipe_id": "18",
+          "repair_hours": 4.0
+        },
+        {
+          "pipe_id": "12",
+          "repair_hours": 5.0
+        }
+      ],
+      "crews": 1,
+      "failure_start_hour": 2.0,
+      "horizon_hours": 24,
+      "step_minutes": 15,
+      "required_pressure_m": 20,
+      "low_pressure_m": 15,
+      "hydraulic_trials": 40,
+      "critical_weights": {
+        "11": 3.0,
+        "16": 2.0
+      },
+      "manual_order": null,
+      "wntr_max_iterations": 3000
+    },
+    "scenario_sha256": "223901efeac0ef2ad48a12ee188873c7ca62d595bc761abef0d657cd74bb0da9"
+  },
+  "started_utc": "2026-11-20T13:32:16.903138+00:00",
+  "solver": "WNTRSimulator 1.5.0 / PDD",
+  "code_sha256": "a6cac10d72bc099230b0b5997d4ca94b0f42a8cb88016a35b8ee6c8ce668475a",
+  "method_version": "s02-restoration-1",
+  "protocol_lock_sha256": "86bf325f458d9010af444ed630df6a5daedd4cf7b97447583783e1eb78fe3729",
+  "limit_s": 180,
+  "wall_s": 34.51356519997353,
+  "finished_utc": "2026-11-20T13:32:51.420060+00:00"
+}

@@ -1,0 +1,2392 @@
+{
+  "id": "BUILD02_S_v1",
+  "registered_utc": "2026-10-29T21:46:26.701553+00:00",
+  "seed": 20261030,
+  "authors": [
+    "Öğr. Gör. Enise Odabaş",
+    "Öğr. Gör. Mert Hızmalı"
+  ],
+  "source": {
+    "model_file": "data/networks/Net3.inp",
+    "sha256": "ea3e825c4fef0b5cba47fb06301bc85253f18b6364dc96c44d9fb492c40faa52",
+    "source": "WNTR PyPI 1.5.0 distributed wntr.library model Net3",
+    "source_file": "data/networks/Net3.inp",
+    "model_library_reference": "https://usepa.github.io/WNTR/libraries.html",
+    "distribution_url": "https://pypi.org/project/wntr/1.5.0/",
+    "license": "Revised BSD (WNTR distribution; complete notice retained)",
+    "license_sha256": "926dffd7ad1325a9f381adab7d7a103a0e38211e09b4ca88a02ef8119d5205ae",
+    "retrieved_utc": "2026-10-29T20:41:33Z",
+    "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+    "platform": "Windows-11-10.0.26200-SP0",
+    "wntr": "1.5.0",
+    "model_inventory": {
+      "nodes": 97,
+      "junctions": 92,
+      "pipes": 117,
+      "pumps": 2,
+      "tanks": 3,
+      "reservoirs": 2,
+      "valves": 0,
+      "controls": 18,
+      "patterns": 5,
+      "source_duration_seconds": 604800.0,
+      "source_flow_units": "GPM",
+      "controlled_links": [
+        "10",
+        "330",
+        "335"
+      ]
+    },
+    "analysis_options": {
+      "demand_model": "PDD",
+      "required_pressure_m": 20.0,
+      "minimum_pressure_m": 0.0,
+      "pressure_exponent": 0.5
+    },
+    "original_geometry_initial_tanks_reservoirs_patterns_controls_unchanged": true,
+    "source_default_demand_model": "DDA",
+    "pdd_parameters_are_analysis_assumptions": true,
+    "pressure_interpretation": "Both solvers retain eight negative samples at zero-base-demand junction 10 during the full 168-hour reference. These are flagged, not replaced by zero. Solver convergence is not a certificate of adequate service pressure.",
+    "coordinates": "Model schematic coordinates, not local geographic coordinates",
+    "fault_type": "pipe_isolation_only",
+    "leakage_modelled": false,
+    "required_pressure_m_is_scenario_assumption": true,
+    "verified_utc": "2026-10-29T21:19:06.753095+00:00",
+    "verified_against": "wntr.library.model_library.get_filepath(Net3), WNTR 1.5.0 kurulu dağıtımı; tüm baytlar ve lisans karması eşleşti",
+    "solver_version": "EPANET 2.2; WNTRSimulator 1.5.0 ile 168 saat çapraz doğrulama"
+  },
+  "model_sha256": "ea3e825c4fef0b5cba47fb06301bc85253f18b6364dc96c44d9fb492c40faa52",
+  "wntr": "1.5.0",
+  "epanet": "2.2",
+  "selection": {
+    "rule": "Özgün şematik x orta noktasına göre (eşitlikte boru kimliği) sıralı havuzun üç eşit sayılı bandı. Her banttan üç ayrı üçlü; ayrıca her banttan bir borulu üç karışık üçlü. Sabit Python Random seed. Tekrarlı kümeler yalnız geometri aşamasında yeniden çekilir. Hidrolik etkiye göre seçim yok.",
+    "interpretation": "Bölge numaraları yalnız şematik koordinat bandıdır; risk sınıfı veya coğrafya değildir.",
+    "eligible_pool": [
+      {
+        "pipe_id": "101",
+        "midpoint_x": 11.405000000000001,
+        "midpoint_y": 25.395000000000003
+      },
+      {
+        "pipe_id": "103",
+        "midpoint_x": 13.385000000000002,
+        "midpoint_y": 22.125
+      },
+      {
+        "pipe_id": "109",
+        "midpoint_x": 15.3,
+        "midpoint_y": 20.115000000000002
+      },
+      {
+        "pipe_id": "105",
+        "midpoint_x": 15.39,
+        "midpoint_y": 22.11
+      },
+      {
+        "pipe_id": "107",
+        "midpoint_x": 17.71,
+        "midpoint_y": 20.87
+      },
+      {
+        "pipe_id": "117",
+        "midpoint_x": 18.645,
+        "midpoint_y": 21.425
+      },
+      {
+        "pipe_id": "111",
+        "midpoint_x": 18.925,
+        "midpoint_y": 18.225
+      },
+      {
+        "pipe_id": "115",
+        "midpoint_x": 19.715,
+        "midpoint_y": 19.82
+      },
+      {
+        "pipe_id": "307",
+        "midpoint_x": 20.555,
+        "midpoint_y": 21.509999999999998
+      },
+      {
+        "pipe_id": "301",
+        "midpoint_x": 20.560000000000002,
+        "midpoint_y": 22.485
+      },
+      {
+        "pipe_id": "225",
+        "midpoint_x": 20.59,
+        "midpoint_y": 16.355
+      },
+      {
+        "pipe_id": "112",
+        "midpoint_x": 20.595,
+        "midpoint_y": 18.355
+      },
+      {
+        "pipe_id": "303",
+        "midpoint_x": 20.98,
+        "midpoint_y": 22.384999999999998
+      },
+      {
+        "pipe_id": "299",
+        "midpoint_x": 20.985,
+        "midpoint_y": 23.36
+      },
+      {
+        "pipe_id": "113",
+        "midpoint_x": 21.125,
+        "midpoint_y": 17.07
+      },
+      {
+        "pipe_id": "305",
+        "midpoint_x": 21.240000000000002,
+        "midpoint_y": 21.365000000000002
+      },
+      {
+        "pipe_id": "119",
+        "midpoint_x": 21.335,
+        "midpoint_y": 20.23
+      },
+      {
+        "pipe_id": "114",
+        "midpoint_x": 21.509999999999998,
+        "midpoint_y": 17.895
+      },
+      {
+        "pipe_id": "223",
+        "midpoint_x": 21.535,
+        "midpoint_y": 14.625
+      },
+      {
+        "pipe_id": "297",
+        "midpoint_x": 21.625,
+        "midpoint_y": 23.21
+      },
+      {
+        "pipe_id": "121",
+        "midpoint_x": 21.884999999999998,
+        "midpoint_y": 22.19
+      },
+      {
+        "pipe_id": "116",
+        "midpoint_x": 22.46,
+        "midpoint_y": 15.48
+      },
+      {
+        "pipe_id": "217",
+        "midpoint_x": 22.490000000000002,
+        "midpoint_y": 14.21
+      },
+      {
+        "pipe_id": "122",
+        "midpoint_x": 22.81,
+        "midpoint_y": 24.3
+      },
+      {
+        "pipe_id": "213",
+        "midpoint_x": 22.87,
+        "midpoint_y": 12.555
+      },
+      {
+        "pipe_id": "120",
+        "midpoint_x": 22.89,
+        "midpoint_y": 22.93
+      },
+      {
+        "pipe_id": "219",
+        "midpoint_x": 23.03,
+        "midpoint_y": 14.535
+      },
+      {
+        "pipe_id": "311",
+        "midpoint_x": 23.13,
+        "midpoint_y": 13.649999999999999
+      },
+      {
+        "pipe_id": "333",
+        "midpoint_x": 23.355,
+        "midpoint_y": 29.259999999999998
+      },
+      {
+        "pipe_id": "125",
+        "midpoint_x": 23.455,
+        "midpoint_y": 26.405
+      },
+      {
+        "pipe_id": "329",
+        "midpoint_x": 23.54,
+        "midpoint_y": 28.17
+      },
+      {
+        "pipe_id": "123",
+        "midpoint_x": 23.619999999999997,
+        "midpoint_y": 24.130000000000003
+      },
+      {
+        "pipe_id": "186",
+        "midpoint_x": 23.72,
+        "midpoint_y": 10.969999999999999
+      },
+      {
+        "pipe_id": "215",
+        "midpoint_x": 23.765,
+        "midpoint_y": 12.16
+      },
+      {
+        "pipe_id": "209",
+        "midpoint_x": 23.895,
+        "midpoint_y": 11.204999999999998
+      },
+      {
+        "pipe_id": "175",
+        "midpoint_x": 23.985,
+        "midpoint_y": 18.83
+      },
+      {
+        "pipe_id": "60",
+        "midpoint_x": 24.025,
+        "midpoint_y": 30.5
+      },
+      {
+        "pipe_id": "129",
+        "midpoint_x": 24.064999999999998,
+        "midpoint_y": 25.57
+      },
+      {
+        "pipe_id": "177",
+        "midpoint_x": 24.11,
+        "midpoint_y": 16.39
+      },
+      {
+        "pipe_id": "221",
+        "midpoint_x": 24.14,
+        "midpoint_y": 15.0
+      },
+      {
+        "pipe_id": "173",
+        "midpoint_x": 24.275,
+        "midpoint_y": 21.46
+      },
+      {
+        "pipe_id": "309",
+        "midpoint_x": 24.384999999999998,
+        "midpoint_y": 13.274999999999999
+      },
+      {
+        "pipe_id": "205",
+        "midpoint_x": 24.405,
+        "midpoint_y": 10.285
+      },
+      {
+        "pipe_id": "313",
+        "midpoint_x": 24.59,
+        "midpoint_y": 11.754999999999999
+      },
+      {
+        "pipe_id": "207",
+        "midpoint_x": 24.799999999999997,
+        "midpoint_y": 10.774999999999999
+      },
+      {
+        "pipe_id": "202",
+        "midpoint_x": 25.08,
+        "midpoint_y": 9.594999999999999
+      },
+      {
+        "pipe_id": "203",
+        "midpoint_x": 25.23,
+        "midpoint_y": 9.925
+      },
+      {
+        "pipe_id": "179",
+        "midpoint_x": 25.245,
+        "midpoint_y": 15.129999999999999
+      },
+      {
+        "pipe_id": "211",
+        "midpoint_x": 25.355,
+        "midpoint_y": 12.440000000000001
+      },
+      {
+        "pipe_id": "321",
+        "midpoint_x": 25.39,
+        "midpoint_y": 14.29
+      },
+      {
+        "pipe_id": "325",
+        "midpoint_x": 25.5,
+        "midpoint_y": 11.57
+      },
+      {
+        "pipe_id": "183",
+        "midpoint_x": 25.535,
+        "midpoint_y": 13.17
+      },
+      {
+        "pipe_id": "199",
+        "midpoint_x": 25.58,
+        "midpoint_y": 10.29
+      },
+      {
+        "pipe_id": "193",
+        "midpoint_x": 25.59,
+        "midpoint_y": 10.629999999999999
+      },
+      {
+        "pipe_id": "180",
+        "midpoint_x": 25.685000000000002,
+        "midpoint_y": 15.06
+      },
+      {
+        "pipe_id": "197",
+        "midpoint_x": 25.71,
+        "midpoint_y": 10.485
+      },
+      {
+        "pipe_id": "195",
+        "midpoint_x": 25.715,
+        "midpoint_y": 10.655000000000001
+      },
+      {
+        "pipe_id": "185",
+        "midpoint_x": 25.78,
+        "midpoint_y": 12.86
+      },
+      {
+        "pipe_id": "315",
+        "midpoint_x": 25.845,
+        "midpoint_y": 10.870000000000001
+      },
+      {
+        "pipe_id": "171",
+        "midpoint_x": 25.994999999999997,
+        "midpoint_y": 22.075000000000003
+      },
+      {
+        "pipe_id": "187",
+        "midpoint_x": 26.165,
+        "midpoint_y": 12.27
+      },
+      {
+        "pipe_id": "181",
+        "midpoint_x": 26.23,
+        "midpoint_y": 15.135000000000002
+      },
+      {
+        "pipe_id": "191",
+        "midpoint_x": 26.31,
+        "midpoint_y": 11.4
+      },
+      {
+        "pipe_id": "169",
+        "midpoint_x": 26.36,
+        "midpoint_y": 24.134999999999998
+      },
+      {
+        "pipe_id": "201",
+        "midpoint_x": 26.365000000000002,
+        "midpoint_y": 10.105
+      },
+      {
+        "pipe_id": "189",
+        "midpoint_x": 26.759999999999998,
+        "midpoint_y": 11.695
+      },
+      {
+        "pipe_id": "131",
+        "midpoint_x": 26.939999999999998,
+        "midpoint_y": 26.02
+      },
+      {
+        "pipe_id": "204",
+        "midpoint_x": 27.174999999999997,
+        "midpoint_y": 7.99
+      },
+      {
+        "pipe_id": "40",
+        "midpoint_x": 27.240000000000002,
+        "midpoint_y": 9.825
+      },
+      {
+        "pipe_id": "229",
+        "midpoint_x": 28.145000000000003,
+        "midpoint_y": 10.015
+      },
+      {
+        "pipe_id": "163",
+        "midpoint_x": 28.21,
+        "midpoint_y": 22.009999999999998
+      },
+      {
+        "pipe_id": "161",
+        "midpoint_x": 28.955,
+        "midpoint_y": 21.064999999999998
+      },
+      {
+        "pipe_id": "319",
+        "midpoint_x": 29.18,
+        "midpoint_y": 6.92
+      },
+      {
+        "pipe_id": "235",
+        "midpoint_x": 29.29,
+        "midpoint_y": 7.91
+      },
+      {
+        "pipe_id": "133",
+        "midpoint_x": 29.365000000000002,
+        "midpoint_y": 26.655
+      },
+      {
+        "pipe_id": "20",
+        "midpoint_x": 29.425,
+        "midpoint_y": 27.09
+      },
+      {
+        "pipe_id": "135",
+        "midpoint_x": 29.805,
+        "midpoint_y": 26.395
+      },
+      {
+        "pipe_id": "159",
+        "midpoint_x": 29.93,
+        "midpoint_y": 20.56
+      },
+      {
+        "pipe_id": "237",
+        "midpoint_x": 30.1,
+        "midpoint_y": 6.535
+      },
+      {
+        "pipe_id": "317",
+        "midpoint_x": 30.115000000000002,
+        "midpoint_y": 7.834999999999999
+      },
+      {
+        "pipe_id": "231",
+        "midpoint_x": 30.155,
+        "midpoint_y": 8.504999999999999
+      },
+      {
+        "pipe_id": "323",
+        "midpoint_x": 30.98,
+        "midpoint_y": 8.43
+      },
+      {
+        "pipe_id": "233",
+        "midpoint_x": 31.015,
+        "midpoint_y": 8.73
+      },
+      {
+        "pipe_id": "239",
+        "midpoint_x": 31.035,
+        "midpoint_y": 7.449999999999999
+      },
+      {
+        "pipe_id": "238",
+        "midpoint_x": 31.33,
+        "midpoint_y": 6.625
+      },
+      {
+        "pipe_id": "155",
+        "midpoint_x": 31.630000000000003,
+        "midpoint_y": 19.835
+      },
+      {
+        "pipe_id": "145",
+        "midpoint_x": 31.8,
+        "midpoint_y": 25.465
+      },
+      {
+        "pipe_id": "240",
+        "midpoint_x": 32.1,
+        "midpoint_y": 6.725
+      },
+      {
+        "pipe_id": "291",
+        "midpoint_x": 32.839,
+        "midpoint_y": 2.1675
+      },
+      {
+        "pipe_id": "50",
+        "midpoint_x": 33.0,
+        "midpoint_y": 3.23
+      },
+      {
+        "pipe_id": "241",
+        "midpoint_x": 33.15,
+        "midpoint_y": 6.699999999999999
+      },
+      {
+        "pipe_id": "289",
+        "midpoint_x": 33.26,
+        "midpoint_y": 2.73
+      },
+      {
+        "pipe_id": "293",
+        "midpoint_x": 33.83,
+        "midpoint_y": 1.7750000000000001
+      },
+      {
+        "pipe_id": "243",
+        "midpoint_x": 33.980000000000004,
+        "midpoint_y": 6.0649999999999995
+      },
+      {
+        "pipe_id": "137",
+        "midpoint_x": 34.105000000000004,
+        "midpoint_y": 27.97
+      },
+      {
+        "pipe_id": "287",
+        "midpoint_x": 34.265,
+        "midpoint_y": 2.25
+      },
+      {
+        "pipe_id": "153",
+        "midpoint_x": 34.35,
+        "midpoint_y": 21.185
+      },
+      {
+        "pipe_id": "147",
+        "midpoint_x": 34.480000000000004,
+        "midpoint_y": 23.81
+      },
+      {
+        "pipe_id": "295",
+        "midpoint_x": 34.585,
+        "midpoint_y": 1.455
+      },
+      {
+        "pipe_id": "245",
+        "midpoint_x": 34.730000000000004,
+        "midpoint_y": 5.85
+      },
+      {
+        "pipe_id": "269",
+        "midpoint_x": 34.785,
+        "midpoint_y": 4.3100000000000005
+      },
+      {
+        "pipe_id": "285",
+        "midpoint_x": 35.02,
+        "midpoint_y": 1.93
+      },
+      {
+        "pipe_id": "283",
+        "midpoint_x": 35.39,
+        "midpoint_y": 2.06
+      },
+      {
+        "pipe_id": "281",
+        "midpoint_x": 35.445,
+        "midpoint_y": 2.08
+      },
+      {
+        "pipe_id": "273",
+        "midpoint_x": 35.565,
+        "midpoint_y": 2.6950000000000003
+      },
+      {
+        "pipe_id": "261",
+        "midpoint_x": 35.709999999999994,
+        "midpoint_y": 4.825
+      },
+      {
+        "pipe_id": "271",
+        "midpoint_x": 35.765,
+        "midpoint_y": 3.285
+      },
+      {
+        "pipe_id": "275",
+        "midpoint_x": 35.815,
+        "midpoint_y": 2.21
+      },
+      {
+        "pipe_id": "277",
+        "midpoint_x": 36.455,
+        "midpoint_y": 1.055
+      },
+      {
+        "pipe_id": "149",
+        "midpoint_x": 36.575,
+        "midpoint_y": 22.525
+      },
+      {
+        "pipe_id": "263",
+        "midpoint_x": 37.269999999999996,
+        "midpoint_y": 3.015
+      },
+      {
+        "pipe_id": "247",
+        "midpoint_x": 37.605000000000004,
+        "midpoint_y": 7.445
+      },
+      {
+        "pipe_id": "151",
+        "midpoint_x": 38.075,
+        "midpoint_y": 22.865000000000002
+      },
+      {
+        "pipe_id": "249",
+        "midpoint_x": 41.03,
+        "midpoint_y": 8.7
+      },
+      {
+        "pipe_id": "257",
+        "midpoint_x": 42.82,
+        "midpoint_y": 8.025
+      },
+      {
+        "pipe_id": "251",
+        "midpoint_x": 43.485,
+        "midpoint_y": 8.995000000000001
+      }
+    ],
+    "bands": [
+      [
+        "101",
+        "103",
+        "109",
+        "105",
+        "107",
+        "117",
+        "111",
+        "115",
+        "307",
+        "301",
+        "225",
+        "112",
+        "303",
+        "299",
+        "113",
+        "305",
+        "119",
+        "114",
+        "223",
+        "297",
+        "121",
+        "116",
+        "217",
+        "122",
+        "213",
+        "120",
+        "219",
+        "311",
+        "333",
+        "125",
+        "329",
+        "123",
+        "186",
+        "215",
+        "209",
+        "175",
+        "60",
+        "129"
+      ],
+      [
+        "177",
+        "221",
+        "173",
+        "309",
+        "205",
+        "313",
+        "207",
+        "202",
+        "203",
+        "179",
+        "211",
+        "321",
+        "325",
+        "183",
+        "199",
+        "193",
+        "180",
+        "197",
+        "195",
+        "185",
+        "315",
+        "171",
+        "187",
+        "181",
+        "191",
+        "169",
+        "201",
+        "189",
+        "131",
+        "204",
+        "40",
+        "229",
+        "163",
+        "161",
+        "319",
+        "235",
+        "133",
+        "20",
+        "135"
+      ],
+      [
+        "159",
+        "237",
+        "317",
+        "231",
+        "323",
+        "233",
+        "239",
+        "238",
+        "155",
+        "145",
+        "240",
+        "291",
+        "50",
+        "241",
+        "289",
+        "293",
+        "243",
+        "137",
+        "287",
+        "153",
+        "147",
+        "295",
+        "245",
+        "269",
+        "285",
+        "283",
+        "281",
+        "273",
+        "261",
+        "271",
+        "275",
+        "277",
+        "149",
+        "263",
+        "247",
+        "151",
+        "249",
+        "257",
+        "251"
+      ]
+    ],
+    "excluded": [
+      "330",
+      "10",
+      "335"
+    ],
+    "exclusion_rule": "Pompa/boru dışı, başlangıçta kapalı, çekvalf veya özgün link kontrolü olanlar."
+  },
+  "triples": [
+    {
+      "cluster_id": "T01",
+      "stratum": "bolge_1",
+      "pipes": [
+        "209",
+        "113",
+        "175"
+      ]
+    },
+    {
+      "cluster_id": "T02",
+      "stratum": "bolge_1",
+      "pipes": [
+        "116",
+        "219",
+        "109"
+      ]
+    },
+    {
+      "cluster_id": "T03",
+      "stratum": "bolge_1",
+      "pipes": [
+        "215",
+        "129",
+        "119"
+      ]
+    },
+    {
+      "cluster_id": "T04",
+      "stratum": "bolge_2",
+      "pipes": [
+        "197",
+        "202",
+        "171"
+      ]
+    },
+    {
+      "cluster_id": "T05",
+      "stratum": "bolge_2",
+      "pipes": [
+        "195",
+        "201",
+        "179"
+      ]
+    },
+    {
+      "cluster_id": "T06",
+      "stratum": "bolge_2",
+      "pipes": [
+        "179",
+        "211",
+        "313"
+      ]
+    },
+    {
+      "cluster_id": "T07",
+      "stratum": "bolge_3",
+      "pipes": [
+        "237",
+        "287",
+        "145"
+      ]
+    },
+    {
+      "cluster_id": "T08",
+      "stratum": "bolge_3",
+      "pipes": [
+        "245",
+        "261",
+        "247"
+      ]
+    },
+    {
+      "cluster_id": "T09",
+      "stratum": "bolge_3",
+      "pipes": [
+        "281",
+        "147",
+        "233"
+      ]
+    },
+    {
+      "cluster_id": "T10",
+      "stratum": "bolgeler_arasi",
+      "pipes": [
+        "105",
+        "295",
+        "40"
+      ]
+    },
+    {
+      "cluster_id": "T11",
+      "stratum": "bolgeler_arasi",
+      "pipes": [
+        "112",
+        "193",
+        "153"
+      ]
+    },
+    {
+      "cluster_id": "T12",
+      "stratum": "bolgeler_arasi",
+      "pipes": [
+        "135",
+        "175",
+        "145"
+      ]
+    }
+  ],
+  "cases": [
+    {
+      "case_id": "T01_C1",
+      "cluster_id": "T01",
+      "stratum": "bolge_1",
+      "scenario": {
+        "name": "T01_C1",
+        "failures": [
+          {
+            "pipe_id": "209",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "113",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "175",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "175",
+          "113",
+          "209"
+        ]
+      }
+    },
+    {
+      "case_id": "T01_C2",
+      "cluster_id": "T01",
+      "stratum": "bolge_1",
+      "scenario": {
+        "name": "T01_C2",
+        "failures": [
+          {
+            "pipe_id": "209",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "113",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "175",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "175",
+          "113",
+          "209"
+        ]
+      }
+    },
+    {
+      "case_id": "T01_C3",
+      "cluster_id": "T01",
+      "stratum": "bolge_1",
+      "scenario": {
+        "name": "T01_C3",
+        "failures": [
+          {
+            "pipe_id": "209",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "113",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "175",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "175",
+          "113",
+          "209"
+        ]
+      }
+    },
+    {
+      "case_id": "T02_C1",
+      "cluster_id": "T02",
+      "stratum": "bolge_1",
+      "scenario": {
+        "name": "T02_C1",
+        "failures": [
+          {
+            "pipe_id": "116",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "219",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "109",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "109",
+          "219",
+          "116"
+        ]
+      }
+    },
+    {
+      "case_id": "T02_C2",
+      "cluster_id": "T02",
+      "stratum": "bolge_1",
+      "scenario": {
+        "name": "T02_C2",
+        "failures": [
+          {
+            "pipe_id": "116",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "219",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "109",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "109",
+          "219",
+          "116"
+        ]
+      }
+    },
+    {
+      "case_id": "T02_C3",
+      "cluster_id": "T02",
+      "stratum": "bolge_1",
+      "scenario": {
+        "name": "T02_C3",
+        "failures": [
+          {
+            "pipe_id": "116",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "219",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "109",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "109",
+          "219",
+          "116"
+        ]
+      }
+    },
+    {
+      "case_id": "T03_C1",
+      "cluster_id": "T03",
+      "stratum": "bolge_1",
+      "scenario": {
+        "name": "T03_C1",
+        "failures": [
+          {
+            "pipe_id": "215",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "129",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "119",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "119",
+          "129",
+          "215"
+        ]
+      }
+    },
+    {
+      "case_id": "T03_C2",
+      "cluster_id": "T03",
+      "stratum": "bolge_1",
+      "scenario": {
+        "name": "T03_C2",
+        "failures": [
+          {
+            "pipe_id": "215",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "129",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "119",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "119",
+          "129",
+          "215"
+        ]
+      }
+    },
+    {
+      "case_id": "T03_C3",
+      "cluster_id": "T03",
+      "stratum": "bolge_1",
+      "scenario": {
+        "name": "T03_C3",
+        "failures": [
+          {
+            "pipe_id": "215",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "129",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "119",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "119",
+          "129",
+          "215"
+        ]
+      }
+    },
+    {
+      "case_id": "T04_C1",
+      "cluster_id": "T04",
+      "stratum": "bolge_2",
+      "scenario": {
+        "name": "T04_C1",
+        "failures": [
+          {
+            "pipe_id": "197",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "202",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "171",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "171",
+          "202",
+          "197"
+        ]
+      }
+    },
+    {
+      "case_id": "T04_C2",
+      "cluster_id": "T04",
+      "stratum": "bolge_2",
+      "scenario": {
+        "name": "T04_C2",
+        "failures": [
+          {
+            "pipe_id": "197",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "202",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "171",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "171",
+          "202",
+          "197"
+        ]
+      }
+    },
+    {
+      "case_id": "T04_C3",
+      "cluster_id": "T04",
+      "stratum": "bolge_2",
+      "scenario": {
+        "name": "T04_C3",
+        "failures": [
+          {
+            "pipe_id": "197",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "202",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "171",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "171",
+          "202",
+          "197"
+        ]
+      }
+    },
+    {
+      "case_id": "T05_C1",
+      "cluster_id": "T05",
+      "stratum": "bolge_2",
+      "scenario": {
+        "name": "T05_C1",
+        "failures": [
+          {
+            "pipe_id": "195",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "201",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "179",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "179",
+          "201",
+          "195"
+        ]
+      }
+    },
+    {
+      "case_id": "T05_C2",
+      "cluster_id": "T05",
+      "stratum": "bolge_2",
+      "scenario": {
+        "name": "T05_C2",
+        "failures": [
+          {
+            "pipe_id": "195",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "201",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "179",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "179",
+          "201",
+          "195"
+        ]
+      }
+    },
+    {
+      "case_id": "T05_C3",
+      "cluster_id": "T05",
+      "stratum": "bolge_2",
+      "scenario": {
+        "name": "T05_C3",
+        "failures": [
+          {
+            "pipe_id": "195",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "201",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "179",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "179",
+          "201",
+          "195"
+        ]
+      }
+    },
+    {
+      "case_id": "T06_C1",
+      "cluster_id": "T06",
+      "stratum": "bolge_2",
+      "scenario": {
+        "name": "T06_C1",
+        "failures": [
+          {
+            "pipe_id": "179",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "211",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "313",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "313",
+          "211",
+          "179"
+        ]
+      }
+    },
+    {
+      "case_id": "T06_C2",
+      "cluster_id": "T06",
+      "stratum": "bolge_2",
+      "scenario": {
+        "name": "T06_C2",
+        "failures": [
+          {
+            "pipe_id": "179",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "211",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "313",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "313",
+          "211",
+          "179"
+        ]
+      }
+    },
+    {
+      "case_id": "T06_C3",
+      "cluster_id": "T06",
+      "stratum": "bolge_2",
+      "scenario": {
+        "name": "T06_C3",
+        "failures": [
+          {
+            "pipe_id": "179",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "211",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "313",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "313",
+          "211",
+          "179"
+        ]
+      }
+    },
+    {
+      "case_id": "T07_C1",
+      "cluster_id": "T07",
+      "stratum": "bolge_3",
+      "scenario": {
+        "name": "T07_C1",
+        "failures": [
+          {
+            "pipe_id": "237",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "287",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "145",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "145",
+          "287",
+          "237"
+        ]
+      }
+    },
+    {
+      "case_id": "T07_C2",
+      "cluster_id": "T07",
+      "stratum": "bolge_3",
+      "scenario": {
+        "name": "T07_C2",
+        "failures": [
+          {
+            "pipe_id": "237",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "287",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "145",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "145",
+          "287",
+          "237"
+        ]
+      }
+    },
+    {
+      "case_id": "T07_C3",
+      "cluster_id": "T07",
+      "stratum": "bolge_3",
+      "scenario": {
+        "name": "T07_C3",
+        "failures": [
+          {
+            "pipe_id": "237",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "287",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "145",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "145",
+          "287",
+          "237"
+        ]
+      }
+    },
+    {
+      "case_id": "T08_C1",
+      "cluster_id": "T08",
+      "stratum": "bolge_3",
+      "scenario": {
+        "name": "T08_C1",
+        "failures": [
+          {
+            "pipe_id": "245",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "261",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "247",
+          "261",
+          "245"
+        ]
+      }
+    },
+    {
+      "case_id": "T08_C2",
+      "cluster_id": "T08",
+      "stratum": "bolge_3",
+      "scenario": {
+        "name": "T08_C2",
+        "failures": [
+          {
+            "pipe_id": "245",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "261",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "247",
+          "261",
+          "245"
+        ]
+      }
+    },
+    {
+      "case_id": "T08_C3",
+      "cluster_id": "T08",
+      "stratum": "bolge_3",
+      "scenario": {
+        "name": "T08_C3",
+        "failures": [
+          {
+            "pipe_id": "245",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "261",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "247",
+          "261",
+          "245"
+        ]
+      }
+    },
+    {
+      "case_id": "T09_C1",
+      "cluster_id": "T09",
+      "stratum": "bolge_3",
+      "scenario": {
+        "name": "T09_C1",
+        "failures": [
+          {
+            "pipe_id": "281",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "147",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "233",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "233",
+          "147",
+          "281"
+        ]
+      }
+    },
+    {
+      "case_id": "T09_C2",
+      "cluster_id": "T09",
+      "stratum": "bolge_3",
+      "scenario": {
+        "name": "T09_C2",
+        "failures": [
+          {
+            "pipe_id": "281",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "147",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "233",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "233",
+          "147",
+          "281"
+        ]
+      }
+    },
+    {
+      "case_id": "T09_C3",
+      "cluster_id": "T09",
+      "stratum": "bolge_3",
+      "scenario": {
+        "name": "T09_C3",
+        "failures": [
+          {
+            "pipe_id": "281",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "147",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "233",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "233",
+          "147",
+          "281"
+        ]
+      }
+    },
+    {
+      "case_id": "T10_C1",
+      "cluster_id": "T10",
+      "stratum": "bolgeler_arasi",
+      "scenario": {
+        "name": "T10_C1",
+        "failures": [
+          {
+            "pipe_id": "105",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "295",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "40",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "40",
+          "295",
+          "105"
+        ]
+      }
+    },
+    {
+      "case_id": "T10_C2",
+      "cluster_id": "T10",
+      "stratum": "bolgeler_arasi",
+      "scenario": {
+        "name": "T10_C2",
+        "failures": [
+          {
+            "pipe_id": "105",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "295",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "40",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "40",
+          "295",
+          "105"
+        ]
+      }
+    },
+    {
+      "case_id": "T10_C3",
+      "cluster_id": "T10",
+      "stratum": "bolgeler_arasi",
+      "scenario": {
+        "name": "T10_C3",
+        "failures": [
+          {
+            "pipe_id": "105",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "295",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "40",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "40",
+          "295",
+          "105"
+        ]
+      }
+    },
+    {
+      "case_id": "T11_C1",
+      "cluster_id": "T11",
+      "stratum": "bolgeler_arasi",
+      "scenario": {
+        "name": "T11_C1",
+        "failures": [
+          {
+            "pipe_id": "112",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "193",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "153",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "153",
+          "193",
+          "112"
+        ]
+      }
+    },
+    {
+      "case_id": "T11_C2",
+      "cluster_id": "T11",
+      "stratum": "bolgeler_arasi",
+      "scenario": {
+        "name": "T11_C2",
+        "failures": [
+          {
+            "pipe_id": "112",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "193",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "153",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "153",
+          "193",
+          "112"
+        ]
+      }
+    },
+    {
+      "case_id": "T11_C3",
+      "cluster_id": "T11",
+      "stratum": "bolgeler_arasi",
+      "scenario": {
+        "name": "T11_C3",
+        "failures": [
+          {
+            "pipe_id": "112",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "193",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "153",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "153",
+          "193",
+          "112"
+        ]
+      }
+    },
+    {
+      "case_id": "T12_C1",
+      "cluster_id": "T12",
+      "stratum": "bolgeler_arasi",
+      "scenario": {
+        "name": "T12_C1",
+        "failures": [
+          {
+            "pipe_id": "135",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "175",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "145",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "145",
+          "175",
+          "135"
+        ]
+      }
+    },
+    {
+      "case_id": "T12_C2",
+      "cluster_id": "T12",
+      "stratum": "bolgeler_arasi",
+      "scenario": {
+        "name": "T12_C2",
+        "failures": [
+          {
+            "pipe_id": "135",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "175",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "145",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "145",
+          "175",
+          "135"
+        ]
+      }
+    },
+    {
+      "case_id": "T12_C3",
+      "cluster_id": "T12",
+      "stratum": "bolgeler_arasi",
+      "scenario": {
+        "name": "T12_C3",
+        "failures": [
+          {
+            "pipe_id": "135",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "175",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "145",
+            "repair_hours": 4.0
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20.0,
+        "low_pressure_m": 15.0,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "203": 3.0,
+          "215": 2.0
+        },
+        "manual_order": [
+          "145",
+          "175",
+          "135"
+        ]
+      }
+    }
+  ],
+  "planned_main_cases": 36,
+  "prior_knowledge": "BUILD01 örneği 137/247/233 ve sezgisel-tam arama eşitliği önceden biliniyor; yeni örnekleme bu sonuçtan seçilmedi. Eski örnek ayrı ankraj olarak tekrar koşulur, 36 vaka paydasına katılmaz.",
+  "hypotheses": [
+    "H1: Eksiksiz sıra taramasının leksikografik hedefi aynı aday ailesindeki FIFO/sezgisel/ters bildirimden kötü olmamalı; bu tanım gereği beklenen bir kontrol, yeni algoritma üstünlüğü kanıtı değildir.",
+    "H2: Tam arama-sezgisel farkı bir ve iki ekipte sıfır veya pozitif olabilir; herhangi bir kazanç oranı önceden varsayılmaz.",
+    "H3: Üç boru ve üç ekipte her iş arıza anında başlayacağından altı sıra fiziksel olarak eşittir; aksi durum araştırılır.",
+    "H4: Zaman adımı metrikleri ve seçilen sırayı değiştirebilir; 5 dakika tam doğru kabul edilmeden ince referans olarak kullanılır."
+  ],
+  "methods": [
+    "FIFO",
+    "Tekli ek etki/onarım süresi",
+    "Altı sıranın hidrolik tam araması",
+    "Ters bildirim kontrolü"
+  ],
+  "manual_control": "manual_order alanı deterministik ters FIFO; insan tarafından hazırlanmış plan değildir.",
+  "objective": [
+    "weighted_unmet_volume_m3",
+    "critical_low_pressure_node_hours",
+    "repair_completion_hour"
+  ],
+  "separate_outcome": "unmet_demand_volume_m3",
+  "metric_language": {
+    "weighted_unmet_volume_m3": "Ağırlıklandırılmış hizmet açığı (m³; boyutsuz senaryo katsayılarıyla)",
+    "unmet_demand_volume_m3": "Karşılanamayan müşteri talebi (m³)",
+    "leakage_volume_m3": "null; kaçak fiziği yok"
+  },
+  "tolerance": {
+    "rtol": 1e-08,
+    "atol": 1e-06,
+    "comparison": "Simetrik |a-b|≤atol+rtol*max(|a|,|b|). Leksikografik ilk tolerans dışı bileşen belirleyici; eşit sıralar bütün üç bileşende toleransla eşit."
+  },
+  "analysis": {
+    "paired_unit": "case_id; aynı üçlüde üç ekip koşusu bağımlı. Ayrıca ekip grubu (n=12) ve üçlü kümesi düzeyinde rapor.",
+    "statistics": [
+      "daha iyi/eşit/daha kötü sayıları",
+      "eşleştirilmiş fark min/q25/medyan/q75/max",
+      "ekip bazında ayrı dağılım",
+      "bütün başarısız vakalar"
+    ],
+    "no_inference": "Amaçlı sabit geometri örneklemesi; p-değeri/bağımsız 36 gözlem varsayımı/evrene genelleyen güven aralığı yok.",
+    "large_difference_rule": "Tam arama-sezgisel V_w farkında en büyük mutlak üç başarılı vaka, eşitlikte case_id; tüm tablo yanında mekanizma incelemesi, yeni seçim değil."
+  },
+  "failures": {
+    "policy": "Vaka değiştirme/yerine yenisini koyma/yeniden örnekleme yok. Her aşama hata kaydı. Başarısız plan için sıfır yok. Çiftli yöntem karşılaştırması yalnız iki planın geçerli olduğu vakada; toplam planlanan 36 ve geçerli payda birlikte.",
+    "timeout_seconds_per_case": 120,
+    "retry": "Otomatik tekrar yok. Altyapı düzeltmesi gerekirse eski başarısız deneme tutulur, ek deneme ayrı kimliklidir."
+  },
+  "sensitivity": {
+    "case_ids": [
+      "T01_C1",
+      "T05_C2",
+      "T12_C3"
+    ],
+    "main_step_minutes": 15,
+    "alternatives_minutes": [
+      5,
+      10,
+      30,
+      60
+    ],
+    "rule": "Üç vaka kimliği sonuçtan önce sabit. Bütün yöntemler/altı aday her adımda taze çözülür. Olay/süreler bütün adımların katıdır. 5 dakikaya göre hacim ve sıra değişimi; ana 15 dakikaya göre fark da verilir.",
+    "warning_threshold_relative_unweighted_volume": 0.05,
+    "interpretation": "%5 üstü fark veya seçilen sıra değişimi uyarıdır; durum gizlenmez. Bu eşik hata tahmini veya otomatik model geçerlilik onayı değildir. Hidrolik ve raporlama adımı birlikte değişir."
+  },
+  "uncertainty": {
+    "case_ids": [
+      "T01_C1",
+      "T05_C2",
+      "T12_C3"
+    ],
+    "step_minutes": 15,
+    "realizations": [
+      {
+        "id": "U1",
+        "repair_delta_h": [
+          -0.5,
+          -0.5,
+          -0.5
+        ],
+        "crew_delay_h": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "U2",
+        "repair_delta_h": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "crew_delay_h": [
+          0,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "U3",
+        "repair_delta_h": [
+          0.5,
+          -0.5,
+          0.5
+        ],
+        "crew_delay_h": [
+          0.5,
+          0,
+          0
+        ]
+      },
+      {
+        "id": "U4",
+        "repair_delta_h": [
+          -0.5,
+          0.5,
+          -0.5
+        ],
+        "crew_delay_h": [
+          0,
+          0.5,
+          0
+        ]
+      }
+    ],
+    "rule": "Nominal dört yöntemin sırası sabit tutulur; gerçekleşen süreler ve ekip erişim gecikmeleriyle yeniden fiziksel değerlendirme. Ekip sayısından fazla gecikme bileşeni kullanılmaz. Ayrı heap çizelgesi gerçek zaman boşluklarına göre atar. Altı gerçekleşmiş sıra referansı ayrıca hesaplanır.",
+    "interpretation": "Dört sabit stres koşulu; saha dağılımı, olasılıklı güven aralığı, yeni robust planlayıcı veya eğitim/öğrenme yok. Ortalama/en kötü hedef, nominal sıra optimum kümesinde mi ve pişmanlık raporlanır."
+  },
+  "cross_engine": {
+    "case_id": "T01_C1",
+    "method": "fifo",
+    "solver": "WNTRSimulator",
+    "rule": "Aynı senaryo; bütün düğüm/bağlantıları kimlikle hizalayarak maksimum fark. Başarısızsa başka vaka seçilmez."
+  },
+  "go_rule": "Protokol ana sonuçlardan önce hashlenmiş, 36 planlanan vakanın tüm durumları kayıtlı, en az üç vakanın adım analizleri ve başarısızlıkları raporlanmış, yöntem analizi ve özgünlük sınırı dürüst, test/temiz kurulum kanıtı mevcutsa GO-BILIMSEL. Hidrolik motor bozulur, sonuç gizlenir veya zorunlu kanıt tamamlanmazsa NO-GO-BILIMSEL. Sezgisele üstünlük GO şartı değildir."
+}

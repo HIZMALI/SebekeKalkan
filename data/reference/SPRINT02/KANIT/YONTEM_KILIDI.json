@@ -1,0 +1,12 @@
+{
+  "at_utc": "2026-11-20T13:28:03.869068+00:00",
+  "protocol_sha256": "86bf325f458d9010af444ed630df6a5daedd4cf7b97447583783e1eb78fe3729",
+  "research_code_sha256": "a6cac10d72bc099230b0b5997d4ca94b0f42a8cb88016a35b8ee6c8ce668475a",
+  "codes": {
+    "scripts/sprint02.py": "d976cca6e8e5bafc766104b865ccf49852720ed0d960890c8355c661fd6c1cd1",
+    "backend/sebekekalkan_core/s02_search.py": "342b2072cce13ade1c6c0e84089438d2f7b90b3a6bf838f99500b757c442dfd4",
+    "backend/sebekekalkan_core/s02_comparison.py": "732f718483471e6ca6f49947e9362d5097ed4b881aa84aa7d029c46e8466aeaf",
+    "backend/sebekekalkan_core/s02_physics.py": "055b9c6ed14797694471297641b981c6c3b719790586d45abc197a99d09a77ff"
+  },
+  "policy": "İlk karşılaştırmadan önce tüm yöntemler sabit. Sonraki koşular aynı kaynakla yürütülür."
+}

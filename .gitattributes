@@ -1,0 +1,7 @@
+# The original model and evidence checks use bytewise SHA-256.
+* -text
+* whitespace=cr-at-eol
+# Keep the original third-party tabular padding and complete license text.
+*.inp -whitespace
+data/networks/LICENSE_WNTR.md -whitespace
+data/reference/SPRINT02/MODELLER/WNTR-LICENSE.md -whitespace

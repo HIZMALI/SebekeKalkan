@@ -1,0 +1,14 @@
+services:
+  sebekekalkan:
+    build:
+      context: .
+      dockerfile: deploy/Dockerfile
+    ports:
+      - "127.0.0.1:${SE_PORT:-18760}:8000"
+    mem_limit: 1024m
+    cpus: 2
+    pids_limit: 128
+    security_opt:
+      - no-new-privileges:true
+    cap_drop:
+      - ALL

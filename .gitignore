@@ -1,0 +1,16 @@
+.calisma/
+.cache/
+.venv*/
+.pytest_cache/
+.ruff_cache/
+__pycache__/
+*.py[cod]
+node_modules/
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.log
+test-results/
+playwright-report/

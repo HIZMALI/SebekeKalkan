@@ -1,0 +1,19 @@
+services:
+  sebekekalkan:
+    command:
+      - python
+      - -m
+      - uvicorn
+      - sebekekalkan_core.public_server:app
+      - --host
+      - 0.0.0.0
+      - --port
+      - "8000"
+      - --no-proxy-headers
+      - --workers
+      - "1"
+      - --no-access-log
+    environment:
+      SE_ALLOWED_ORIGINS: "${SE_ALLOWED_ORIGINS:?Set the verified HTTPS frontend origin}"
+    tmpfs:
+      - /srv/runtime/01_GELISTIRME_KAYNAK/.calisma:size=512m,uid=10001,gid=10001,mode=0700

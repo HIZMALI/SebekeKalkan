@@ -1,0 +1,10 @@
+import { createRoot } from 'react-dom/client';
+import type {ReactNode} from 'react';
+import App from './App';
+import Final from './Final';
+import Judge from './final-v4/Judge';
+import Custom from './final-v4/Custom';
+import './style.css';
+const pages: Record<string, ReactNode> = {'/final-v4': <Judge/>, '/final-v4/senaryo': <Custom/>, '/final': <Final/>};
+const page = pages[location.pathname] ?? <App/>;
+createRoot(document.getElementById('root')!).render(page);

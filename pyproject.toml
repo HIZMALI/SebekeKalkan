@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "sebekekalkan-core"
+version = "0.1.0"
+description = "ŞebekeKalkan: EPANET 2.2 ile sınırlı ekip müdahale karşılaştırması"
+readme = "README.md"
+requires-python = ">=3.10,<3.14"
+dependencies = ["reportlab==4.5.1", "wntr==1.5.0", "fastapi==0.162.0", "uvicorn==0.54.0", "pydantic==2.14.2"]
+
+[project.optional-dependencies]
+test = ["pytest==9.2.0", "httpx==0.28.1"]
+
+[tool.setuptools.packages.find]
+where = ["backend"]
+include = ["sebekekalkan_core*"]

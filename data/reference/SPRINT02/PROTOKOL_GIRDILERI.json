@@ -1,0 +1,606 @@
+{
+  "plan": "s02-v1",
+  "registered_local": "2026-11-20T16:26:07.243685+03:00",
+  "seed": 2026112002,
+  "models_excluded": {
+    "Awumah1": "pozitif talep yok",
+    "Anytown": "pilot fizik kapısı",
+    "Todini2": "önceden bilinen tanısal ağ"
+  },
+  "budgets": [
+    6,
+    12
+  ],
+  "cases": [
+    {
+      "case_id": "Net2_G1_C1",
+      "group": "dev",
+      "stage": "comparison",
+      "model_id": "Net2",
+      "model_sha256": "7c140a40f9d43ec54c155783085f9f6403df6ea7e93df1f9ad4bbf35b6c28fb0",
+      "scenario": {
+        "name": "Net2_G1_C1",
+        "failures": [
+          {
+            "pipe_id": "30",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "18",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "25",
+            "repair_hours": 4.0
+          },
+          {
+            "pipe_id": "12",
+            "repair_hours": 5.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 24,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "11": 3.0,
+          "16": 2.0
+        },
+        "manual_order": null,
+        "wntr_max_iterations": 3000
+      },
+      "scenario_sha256": "f5987a79eea7f1cfb23afe9d651776f9444e68f803f31544682247f3b077d75a"
+    },
+    {
+      "case_id": "Net2_G1_C2",
+      "group": "dev",
+      "stage": "comparison",
+      "model_id": "Net2",
+      "model_sha256": "7c140a40f9d43ec54c155783085f9f6403df6ea7e93df1f9ad4bbf35b6c28fb0",
+      "scenario": {
+        "name": "Net2_G1_C2",
+        "failures": [
+          {
+            "pipe_id": "30",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "18",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "25",
+            "repair_hours": 4.0
+          },
+          {
+            "pipe_id": "12",
+            "repair_hours": 5.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 24,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "11": 3.0,
+          "16": 2.0
+        },
+        "manual_order": null,
+        "wntr_max_iterations": 3000
+      },
+      "scenario_sha256": "931810be91f95fbd0ee774acd6a94a9186cdca3b573cba27efad3444cdf2291c"
+    },
+    {
+      "case_id": "Net2_G2_C1",
+      "group": "dev",
+      "stage": "comparison",
+      "model_id": "Net2",
+      "model_sha256": "7c140a40f9d43ec54c155783085f9f6403df6ea7e93df1f9ad4bbf35b6c28fb0",
+      "scenario": {
+        "name": "Net2_G2_C1",
+        "failures": [
+          {
+            "pipe_id": "5",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "13",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "18",
+            "repair_hours": 4.0
+          },
+          {
+            "pipe_id": "17",
+            "repair_hours": 5.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 24,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "11": 3.0,
+          "16": 2.0
+        },
+        "manual_order": null,
+        "wntr_max_iterations": 3000
+      },
+      "scenario_sha256": "5863b2bb4f134bcbd982fea9f125348ff68d7adca24c0cf655fa94eb1ee7ff0e"
+    },
+    {
+      "case_id": "Net2_G2_C2",
+      "group": "dev",
+      "stage": "comparison",
+      "model_id": "Net2",
+      "model_sha256": "7c140a40f9d43ec54c155783085f9f6403df6ea7e93df1f9ad4bbf35b6c28fb0",
+      "scenario": {
+        "name": "Net2_G2_C2",
+        "failures": [
+          {
+            "pipe_id": "5",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "13",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "18",
+            "repair_hours": 4.0
+          },
+          {
+            "pipe_id": "17",
+            "repair_hours": 5.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 24,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "11": 3.0,
+          "16": 2.0
+        },
+        "manual_order": null,
+        "wntr_max_iterations": 3000
+      },
+      "scenario_sha256": "89ba78a7af69041711202a94bdbf9954d1e2befe0a58bd25c21cbdc97932b811"
+    },
+    {
+      "case_id": "Net2_G3_C1",
+      "group": "internal_holdout",
+      "stage": "comparison",
+      "model_id": "Net2",
+      "model_sha256": "7c140a40f9d43ec54c155783085f9f6403df6ea7e93df1f9ad4bbf35b6c28fb0",
+      "scenario": {
+        "name": "Net2_G3_C1",
+        "failures": [
+          {
+            "pipe_id": "21",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "2",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "39",
+            "repair_hours": 4.0
+          },
+          {
+            "pipe_id": "20",
+            "repair_hours": 5.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 24,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "11": 3.0,
+          "16": 2.0
+        },
+        "manual_order": null,
+        "wntr_max_iterations": 3000
+      },
+      "scenario_sha256": "a39db015eab2cac1211298bf7817c4676b22eb33b932c570a3cbf5b108712512"
+    },
+    {
+      "case_id": "Net2_G3_C2",
+      "group": "internal_holdout",
+      "stage": "comparison",
+      "model_id": "Net2",
+      "model_sha256": "7c140a40f9d43ec54c155783085f9f6403df6ea7e93df1f9ad4bbf35b6c28fb0",
+      "scenario": {
+        "name": "Net2_G3_C2",
+        "failures": [
+          {
+            "pipe_id": "21",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "2",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "39",
+            "repair_hours": 4.0
+          },
+          {
+            "pipe_id": "20",
+            "repair_hours": 5.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 24,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "11": 3.0,
+          "16": 2.0
+        },
+        "manual_order": null,
+        "wntr_max_iterations": 3000
+      },
+      "scenario_sha256": "6fe54ece6bc514c84a35c14c58689c29dfd4f97ae871a2941d938a390b6d9064"
+    },
+    {
+      "case_id": "Net2_G4_C1",
+      "group": "internal_holdout",
+      "stage": "comparison",
+      "model_id": "Net2",
+      "model_sha256": "7c140a40f9d43ec54c155783085f9f6403df6ea7e93df1f9ad4bbf35b6c28fb0",
+      "scenario": {
+        "name": "Net2_G4_C1",
+        "failures": [
+          {
+            "pipe_id": "17",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "9",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "18",
+            "repair_hours": 4.0
+          },
+          {
+            "pipe_id": "12",
+            "repair_hours": 5.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 24,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "11": 3.0,
+          "16": 2.0
+        },
+        "manual_order": null,
+        "wntr_max_iterations": 3000
+      },
+      "scenario_sha256": "223901efeac0ef2ad48a12ee188873c7ca62d595bc761abef0d657cd74bb0da9"
+    },
+    {
+      "case_id": "Net2_G4_C2",
+      "group": "internal_holdout",
+      "stage": "comparison",
+      "model_id": "Net2",
+      "model_sha256": "7c140a40f9d43ec54c155783085f9f6403df6ea7e93df1f9ad4bbf35b6c28fb0",
+      "scenario": {
+        "name": "Net2_G4_C2",
+        "failures": [
+          {
+            "pipe_id": "17",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "9",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "18",
+            "repair_hours": 4.0
+          },
+          {
+            "pipe_id": "12",
+            "repair_hours": 5.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 24,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "11": 3.0,
+          "16": 2.0
+        },
+        "manual_order": null,
+        "wntr_max_iterations": 3000
+      },
+      "scenario_sha256": "3b10330d6d304113aa780506099f1b702c92f0ffe784eedd86b22070af129b3f"
+    },
+    {
+      "case_id": "Skeletonize_G1_C1",
+      "group": "external_holdout",
+      "stage": "comparison",
+      "model_id": "Skeletonize",
+      "model_sha256": "d32534dfd2b4c8df310cd82887b2fd269b607999939ece2d81ba92d9a170f97d",
+      "scenario": {
+        "name": "Skeletonize_G1_C1",
+        "failures": [
+          {
+            "pipe_id": "64",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "69",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "54",
+            "repair_hours": 4.0
+          },
+          {
+            "pipe_id": "11",
+            "repair_hours": 5.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 24,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "58": 3.0,
+          "14": 2.0
+        },
+        "manual_order": null,
+        "wntr_max_iterations": 3000
+      },
+      "scenario_sha256": "7cea6759b0abde8c0d03790a2885f7d0c5c0529d3c19fe7f617d9e9f3ac09e7f"
+    },
+    {
+      "case_id": "Skeletonize_G1_C2",
+      "group": "external_holdout",
+      "stage": "comparison",
+      "model_id": "Skeletonize",
+      "model_sha256": "d32534dfd2b4c8df310cd82887b2fd269b607999939ece2d81ba92d9a170f97d",
+      "scenario": {
+        "name": "Skeletonize_G1_C2",
+        "failures": [
+          {
+            "pipe_id": "64",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "69",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "54",
+            "repair_hours": 4.0
+          },
+          {
+            "pipe_id": "11",
+            "repair_hours": 5.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 24,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "58": 3.0,
+          "14": 2.0
+        },
+        "manual_order": null,
+        "wntr_max_iterations": 3000
+      },
+      "scenario_sha256": "e37a183ed8d1051592534a6949c4108a9edf67fbb2ff1d892e4fc1473f0a5ce2"
+    },
+    {
+      "case_id": "Skeletonize_G2_C1",
+      "group": "external_holdout",
+      "stage": "comparison",
+      "model_id": "Skeletonize",
+      "model_sha256": "d32534dfd2b4c8df310cd82887b2fd269b607999939ece2d81ba92d9a170f97d",
+      "scenario": {
+        "name": "Skeletonize_G2_C1",
+        "failures": [
+          {
+            "pipe_id": "38",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "60",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "79",
+            "repair_hours": 4.0
+          },
+          {
+            "pipe_id": "71",
+            "repair_hours": 5.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 24,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "58": 3.0,
+          "14": 2.0
+        },
+        "manual_order": null,
+        "wntr_max_iterations": 3000
+      },
+      "scenario_sha256": "30aefdca0451d838bc95fb009550ab3d1c09f524f95b61decf9cb17977739568"
+    },
+    {
+      "case_id": "Skeletonize_G2_C2",
+      "group": "external_holdout",
+      "stage": "comparison",
+      "model_id": "Skeletonize",
+      "model_sha256": "d32534dfd2b4c8df310cd82887b2fd269b607999939ece2d81ba92d9a170f97d",
+      "scenario": {
+        "name": "Skeletonize_G2_C2",
+        "failures": [
+          {
+            "pipe_id": "38",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "60",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "79",
+            "repair_hours": 4.0
+          },
+          {
+            "pipe_id": "71",
+            "repair_hours": 5.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 24,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "58": 3.0,
+          "14": 2.0
+        },
+        "manual_order": null,
+        "wntr_max_iterations": 3000
+      },
+      "scenario_sha256": "cfde98ea8f8e8b951416525b871615fa1724edd64c3a45be04fb07c5bb44649e"
+    },
+    {
+      "case_id": "Skeletonize_G3_C1",
+      "group": "external_holdout",
+      "stage": "comparison",
+      "model_id": "Skeletonize",
+      "model_sha256": "d32534dfd2b4c8df310cd82887b2fd269b607999939ece2d81ba92d9a170f97d",
+      "scenario": {
+        "name": "Skeletonize_G3_C1",
+        "failures": [
+          {
+            "pipe_id": "11",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "68",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "77",
+            "repair_hours": 4.0
+          },
+          {
+            "pipe_id": "27",
+            "repair_hours": 5.0
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 24,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "58": 3.0,
+          "14": 2.0
+        },
+        "manual_order": null,
+        "wntr_max_iterations": 3000
+      },
+      "scenario_sha256": "03fb326226c7c0fa80da685e83d862f5bf3e939aef38153d692a286b878424ee"
+    },
+    {
+      "case_id": "Skeletonize_G3_C2",
+      "group": "external_holdout",
+      "stage": "comparison",
+      "model_id": "Skeletonize",
+      "model_sha256": "d32534dfd2b4c8df310cd82887b2fd269b607999939ece2d81ba92d9a170f97d",
+      "scenario": {
+        "name": "Skeletonize_G3_C2",
+        "failures": [
+          {
+            "pipe_id": "11",
+            "repair_hours": 2.0
+          },
+          {
+            "pipe_id": "68",
+            "repair_hours": 3.0
+          },
+          {
+            "pipe_id": "77",
+            "repair_hours": 4.0
+          },
+          {
+            "pipe_id": "27",
+            "repair_hours": 5.0
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2.0,
+        "horizon_hours": 24,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "hydraulic_trials": 40,
+        "critical_weights": {
+          "58": 3.0,
+          "14": 2.0
+        },
+        "manual_order": null,
+        "wntr_max_iterations": 3000
+      },
+      "scenario_sha256": "9d40b417f15f0c021cfa0f19cce01bdeb61cad5e1ccaebc1cbccd82311cf4dc4"
+    }
+  ],
+  "limit_s": 180,
+  "recover_service": "not_evaluated"
+}

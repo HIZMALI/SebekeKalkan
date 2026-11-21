@@ -1,0 +1,40 @@
+[
+  {
+    "caseId": "M03",
+    "title": "Net2 · 4 arıza · Hızlı",
+    "request": {
+      "network": "Net2", "crews": 1, "search": "fast",
+      "faults": [
+        {"pipe_id": "1", "repair_hours": 3},
+        {"pipe_id": "6", "repair_hours": 5},
+        {"pipe_id": "41", "repair_hours": 5},
+        {"pipe_id": "12", "repair_hours": 3}
+      ]
+    }
+  },
+  {
+    "caseId": "M07",
+    "title": "Skeletonize · 3 arıza",
+    "request": {
+      "network": "Skeletonize", "crews": 1, "search": "fast",
+      "faults": [
+        {"pipe_id": "27", "repair_hours": 5},
+        {"pipe_id": "80", "repair_hours": 3},
+        {"pipe_id": "62", "repair_hours": 4}
+      ]
+    }
+  },
+  {
+    "caseId": "M10",
+    "title": "Skeletonize · 4 arıza · Kapsamlı",
+    "request": {
+      "network": "Skeletonize", "crews": 1, "search": "comprehensive",
+      "faults": [
+        {"pipe_id": "76", "repair_hours": 4},
+        {"pipe_id": "26", "repair_hours": 2},
+        {"pipe_id": "10", "repair_hours": 4},
+        {"pipe_id": "80", "repair_hours": 2}
+      ]
+    }
+  }
+]

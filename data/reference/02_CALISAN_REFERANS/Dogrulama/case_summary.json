@@ -1,0 +1,7418 @@
+[
+  {
+    "case": "Net3_A1_C1",
+    "network": "Net3",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 398.4737638230076,
+          "weighted_unmet_volume_m3": 398.4737638230076,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 1.4943434000015259
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "b0e6fa3b5fa331cc5a5e021a9af5fa18f99bf04e60c8ceb4e0ea6885b551af6b",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 192.19824181539272,
+          "weighted_unmet_volume_m3": 192.19824181539272,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 1.164623099990422
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "b0e6fa3b5fa331cc5a5e021a9af5fa18f99bf04e60c8ceb4e0ea6885b551af6b",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 192.19824181539272,
+          "weighted_unmet_volume_m3": 192.19824181539272,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 1.164623099990422
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "b0e6fa3b5fa331cc5a5e021a9af5fa18f99bf04e60c8ceb4e0ea6885b551af6b",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "247",
+        "180",
+        "101"
+      ],
+      "objective": [
+        192.19824181539272,
+        0.0,
+        11.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 20.814060999982757,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          398.4737638230076,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          272.2110055098034,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          397.42853592120946,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          308.04238099219936,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          193.48558465489546,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          192.19824181539272,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C2",
+    "network": "Net3",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 268.67967056474544,
+          "weighted_unmet_volume_m3": 268.67967056474544,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 2.462447700003395
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 1.0544217999849934
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.9769122999859974
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "180",
+        "247",
+        "101"
+      ],
+      "objective": [
+        189.95424970983754,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 22.534345699998084,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          268.67967056474544,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          190.99947761163563,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          268.67967056474544,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          190.99947761163563,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C3",
+    "network": "Net3",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 1.3953226000012364
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "63211eab0be0cf51ffe2ce08eee62d7ba060167531216355515bc2917afdfc2a",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 1.1004492999927606
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "63211eab0be0cf51ffe2ce08eee62d7ba060167531216355515bc2917afdfc2a",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 1.3953226000012364
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "63211eab0be0cf51ffe2ce08eee62d7ba060167531216355515bc2917afdfc2a",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "101",
+        "180",
+        "247"
+      ],
+      "objective": [
+        189.95424970983754,
+        0.0,
+        6.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "101",
+        "180",
+        "247"
+      ],
+      [
+        "101",
+        "247",
+        "180"
+      ],
+      [
+        "180",
+        "101",
+        "247"
+      ],
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "101",
+        "180"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 19.819459599995753,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A2_C1",
+    "network": "Net3",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 196.6254020299578,
+          "weighted_unmet_volume_m3": 196.6254020299578,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.9295862999861129
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e43be42289a3a28ca52f404cd1df550aeaf8db11cab920f5a6275cd108b88158",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 96.29933133695212,
+          "weighted_unmet_volume_m3": 96.29933133695212,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 1.2864542999886908
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e43be42289a3a28ca52f404cd1df550aeaf8db11cab920f5a6275cd108b88158",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 96.29933133695212,
+          "weighted_unmet_volume_m3": 96.29933133695212,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 1.2864542999886908
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e43be42289a3a28ca52f404cd1df550aeaf8db11cab920f5a6275cd108b88158",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "249",
+        "181",
+        "103"
+      ],
+      "objective": [
+        96.29933133695212,
+        0.0,
+        11.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "249",
+        "181",
+        "103"
+      ]
+    ],
+    "seconds": 17.233387499989476,
+    "candidate_objectives": [
+      {
+        "order": [
+          "103",
+          "181",
+          "249"
+        ],
+        "objective": [
+          196.6254020299578,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "103",
+          "249",
+          "181"
+        ],
+        "objective": [
+          136.10993168668895,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "181",
+          "103",
+          "249"
+        ],
+        "objective": [
+          195.58017412815977,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "181",
+          "249",
+          "103"
+        ],
+        "objective": [
+          151.8402254967481,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "249",
+          "103",
+          "181"
+        ],
+        "objective": [
+          97.58667417645484,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "249",
+          "181",
+          "103"
+        ],
+        "objective": [
+          96.29933133695212,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A2_C2",
+    "network": "Net3",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 132.57859674163103,
+          "weighted_unmet_volume_m3": 132.57859674163103,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 1.172960099996999
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "86ceada8ad4361d2e14033509213e7f7b43a5a26d69a0ea94cdff824c072e791",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 94.05533923139693,
+          "weighted_unmet_volume_m3": 94.05533923139693,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 1.2064225999929477
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "86ceada8ad4361d2e14033509213e7f7b43a5a26d69a0ea94cdff824c072e791",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 94.05533923139693,
+          "weighted_unmet_volume_m3": 94.05533923139693,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.9624503999948502
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "86ceada8ad4361d2e14033509213e7f7b43a5a26d69a0ea94cdff824c072e791",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "181",
+        "249",
+        "103"
+      ],
+      "objective": [
+        94.05533923139693,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "181",
+        "249",
+        "103"
+      ],
+      [
+        "249",
+        "181",
+        "103"
+      ]
+    ],
+    "seconds": 18.297069599997485,
+    "candidate_objectives": [
+      {
+        "order": [
+          "103",
+          "181",
+          "249"
+        ],
+        "objective": [
+          132.57859674163103,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "103",
+          "249",
+          "181"
+        ],
+        "objective": [
+          95.100567133195,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "181",
+          "103",
+          "249"
+        ],
+        "objective": [
+          132.57859674163103,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "181",
+          "249",
+          "103"
+        ],
+        "objective": [
+          94.05533923139693,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "249",
+          "103",
+          "181"
+        ],
+        "objective": [
+          95.100567133195,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "249",
+          "181",
+          "103"
+        ],
+        "objective": [
+          94.05533923139693,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A2_C3",
+    "network": "Net3",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 94.05533923139693,
+          "weighted_unmet_volume_m3": 94.05533923139693,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 1.3178439000039361
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "c5daa613e5f16afef05c1f8872e8125f6d432d1d6ac8ec6979f262b0e05c2cf9",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 94.05533923139693,
+          "weighted_unmet_volume_m3": 94.05533923139693,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 0.844327600003453
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "c5daa613e5f16afef05c1f8872e8125f6d432d1d6ac8ec6979f262b0e05c2cf9",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 94.05533923139693,
+          "weighted_unmet_volume_m3": 94.05533923139693,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 1.3178439000039361
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "c5daa613e5f16afef05c1f8872e8125f6d432d1d6ac8ec6979f262b0e05c2cf9",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "103",
+        "181",
+        "249"
+      ],
+      "objective": [
+        94.05533923139693,
+        0.0,
+        6.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "103",
+        "181",
+        "249"
+      ],
+      [
+        "103",
+        "249",
+        "181"
+      ],
+      [
+        "181",
+        "103",
+        "249"
+      ],
+      [
+        "181",
+        "249",
+        "103"
+      ],
+      [
+        "249",
+        "103",
+        "181"
+      ],
+      [
+        "249",
+        "181",
+        "103"
+      ]
+    ],
+    "seconds": 17.292787900019903,
+    "candidate_objectives": [
+      {
+        "order": [
+          "103",
+          "181",
+          "249"
+        ],
+        "objective": [
+          94.05533923139693,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "103",
+          "249",
+          "181"
+        ],
+        "objective": [
+          94.05533923139693,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "181",
+          "103",
+          "249"
+        ],
+        "objective": [
+          94.05533923139693,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "181",
+          "249",
+          "103"
+        ],
+        "objective": [
+          94.05533923139693,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "249",
+          "103",
+          "181"
+        ],
+        "objective": [
+          94.05533923139693,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "249",
+          "181",
+          "103"
+        ],
+        "objective": [
+          94.05533923139693,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A3_C1",
+    "network": "Net3",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 90.4694035067666,
+          "weighted_unmet_volume_m3": 90.4694035067666,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 1.1378127000061795
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "17207bdfb4d79e3b4f83ff2573f0e866a6e23da2b55b3e7f40b263d1a56462ef",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 42.982351458609024,
+          "weighted_unmet_volume_m3": 42.982351458609024,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.9786598999926355
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "17207bdfb4d79e3b4f83ff2573f0e866a6e23da2b55b3e7f40b263d1a56462ef",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 42.982351458609024,
+          "weighted_unmet_volume_m3": 42.982351458609024,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.9275616999948397
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "17207bdfb4d79e3b4f83ff2573f0e866a6e23da2b55b3e7f40b263d1a56462ef",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "251",
+        "105",
+        "183"
+      ],
+      "objective": [
+        42.982351458609024,
+        0.0,
+        11.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "251",
+        "105",
+        "183"
+      ],
+      [
+        "251",
+        "183",
+        "105"
+      ]
+    ],
+    "seconds": 15.81570860001375,
+    "candidate_objectives": [
+      {
+        "order": [
+          "105",
+          "183",
+          "251"
+        ],
+        "objective": [
+          90.4694035067666,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "105",
+          "251",
+          "183"
+        ],
+        "objective": [
+          61.0011538168032,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "183",
+          "105",
+          "251"
+        ],
+        "objective": [
+          90.4694035067666,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "183",
+          "251",
+          "105"
+        ],
+        "objective": [
+          70.01055499590029,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "251",
+          "105",
+          "183"
+        ],
+        "objective": [
+          42.982351458609024,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "251",
+          "183",
+          "105"
+        ],
+        "objective": [
+          42.982351458609024,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A3_C2",
+    "network": "Net3",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 61.0011538168032,
+          "weighted_unmet_volume_m3": 61.0011538168032,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 1.1622968000010587
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "0f222e7705b080cddd3310bd009beab0cd88846d1e8aa8cb7480d979bb4ee5c3",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 42.982351458609024,
+          "weighted_unmet_volume_m3": 42.982351458609024,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.8695107999956235
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "0f222e7705b080cddd3310bd009beab0cd88846d1e8aa8cb7480d979bb4ee5c3",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 42.982351458609024,
+          "weighted_unmet_volume_m3": 42.982351458609024,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.9417300999921281
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "0f222e7705b080cddd3310bd009beab0cd88846d1e8aa8cb7480d979bb4ee5c3",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "105",
+        "251",
+        "183"
+      ],
+      "objective": [
+        42.982351458609024,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "105",
+        "251",
+        "183"
+      ],
+      [
+        "183",
+        "251",
+        "105"
+      ],
+      [
+        "251",
+        "105",
+        "183"
+      ],
+      [
+        "251",
+        "183",
+        "105"
+      ]
+    ],
+    "seconds": 15.487044499983313,
+    "candidate_objectives": [
+      {
+        "order": [
+          "105",
+          "183",
+          "251"
+        ],
+        "objective": [
+          61.0011538168032,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "105",
+          "251",
+          "183"
+        ],
+        "objective": [
+          42.982351458609024,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "183",
+          "105",
+          "251"
+        ],
+        "objective": [
+          61.0011538168032,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "183",
+          "251",
+          "105"
+        ],
+        "objective": [
+          42.982351458609024,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "251",
+          "105",
+          "183"
+        ],
+        "objective": [
+          42.982351458609024,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "251",
+          "183",
+          "105"
+        ],
+        "objective": [
+          42.982351458609024,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A3_C3",
+    "network": "Net3",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 42.982351458609024,
+          "weighted_unmet_volume_m3": 42.982351458609024,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 1.1481341000180691
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "55c7b9f8f082c9fbcc12223aa66f9dba2c22de42cef277c9aac8a2fc46eb302b",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 42.982351458609024,
+          "weighted_unmet_volume_m3": 42.982351458609024,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 0.9105757999932393
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "55c7b9f8f082c9fbcc12223aa66f9dba2c22de42cef277c9aac8a2fc46eb302b",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 42.982351458609024,
+          "weighted_unmet_volume_m3": 42.982351458609024,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 1.1481341000180691
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "55c7b9f8f082c9fbcc12223aa66f9dba2c22de42cef277c9aac8a2fc46eb302b",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "105",
+        "183",
+        "251"
+      ],
+      "objective": [
+        42.982351458609024,
+        0.0,
+        6.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "105",
+        "183",
+        "251"
+      ],
+      [
+        "105",
+        "251",
+        "183"
+      ],
+      [
+        "183",
+        "105",
+        "251"
+      ],
+      [
+        "183",
+        "251",
+        "105"
+      ],
+      [
+        "251",
+        "105",
+        "183"
+      ],
+      [
+        "251",
+        "183",
+        "105"
+      ]
+    ],
+    "seconds": 16.54675869998755,
+    "candidate_objectives": [
+      {
+        "order": [
+          "105",
+          "183",
+          "251"
+        ],
+        "objective": [
+          42.982351458609024,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "105",
+          "251",
+          "183"
+        ],
+        "objective": [
+          42.982351458609024,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "183",
+          "105",
+          "251"
+        ],
+        "objective": [
+          42.982351458609024,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "183",
+          "251",
+          "105"
+        ],
+        "objective": [
+          42.982351458609024,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "251",
+          "105",
+          "183"
+        ],
+        "objective": [
+          42.982351458609024,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "251",
+          "183",
+          "105"
+        ],
+        "objective": [
+          42.982351458609024,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C1",
+    "network": "Net1",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.27248000001418404
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e5cb5231829e2fe44651b00096c778a91257b5664bbd8caa8ecf1aede7e2c22c",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.27248000001418404
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e5cb5231829e2fe44651b00096c778a91257b5664bbd8caa8ecf1aede7e2c22c",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.27248000001418404
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e5cb5231829e2fe44651b00096c778a91257b5664bbd8caa8ecf1aede7e2c22c",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "112",
+        "122"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        11.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "112",
+        "122"
+      ],
+      [
+        "10",
+        "122",
+        "112"
+      ]
+    ],
+    "seconds": 3.2670739999739453,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          299.8046132928,
+          1.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          2398.4369063424,
+          9.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          899.4138398784,
+          3.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          2398.4369063424,
+          9.0,
+          11.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C2",
+    "network": "Net1",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.21758419999969192
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.21758419999969192
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.19115660001989454
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "122",
+        "112"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ]
+    ],
+    "seconds": 3.644723499979591,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          299.8046132928,
+          1.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          299.8046132928,
+          1.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C3",
+    "network": "Net1",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 1.4741686999914236
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "9d3c9a0f4af8dd2a6b1821f44d3cfe40d5abffcdfca32a26e668e1299cb4b125",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 1.4741686999914236
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "9d3c9a0f4af8dd2a6b1821f44d3cfe40d5abffcdfca32a26e668e1299cb4b125",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 1.4741686999914236
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "9d3c9a0f4af8dd2a6b1821f44d3cfe40d5abffcdfca32a26e668e1299cb4b125",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "112",
+        "122"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        6.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "112",
+        "122"
+      ],
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "112",
+        "10",
+        "122"
+      ],
+      [
+        "112",
+        "122",
+        "10"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ],
+      [
+        "122",
+        "112",
+        "10"
+      ]
+    ],
+    "seconds": 10.713404699985404,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A2_C1",
+    "network": "Net1",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.19925430000876077
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f7cf790f056b509a32690be4044b104e37d6fe8c6cb54832d2041cfbe3e90121",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.19925430000876077
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f7cf790f056b509a32690be4044b104e37d6fe8c6cb54832d2041cfbe3e90121",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.19925430000876077
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f7cf790f056b509a32690be4044b104e37d6fe8c6cb54832d2041cfbe3e90121",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "11",
+        "113",
+        "21"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        11.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "11",
+        "113",
+        "21"
+      ],
+      [
+        "11",
+        "21",
+        "113"
+      ],
+      [
+        "113",
+        "11",
+        "21"
+      ],
+      [
+        "113",
+        "21",
+        "11"
+      ],
+      [
+        "21",
+        "11",
+        "113"
+      ],
+      [
+        "21",
+        "113",
+        "11"
+      ]
+    ],
+    "seconds": 3.1660925000032876,
+    "candidate_objectives": [
+      {
+        "order": [
+          "11",
+          "113",
+          "21"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "11",
+          "21",
+          "113"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "113",
+          "11",
+          "21"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "113",
+          "21",
+          "11"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "21",
+          "11",
+          "113"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "21",
+          "113",
+          "11"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A2_C2",
+    "network": "Net1",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.19139399999403395
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "c0e867fedac432b35c283f21a4535f8d8688647868552adc675a6a5c821a786b",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.19139399999403395
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "c0e867fedac432b35c283f21a4535f8d8688647868552adc675a6a5c821a786b",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.16360940001322888
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "c0e867fedac432b35c283f21a4535f8d8688647868552adc675a6a5c821a786b",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "11",
+        "21",
+        "113"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "11",
+        "21",
+        "113"
+      ],
+      [
+        "113",
+        "21",
+        "11"
+      ],
+      [
+        "21",
+        "11",
+        "113"
+      ],
+      [
+        "21",
+        "113",
+        "11"
+      ]
+    ],
+    "seconds": 3.008701299986569,
+    "candidate_objectives": [
+      {
+        "order": [
+          "11",
+          "113",
+          "21"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "11",
+          "21",
+          "113"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "113",
+          "11",
+          "21"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "113",
+          "21",
+          "11"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "21",
+          "11",
+          "113"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "21",
+          "113",
+          "11"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A2_C3",
+    "network": "Net1",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 0.16345270001329482
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e4a7b5ab93b98481144fc57a00c816da49740256e7ab2fe5156092df38294a61",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 0.16345270001329482
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e4a7b5ab93b98481144fc57a00c816da49740256e7ab2fe5156092df38294a61",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 0.16345270001329482
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e4a7b5ab93b98481144fc57a00c816da49740256e7ab2fe5156092df38294a61",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "11",
+        "113",
+        "21"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        6.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "11",
+        "113",
+        "21"
+      ],
+      [
+        "11",
+        "21",
+        "113"
+      ],
+      [
+        "113",
+        "11",
+        "21"
+      ],
+      [
+        "113",
+        "21",
+        "11"
+      ],
+      [
+        "21",
+        "11",
+        "113"
+      ],
+      [
+        "21",
+        "113",
+        "11"
+      ]
+    ],
+    "seconds": 3.6180632000032347,
+    "candidate_objectives": [
+      {
+        "order": [
+          "11",
+          "113",
+          "21"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "11",
+          "21",
+          "113"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "113",
+          "11",
+          "21"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "113",
+          "21",
+          "11"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "21",
+          "11",
+          "113"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "21",
+          "113",
+          "11"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A3_C1",
+    "network": "Net1",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 386.11200196799996,
+          "weighted_unmet_volume_m3": 386.11200196799996,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.27122439999948256
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "14fdb2165306128df0e748661449c3060917f84b60c5db4682b1219eef3451f9",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 386.11200196799996,
+          "weighted_unmet_volume_m3": 386.11200196799996,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.27122439999948256
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "14fdb2165306128df0e748661449c3060917f84b60c5db4682b1219eef3451f9",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 215.76847168799998,
+          "weighted_unmet_volume_m3": 215.76847168799998,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.25624940000125207
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "14fdb2165306128df0e748661449c3060917f84b60c5db4682b1219eef3451f9",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "12",
+        "110",
+        "22"
+      ],
+      "objective": [
+        215.76847168799998,
+        0.0,
+        11.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "12",
+        "110",
+        "22"
+      ],
+      [
+        "12",
+        "22",
+        "110"
+      ]
+    ],
+    "seconds": 4.267445900011808,
+    "candidate_objectives": [
+      {
+        "order": [
+          "110",
+          "12",
+          "22"
+        ],
+        "objective": [
+          386.11200196799996,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "110",
+          "22",
+          "12"
+        ],
+        "objective": [
+          476.96188478399995,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "12",
+          "110",
+          "22"
+        ],
+        "objective": [
+          215.76847168799998,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "12",
+          "22",
+          "110"
+        ],
+        "objective": [
+          215.76847168799998,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "22",
+          "110",
+          "12"
+        ],
+        "objective": [
+          295.26211915199997,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "22",
+          "12",
+          "110"
+        ],
+        "objective": [
+          295.26211915199997,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A3_C2",
+    "network": "Net1",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 215.76847168799998,
+          "weighted_unmet_volume_m3": 215.76847168799998,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.1534263999783434
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "688bd821dc885a10c198fda53bdfcdbf6abae79f0f8922442d8fe9ae26fa23a8",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 215.76847168799998,
+          "weighted_unmet_volume_m3": 215.76847168799998,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.1534263999783434
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "688bd821dc885a10c198fda53bdfcdbf6abae79f0f8922442d8fe9ae26fa23a8",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 215.76847168799998,
+          "weighted_unmet_volume_m3": 215.76847168799998,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.185195099998964
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "688bd821dc885a10c198fda53bdfcdbf6abae79f0f8922442d8fe9ae26fa23a8",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "12",
+        "22",
+        "110"
+      ],
+      "objective": [
+        215.76847168799998,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "12",
+        "22",
+        "110"
+      ],
+      [
+        "22",
+        "12",
+        "110"
+      ]
+    ],
+    "seconds": 3.4570322000072338,
+    "candidate_objectives": [
+      {
+        "order": [
+          "110",
+          "12",
+          "22"
+        ],
+        "objective": [
+          215.76847168799998,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "110",
+          "22",
+          "12"
+        ],
+        "objective": [
+          295.26211915199997,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "12",
+          "110",
+          "22"
+        ],
+        "objective": [
+          215.76847168799998,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "12",
+          "22",
+          "110"
+        ],
+        "objective": [
+          215.76847168799998,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "22",
+          "110",
+          "12"
+        ],
+        "objective": [
+          295.26211915199997,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "22",
+          "12",
+          "110"
+        ],
+        "objective": [
+          215.76847168799998,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A3_C3",
+    "network": "Net1",
+    "kind": "main",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 215.76847168799998,
+          "weighted_unmet_volume_m3": 215.76847168799998,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 0.1736936999950558
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "caa9fd865b068dcb4c311dc3d87ce797e400d068a907177adfe535a61b0a3e44",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 215.76847168799998,
+          "weighted_unmet_volume_m3": 215.76847168799998,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 0.1736936999950558
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "caa9fd865b068dcb4c311dc3d87ce797e400d068a907177adfe535a61b0a3e44",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 215.76847168799998,
+          "weighted_unmet_volume_m3": 215.76847168799998,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 0.1736936999950558
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "caa9fd865b068dcb4c311dc3d87ce797e400d068a907177adfe535a61b0a3e44",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "110",
+        "12",
+        "22"
+      ],
+      "objective": [
+        215.76847168799998,
+        0.0,
+        6.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "110",
+        "12",
+        "22"
+      ],
+      [
+        "110",
+        "22",
+        "12"
+      ],
+      [
+        "12",
+        "110",
+        "22"
+      ],
+      [
+        "12",
+        "22",
+        "110"
+      ],
+      [
+        "22",
+        "110",
+        "12"
+      ],
+      [
+        "22",
+        "12",
+        "110"
+      ]
+    ],
+    "seconds": 3.5572820999950636,
+    "candidate_objectives": [
+      {
+        "order": [
+          "110",
+          "12",
+          "22"
+        ],
+        "objective": [
+          215.76847168799998,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "110",
+          "22",
+          "12"
+        ],
+        "objective": [
+          215.76847168799998,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "12",
+          "110",
+          "22"
+        ],
+        "objective": [
+          215.76847168799998,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "12",
+          "22",
+          "110"
+        ],
+        "objective": [
+          215.76847168799998,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "22",
+          "110",
+          "12"
+        ],
+        "objective": [
+          215.76847168799998,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "22",
+          "12",
+          "110"
+        ],
+        "objective": [
+          215.76847168799998,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C2_step5",
+    "network": "Net3",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 268.6796705647455,
+          "weighted_unmet_volume_m3": 268.6796705647455,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 1.6803995000082068
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "509b60f7463683f9c2ab6d841666234d13aa36878032d8b2a67862420616571c",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 1.8524578999786172
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "509b60f7463683f9c2ab6d841666234d13aa36878032d8b2a67862420616571c",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 1.5959212000016123
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "509b60f7463683f9c2ab6d841666234d13aa36878032d8b2a67862420616571c",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "180",
+        "247",
+        "101"
+      ],
+      "objective": [
+        189.95424970983754,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 31.950245500018355,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          268.6796705647455,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          190.99947761163563,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          268.6796705647455,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          190.99947761163563,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C2_step30",
+    "network": "Net3",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 268.67967056474544,
+          "weighted_unmet_volume_m3": 268.67967056474544,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.945206500007771
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.7240611999877729
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.7174727000237908
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "180",
+        "247",
+        "101"
+      ],
+      "objective": [
+        189.95424970983754,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 13.76289650000399,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          268.67967056474544,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          190.99947761163563,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          268.67967056474544,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          190.99947761163563,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C2_step60",
+    "network": "Net3",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 268.6796705647455,
+          "weighted_unmet_volume_m3": 268.67967056474544,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.5680934000120033
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.45310720000998117
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.6159664000151679
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "180",
+        "247",
+        "101"
+      ],
+      "objective": [
+        189.95424970983754,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 9.67703629998141,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          268.67967056474544,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          190.99947761163563,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          268.67967056474544,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          190.99947761163563,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C2_duration-minus",
+    "network": "Net3",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 224.58225035692354,
+          "weighted_unmet_volume_m3": 224.5822503569235,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 1.1101790000102483
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "af1355a8265c0a0e3d90a2822230076a155b86f1a5139194f06af32fa4e66414",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 170.86855175279368,
+          "weighted_unmet_volume_m3": 170.86855175279368,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 0.9298073000099976
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "af1355a8265c0a0e3d90a2822230076a155b86f1a5139194f06af32fa4e66414",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 170.86855175279368,
+          "weighted_unmet_volume_m3": 170.86855175279368,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 0.9728682000131812
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "af1355a8265c0a0e3d90a2822230076a155b86f1a5139194f06af32fa4e66414",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "180",
+        "247",
+        "101"
+      ],
+      "objective": [
+        170.86855175279368,
+        0.0,
+        6.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 16.086629900004482,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          224.5822503569235,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          171.63623326258886,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          224.5822503569235,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          170.86855175279368,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          171.63623326258886,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          170.86855175279368,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C2_duration-plus",
+    "network": "Net3",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 308.31402214181924,
+          "weighted_unmet_volume_m3": 308.31402214181924,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 9.0,
+          "solver_seconds": 0.9867251999967266
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "89cf7e645476889975fed350daae34668fac730c786f19ea22446aceea17c40d",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 207.65209078827814,
+          "weighted_unmet_volume_m3": 207.65209078827814,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 1.0142291999945883
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "89cf7e645476889975fed350daae34668fac730c786f19ea22446aceea17c40d",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 207.65209078827814,
+          "weighted_unmet_volume_m3": 207.65209078827814,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.9044625000096858
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "89cf7e645476889975fed350daae34668fac730c786f19ea22446aceea17c40d",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "180",
+        "247",
+        "101"
+      ],
+      "objective": [
+        207.65209078827814,
+        0.0,
+        8.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 15.889298699999927,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          308.31402214181924,
+          0.0,
+          9.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          209.05753847544167,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          308.31402214181924,
+          0.0,
+          9.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          207.65209078827814,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          209.05753847544167,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          207.65209078827814,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C2_demand08",
+    "network": "Net3",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 214.94373645179638,
+          "weighted_unmet_volume_m3": 214.94373645179638,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.94181029999163
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "00b3de533eb0ad0537f545c65a6ae027133e76dbb1b3c9730f5176607ee1ebaf",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 151.96339976787004,
+          "weighted_unmet_volume_m3": 151.96339976787004,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.9832963999942876
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "00b3de533eb0ad0537f545c65a6ae027133e76dbb1b3c9730f5176607ee1ebaf",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 151.96339976787004,
+          "weighted_unmet_volume_m3": 151.96339976787004,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.746044500003336
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "00b3de533eb0ad0537f545c65a6ae027133e76dbb1b3c9730f5176607ee1ebaf",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "180",
+        "247",
+        "101"
+      ],
+      "objective": [
+        151.96339976787004,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 13.248759899986908,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          214.94373645179638,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          152.7995820893085,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          214.94373645179638,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          151.96339976787004,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          152.7995820893085,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          151.96339976787004,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C2_demand12",
+    "network": "Net3",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 322.41560467769455,
+          "weighted_unmet_volume_m3": 322.41560467769455,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 1.0529240999894682
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "eaff90f7bbffdac5d55dc706b8ab7a528accf6b9d0eb638b46cdc7fc336402e6",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 227.94509965180504,
+          "weighted_unmet_volume_m3": 227.94509965180504,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.848798999999417
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "eaff90f7bbffdac5d55dc706b8ab7a528accf6b9d0eb638b46cdc7fc336402e6",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 227.94509965180504,
+          "weighted_unmet_volume_m3": 227.94509965180504,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.8674943999794777
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "eaff90f7bbffdac5d55dc706b8ab7a528accf6b9d0eb638b46cdc7fc336402e6",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "180",
+        "247",
+        "101"
+      ],
+      "objective": [
+        227.94509965180504,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 14.969560400000773,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          322.41560467769455,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          229.19937313396272,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          322.41560467769455,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          227.94509965180504,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          229.19937313396272,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          227.94509965180504,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C2_tank25",
+    "network": "Net3",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 268.67967056474544,
+          "weighted_unmet_volume_m3": 268.67967056474544,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.852349900000263
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.6219872999936342
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.7243703999847639
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "180",
+        "247",
+        "101"
+      ],
+      "objective": [
+        189.95424970983754,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 12.365885699982755,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          268.67967056474544,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          190.99947761163563,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          268.67967056474544,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          190.99947761163563,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C2_tank75",
+    "network": "Net3",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 268.67967056474544,
+          "weighted_unmet_volume_m3": 268.67967056474544,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.7920598000055179
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.7422986000019591
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.8755635999841616
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "180",
+        "247",
+        "101"
+      ],
+      "objective": [
+        189.95424970983754,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 13.084330299985595,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          268.67967056474544,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          190.99947761163563,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          268.67967056474544,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          190.99947761163563,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C2_start0",
+    "network": "Net3",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 325.0812765143402,
+          "weighted_unmet_volume_m3": 325.0812765143402,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 0.8605786999978591
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f4abec9f069f16479b57677956527cace4a80e5426bd615549ca000a62766047",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 256.1965332662958,
+          "weighted_unmet_volume_m3": 256.1965332662958,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 5.0,
+          "solver_seconds": 0.8420741000154521
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f4abec9f069f16479b57677956527cace4a80e5426bd615549ca000a62766047",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 256.1965332662958,
+          "weighted_unmet_volume_m3": 256.1965332662958,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 5.0,
+          "solver_seconds": 0.7607522000034805
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f4abec9f069f16479b57677956527cace4a80e5426bd615549ca000a62766047",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "180",
+        "247",
+        "101"
+      ],
+      "objective": [
+        256.1965332662958,
+        0.0,
+        5.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 13.131044400011888,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          325.0812765143402,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          257.4956865905646,
+          0.0,
+          5.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          325.0812765143402,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          256.1965332662958,
+          0.0,
+          5.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          257.4956865905646,
+          0.0,
+          5.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          256.1965332662958,
+          0.0,
+          5.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C2_start6",
+    "network": "Net3",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 257.96835581838553,
+          "weighted_unmet_volume_m3": 257.96835581838553,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 12.0,
+          "solver_seconds": 0.7672314000083134
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "db51f5ce2e3b0aeb6835ab32d962175076e89401b9a6c708ece3e69de3e0f5cb",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 164.89194678680173,
+          "weighted_unmet_volume_m3": 164.8919467868017,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.7796965000161435
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "db51f5ce2e3b0aeb6835ab32d962175076e89401b9a6c708ece3e69de3e0f5cb",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 164.89194678680173,
+          "weighted_unmet_volume_m3": 164.8919467868017,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.7889389999909326
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "db51f5ce2e3b0aeb6835ab32d962175076e89401b9a6c708ece3e69de3e0f5cb",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "180",
+        "247",
+        "101"
+      ],
+      "objective": [
+        164.8919467868017,
+        0.0,
+        11.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 14.045352299988735,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          257.96835581838553,
+          0.0,
+          12.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          166.1792896263044,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          257.96835581838553,
+          0.0,
+          12.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          164.8919467868017,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          166.1792896263044,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          164.8919467868017,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C2_pressure15",
+    "network": "Net3",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 268.67967056474544,
+          "weighted_unmet_volume_m3": 268.67967056474544,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.9023834000108764
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.7596207000024151
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 189.95424970983754,
+          "weighted_unmet_volume_m3": 189.95424970983754,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.8506523999967612
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "e3f48ee3cb34cf25a75bbeaa2db9c92314b666acd1fe98557483f941655860ec",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "180",
+        "247",
+        "101"
+      ],
+      "objective": [
+        189.95424970983754,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 14.419693100004224,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          268.67967056474544,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          190.99947761163563,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          268.67967056474544,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          190.99947761163563,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          189.95424970983754,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net3_A1_C2_pressure30",
+    "network": "Net3",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 280.00488061398863,
+          "weighted_unmet_volume_m3": 280.00488061398863,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.9926045000029262
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "de490901d980131baf012622d5c58bcee468c63ef82f8a85fad2f2524e3b5ddb",
+          "in_best_set": false,
+          "first_rejected_component": 0
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 201.48369873904772,
+          "weighted_unmet_volume_m3": 201.4836987390477,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 1.0862277999985963
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "de490901d980131baf012622d5c58bcee468c63ef82f8a85fad2f2524e3b5ddb",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 201.4836987390477,
+          "weighted_unmet_volume_m3": 201.4836987390477,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 1.1769170000043232
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "de490901d980131baf012622d5c58bcee468c63ef82f8a85fad2f2524e3b5ddb",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "180",
+        "247",
+        "101"
+      ],
+      "objective": [
+        201.4836987390477,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "180",
+        "247",
+        "101"
+      ],
+      [
+        "247",
+        "180",
+        "101"
+      ]
+    ],
+    "seconds": 18.912341199989896,
+    "candidate_objectives": [
+      {
+        "order": [
+          "101",
+          "180",
+          "247"
+        ],
+        "objective": [
+          280.00488061398863,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "101",
+          "247",
+          "180"
+        ],
+        "objective": [
+          202.36956121974828,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "101",
+          "247"
+        ],
+        "objective": [
+          280.00488061398863,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "180",
+          "247",
+          "101"
+        ],
+        "objective": [
+          201.4836987390477,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "101",
+          "180"
+        ],
+        "objective": [
+          202.36956121974828,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "247",
+          "180",
+          "101"
+        ],
+        "objective": [
+          201.4836987390477,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C2_step5",
+    "network": "Net1",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.5680641999933869
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.5680641999933869
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.4645146999973804
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "122",
+        "112"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ]
+    ],
+    "seconds": 7.2381328999763355,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          299.8046132928,
+          1.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          299.8046132928,
+          1.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C2_step30",
+    "network": "Net1",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.10538290001568384
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.10538290001568384
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.10254049999639392
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "122",
+        "112"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ]
+    ],
+    "seconds": 2.1771392000082415,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          299.8046132928,
+          1.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          299.8046132928,
+          1.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C2_step60",
+    "network": "Net1",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.16282329999376088
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f8c14f9c30ff96e02ddf8ec564d42d551cdb586a3556b282d42a5e10a3139476",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.16282329999376088
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f8c14f9c30ff96e02ddf8ec564d42d551cdb586a3556b282d42a5e10a3139476",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.15265309999813326
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f8c14f9c30ff96e02ddf8ec564d42d551cdb586a3556b282d42a5e10a3139476",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "122",
+        "112"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "112",
+        "122",
+        "10"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ],
+      [
+        "122",
+        "112",
+        "10"
+      ]
+    ],
+    "seconds": 1.7750855000049341,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C2_duration-minus",
+    "network": "Net1",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.18671270000049844
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "459a38ad38cb7584e240225ecc6d89c7a728ce25760d53bbb3c22cf2c2a13d00",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.18671270000049844
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "459a38ad38cb7584e240225ecc6d89c7a728ce25760d53bbb3c22cf2c2a13d00",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 0.18718940002145246
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "459a38ad38cb7584e240225ecc6d89c7a728ce25760d53bbb3c22cf2c2a13d00",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "122",
+        "112"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        6.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "112",
+        "122",
+        "10"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ],
+      [
+        "122",
+        "112",
+        "10"
+      ]
+    ],
+    "seconds": 3.0592361000017263,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C2_duration-plus",
+    "network": "Net1",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 9.0,
+          "solver_seconds": 0.15797749999910593
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "fc0534e0d45ce7b15d86c97ef14926b6f2b489d1a17f320e1f6f4cd675ad265b",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 9.0,
+          "solver_seconds": 0.15797749999910593
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "fc0534e0d45ce7b15d86c97ef14926b6f2b489d1a17f320e1f6f4cd675ad265b",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.15354759999900125
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "fc0534e0d45ce7b15d86c97ef14926b6f2b489d1a17f320e1f6f4cd675ad265b",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "122",
+        "112"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        8.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ]
+    ],
+    "seconds": 2.9165345999936108,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          9.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          9.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          899.4138398784,
+          3.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          899.4138398784,
+          3.0,
+          8.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C2_demand08",
+    "network": "Net1",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.19236859999364242
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f8c14f9c30ff96e02ddf8ec564d42d551cdb586a3556b282d42a5e10a3139476",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.19236859999364242
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f8c14f9c30ff96e02ddf8ec564d42d551cdb586a3556b282d42a5e10a3139476",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.15436939999926835
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f8c14f9c30ff96e02ddf8ec564d42d551cdb586a3556b282d42a5e10a3139476",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "122",
+        "112"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "112",
+        "122",
+        "10"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ],
+      [
+        "122",
+        "112",
+        "10"
+      ]
+    ],
+    "seconds": 2.8570799000153784,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C2_demand12",
+    "network": "Net1",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.2073077000095509
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "ff31318b61d5a85c7fe3bdfcea15ce911a2fcbdcd7f55de979e6636590b4589a",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.2073077000095509
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "ff31318b61d5a85c7fe3bdfcea15ce911a2fcbdcd7f55de979e6636590b4589a",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.3296592000115197
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "ff31318b61d5a85c7fe3bdfcea15ce911a2fcbdcd7f55de979e6636590b4589a",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "122",
+        "112"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ]
+    ],
+    "seconds": 3.3673913000093307,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          876.92849388144,
+          2.5,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          876.92849388144,
+          2.5,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C2_tank25",
+    "network": "Net1",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.15632650000043213
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "86c0d9c4c3a66db90341d02cc777f8b52a9515b914b50e89e8352711d618dae4",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.15632650000043213
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "86c0d9c4c3a66db90341d02cc777f8b52a9515b914b50e89e8352711d618dae4",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.1566515000013169
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "86c0d9c4c3a66db90341d02cc777f8b52a9515b914b50e89e8352711d618dae4",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "122",
+        "112"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ]
+    ],
+    "seconds": 2.919250099977944,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          861.9382632168,
+          3.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          861.9382632168,
+          3.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C2_tank75",
+    "network": "Net1",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.129555799998343
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f8c14f9c30ff96e02ddf8ec564d42d551cdb586a3556b282d42a5e10a3139476",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.129555799998343
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f8c14f9c30ff96e02ddf8ec564d42d551cdb586a3556b282d42a5e10a3139476",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.13644940001540817
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "f8c14f9c30ff96e02ddf8ec564d42d551cdb586a3556b282d42a5e10a3139476",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "122",
+        "112"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "112",
+        "122",
+        "10"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ],
+      [
+        "122",
+        "112",
+        "10"
+      ]
+    ],
+    "seconds": 2.3295320000033826,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C2_start0",
+    "network": "Net1",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 0.1338345000112895
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "2726094a5a6682be5cd426cc73f4c5dfd619fde001ba9bad1deeec623825d079",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 6.0,
+          "solver_seconds": 0.1338345000112895
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "2726094a5a6682be5cd426cc73f4c5dfd619fde001ba9bad1deeec623825d079",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 5.0,
+          "solver_seconds": 0.125660899997456
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "2726094a5a6682be5cd426cc73f4c5dfd619fde001ba9bad1deeec623825d079",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "122",
+        "112"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        5.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ]
+    ],
+    "seconds": 2.382263299979968,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          5.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          6.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          393.4935549468,
+          1.5,
+          5.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          5.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          393.4935549468,
+          1.5,
+          5.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C2_start6",
+    "network": "Net1",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 12.0,
+          "solver_seconds": 0.22307989999535494
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "20870c4623626fb66c4995575cddab862110371077a98c9d18d299f8de3a1e72",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 12.0,
+          "solver_seconds": 0.22307989999535494
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "20870c4623626fb66c4995575cddab862110371077a98c9d18d299f8de3a1e72",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 11.0,
+          "solver_seconds": 0.18341259998851456
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "20870c4623626fb66c4995575cddab862110371077a98c9d18d299f8de3a1e72",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "122",
+        "112"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        11.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "112",
+        "122",
+        "10"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ],
+      [
+        "122",
+        "112",
+        "10"
+      ]
+    ],
+    "seconds": 3.253699900000356,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          12.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          12.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          11.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C2_pressure15",
+    "network": "Net1",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.2005187000031583
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.2005187000031583
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.22523079998791218
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "122",
+        "112"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ]
+    ],
+    "seconds": 3.560231500014197,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          299.8046132928,
+          1.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          299.8046132928,
+          1.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  },
+  {
+    "case": "Net1_A1_C2_pressure30",
+    "network": "Net1",
+    "kind": "sensitivity",
+    "status": "completed",
+    "physical": {
+      "pass": true,
+      "plans_checked": 16,
+      "scope": "Bütün baz/tekli/aday/oracle koşularında iç olay tank, kütle, PDD ve onarım kapısı."
+    },
+    "methods": {
+      "fifo": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.2946184999891557
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "greedy": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 8.0,
+          "solver_seconds": 0.2946184999891557
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": false,
+          "first_rejected_component": 2
+        }
+      },
+      "proposal": {
+        "metrics": {
+          "unmet_demand_volume_m3": 0.0,
+          "weighted_unmet_volume_m3": 0.0,
+          "critical_low_pressure_node_hours": 0.0,
+          "repair_completion_hour": 7.0,
+          "solver_seconds": 0.3049052999995183
+        },
+        "classification": {
+          "policy": "decision_policy_v2",
+          "decision_sha256": "3200a297dae2cd921515a223cf4f673056406bab71291874b6582fb88c754c67",
+          "in_best_set": true,
+          "first_rejected_component": null
+        }
+      }
+    },
+    "selected": {
+      "order": [
+        "10",
+        "122",
+        "112"
+      ],
+      "objective": [
+        0.0,
+        0.0,
+        7.0
+      ],
+      "status": "completed"
+    },
+    "ties": [
+      [
+        "10",
+        "122",
+        "112"
+      ],
+      [
+        "122",
+        "10",
+        "112"
+      ]
+    ],
+    "seconds": 4.879760599986184,
+    "candidate_objectives": [
+      {
+        "order": [
+          "10",
+          "112",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "10",
+          "122",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "10",
+          "122"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          8.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "112",
+          "122",
+          "10"
+        ],
+        "objective": [
+          299.8046132928,
+          1.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "10",
+          "112"
+        ],
+        "objective": [
+          0.0,
+          0.0,
+          7.0
+        ],
+        "status": "completed"
+      },
+      {
+        "order": [
+          "122",
+          "112",
+          "10"
+        ],
+        "objective": [
+          299.8046132928,
+          1.0,
+          7.0
+        ],
+        "status": "completed"
+      }
+    ]
+  }
+]

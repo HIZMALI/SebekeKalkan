@@ -1,0 +1,104 @@
+{
+  "proje": "ŞebekeKalkan",
+  "manifest_surumu": 2,
+  "veri_kayitlari": [
+    {
+      "dosya": "data/raw/baski_public_aggregate.csv",
+      "sha256": "5d761946c471a02c5c2c36ccbd7942c45e60bb8d0ce67b9f54efa4e0c7478430",
+      "bayt": 607,
+      "satir_sayisi": 4,
+      "sutunlar": [
+        "yil",
+        "toplam_ariza_kaydi",
+        "tam_sayi_mi",
+        "kapsam",
+        "kaynak"
+      ],
+      "envantere_alinma_tarihi": "2026-10-29",
+      "ozgun_indirme_zamani": null,
+      "lisans": null,
+      "birincil_kaynaktan_bu_turda_dogrulandi": true,
+      "kaynak_url": "https://balikesir.bel.tr/haberler/baskide-ariza-sayilari-dusuyor-cozum-hizi-artiyor",
+      "kaynak_aciklamasi": "Balikesir Buyuksehir Belediyesi, 17 Agustos 2026",
+      "kaynakta_bildirilen_yayin_tarihi": "2026-08-17",
+      "birim": "Tüm kategorilerde toplam arıza kaydı",
+      "sinir": "2023 ve 2024 yaklaşık; 1 Ocak–31 Temmuz tüm kategoriler toplamı. Hidrolik hesap girdisi veya boru kırığı sayısı değildir. Kaynak lisansı bilinmiyor; özgün CSV tarihsel elle çıkarımdır.",
+      "dogrulama_zamani_utc": "2026-10-29T21:19:06.753095+00:00"
+    },
+    {
+      "dosya": "data/raw/net1_topology_extracted.csv",
+      "sha256": "f5a52f1aff0d1ecb26b96c08ded23410bad6e1520056a87d5328d4d40f17020c",
+      "bayt": 700,
+      "satir_sayisi": 12,
+      "sutunlar": [
+        "boru_id",
+        "baslangic",
+        "bitis",
+        "uzunluk_ft",
+        "cap_inc",
+        "orijinal_kaynak"
+      ],
+      "envantere_alinma_tarihi": "2026-10-29",
+      "ozgun_indirme_zamani": null,
+      "lisans": null,
+      "birincil_kaynaktan_bu_turda_dogrulandi": false,
+      "kaynak_url": null,
+      "kaynak_aciklamasi": "Özgün CSV: OpenWaterAnalytics/EPANET Net1.inp; kesin sürüm/URL kaydı yok.",
+      "birim": {
+        "uzunluk_ft": "ft",
+        "cap_inc": "inç"
+      },
+      "sinir": "Seçilmiş 12 bağlantı; pompa/rezervuar ve tam hidrolik parametreler yok. Tam .inp veya fiziksel çözüm değildir."
+    },
+    {
+      "model_file": "data/networks/Net3.inp",
+      "sha256": "ea3e825c4fef0b5cba47fb06301bc85253f18b6364dc96c44d9fb492c40faa52",
+      "source": "WNTR PyPI 1.5.0 distributed wntr.library model Net3",
+      "source_file": "data/networks/Net3.inp",
+      "model_library_reference": "https://usepa.github.io/WNTR/libraries.html",
+      "distribution_url": "https://pypi.org/project/wntr/1.5.0/",
+      "license": "Revised BSD (WNTR distribution; complete notice retained)",
+      "license_sha256": "926dffd7ad1325a9f381adab7d7a103a0e38211e09b4ca88a02ef8119d5205ae",
+      "retrieved_utc": "2026-10-29T20:41:33Z",
+      "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+      "platform": "Windows-11-10.0.26200-SP0",
+      "wntr": "1.5.0",
+      "model_inventory": {
+        "nodes": 97,
+        "junctions": 92,
+        "pipes": 117,
+        "pumps": 2,
+        "tanks": 3,
+        "reservoirs": 2,
+        "valves": 0,
+        "controls": 18,
+        "patterns": 5,
+        "source_duration_seconds": 604800.0,
+        "source_flow_units": "GPM",
+        "controlled_links": [
+          "10",
+          "330",
+          "335"
+        ]
+      },
+      "analysis_options": {
+        "demand_model": "PDD",
+        "required_pressure_m": 20.0,
+        "minimum_pressure_m": 0.0,
+        "pressure_exponent": 0.5
+      },
+      "original_geometry_initial_tanks_reservoirs_patterns_controls_unchanged": true,
+      "source_default_demand_model": "DDA",
+      "pdd_parameters_are_analysis_assumptions": true,
+      "pressure_interpretation": "Both solvers retain eight negative samples at zero-base-demand junction 10 during the full 168-hour reference. These are flagged, not replaced by zero. Solver convergence is not a certificate of adequate service pressure.",
+      "coordinates": "Model schematic coordinates, not local geographic coordinates",
+      "fault_type": "pipe_isolation_only",
+      "leakage_modelled": false,
+      "required_pressure_m_is_scenario_assumption": true,
+      "verified_utc": "2026-10-29T21:19:06.753095+00:00",
+      "verified_against": "wntr.library.model_library.get_filepath(Net3), WNTR 1.5.0 kurulu dağıtımı; tüm baytlar ve lisans karması eşleşti",
+      "solver_version": "EPANET 2.2; WNTRSimulator 1.5.0 ile 168 saat çapraz doğrulama",
+      "dosya": "data/networks/Net3.inp"
+    }
+  ]
+}

@@ -1,0 +1,413 @@
+{
+  "schema_version": "s02-recorded-1",
+  "batch": "bd6bc280d8524f91810cb03b6589fccd",
+  "cards": [
+    {
+      "mode": "recorded",
+      "label": "Kayıtlı ve doğrulanmış sonuç",
+      "source_stage": "SPRINT01",
+      "case_id": "Net2_S3_C1",
+      "network": "Net2",
+      "network_sha256": "7c140a40f9d43ec54c155783085f9f6403df6ea7e93df1f9ad4bbf35b6c28fb0",
+      "scenario_sha256": "6f7dbecfc7c5ed8532b63505dbd20319c484ed075a2d6d60cd581f684cb7aece",
+      "method_version": "decision_policy_v2 / 6ce43bf6fce46620fba1a7efcf4a928cd58b105240e571a195089207aa986d6d",
+      "record_id": "68e3b35c70a04b61959ccef3e43de90a",
+      "record_sha256": "dfae8ad7ad15f05acee30beb8c7fb56d610e5549ff9e59fae39c7eca8af00189",
+      "record_path": "../SPRINT01/KOSULAR/v1/68e3b35c70a04b61959ccef3e43de90a/result.json",
+      "physical_pass": true,
+      "baseline": "fifo",
+      "comparison": "proposal",
+      "baseline_order": [
+        "10",
+        "11",
+        "21"
+      ],
+      "comparison_order": [
+        "11",
+        "10",
+        "21"
+      ],
+      "baseline_metrics": {
+        "weighted_unmet_volume_m3": 696.2685653404279,
+        "unmet_demand_volume_m3": 564.965546378475,
+        "critical_low_pressure_node_hours": 11.5,
+        "repair_completion_hour": 11.0
+      },
+      "comparison_metrics": {
+        "weighted_unmet_volume_m3": 416.23581142028405,
+        "unmet_demand_volume_m3": 337.26075779986843,
+        "critical_low_pressure_node_hours": 8.5,
+        "repair_completion_hour": 11.0
+      },
+      "strong_reference_metrics": {
+        "weighted_unmet_volume_m3": 416.23581142028405,
+        "unmet_demand_volume_m3": 337.26075779986843,
+        "critical_low_pressure_node_hours": 8.5,
+        "repair_completion_hour": 11.0
+      },
+      "scientific_scope": "Sprint 01. Net2 örneğinde 9 ana hücre, 3 arıza kümesi. FIFO ile 3 kazanım, 6 eşitlik. Tekli etki/süre ile ağırlıklı hacimde 9 eşitlik."
+    },
+    {
+      "mode": "recorded",
+      "label": "Kayıtlı ve doğrulanmış sonuç",
+      "source_stage": "SPRINT01",
+      "case_id": "Net2_S1_C3",
+      "network": "Net2",
+      "network_sha256": "7c140a40f9d43ec54c155783085f9f6403df6ea7e93df1f9ad4bbf35b6c28fb0",
+      "scenario_sha256": "b7f08507d135b770a37a3e6adaf803b66eb8229a8ecc812b012a008a262b7323",
+      "method_version": "decision_policy_v2 / 6ce43bf6fce46620fba1a7efcf4a928cd58b105240e571a195089207aa986d6d",
+      "record_id": "f87c233e40ff4ca7a11147c52b040fb2",
+      "record_sha256": "ae134e31b3cae0670dd71b6332358a392c0f9ae8ef5590ca481214dba7819008",
+      "record_path": "../SPRINT01/KOSULAR/v1/f87c233e40ff4ca7a11147c52b040fb2/result.json",
+      "physical_pass": true,
+      "baseline": "fifo",
+      "comparison": "proposal",
+      "baseline_order": [
+        "32",
+        "19",
+        "25"
+      ],
+      "comparison_order": [
+        "19",
+        "25",
+        "32"
+      ],
+      "baseline_metrics": {
+        "weighted_unmet_volume_m3": 5.293267939499813,
+        "unmet_demand_volume_m3": 5.293267939499813,
+        "critical_low_pressure_node_hours": 0.0,
+        "repair_completion_hour": 6.0
+      },
+      "comparison_metrics": {
+        "weighted_unmet_volume_m3": 5.293267939499813,
+        "unmet_demand_volume_m3": 5.293267939499813,
+        "critical_low_pressure_node_hours": 0.0,
+        "repair_completion_hour": 6.0
+      },
+      "strong_reference_metrics": {
+        "weighted_unmet_volume_m3": 5.293267939499813,
+        "unmet_demand_volume_m3": 5.293267939499813,
+        "critical_low_pressure_node_hours": 0.0,
+        "repair_completion_hour": 6.0
+      },
+      "scientific_scope": "Sprint 01. Net2 örneğinde 9 ana hücre, 3 arıza kümesi. FIFO ile 3 kazanım, 6 eşitlik. Tekli etki/süre ile ağırlıklı hacimde 9 eşitlik."
+    },
+    {
+      "mode": "recorded",
+      "label": "Kayıtlı ve doğrulanmış sonuç",
+      "source_stage": "SPRINT01",
+      "case_id": "Net2_S1_C2",
+      "network": "Net2",
+      "network_sha256": "7c140a40f9d43ec54c155783085f9f6403df6ea7e93df1f9ad4bbf35b6c28fb0",
+      "scenario_sha256": "7e52213ce1abdb38593a49420a65381122e4817b85804099fb5b80310d040360",
+      "method_version": "decision_policy_v2 / 6ce43bf6fce46620fba1a7efcf4a928cd58b105240e571a195089207aa986d6d",
+      "record_id": "16fcdcfd7b7e406c882f7ea4fd941fab",
+      "record_sha256": "bca1b2c7bc6b685e0a9497a2adbd47bc85a8af01f7ec5c3b0310336f5bf2088e",
+      "record_path": "../SPRINT01/KOSULAR/v1/16fcdcfd7b7e406c882f7ea4fd941fab/result.json",
+      "physical_pass": true,
+      "baseline": "greedy",
+      "comparison": "proposal",
+      "baseline_order": [
+        "32",
+        "19",
+        "25"
+      ],
+      "comparison_order": [
+        "25",
+        "32",
+        "19"
+      ],
+      "baseline_metrics": {
+        "weighted_unmet_volume_m3": 5.293267939499813,
+        "unmet_demand_volume_m3": 5.293267939499813,
+        "critical_low_pressure_node_hours": 0.0,
+        "repair_completion_hour": 8.0
+      },
+      "comparison_metrics": {
+        "weighted_unmet_volume_m3": 5.293267939499772,
+        "unmet_demand_volume_m3": 5.293267939499772,
+        "critical_low_pressure_node_hours": 0.0,
+        "repair_completion_hour": 7.0
+      },
+      "strong_reference_metrics": {
+        "weighted_unmet_volume_m3": 5.293267939499813,
+        "unmet_demand_volume_m3": 5.293267939499813,
+        "critical_low_pressure_node_hours": 0.0,
+        "repair_completion_hour": 8.0
+      },
+      "scientific_scope": "Sprint 01. Net2 örneğinde 9 ana hücre, 3 arıza kümesi. FIFO ile 3 kazanım, 6 eşitlik. Tekli etki/süre ile ağırlıklı hacimde 9 eşitlik."
+    },
+    {
+      "mode": "recorded",
+      "label": "Kayıtlı ve doğrulanmış sonuç",
+      "source_stage": "historical",
+      "case_id": "Net1_A3_C1",
+      "network": "Net1",
+      "network_sha256": "607510a01287d60d27b280a39df31a001363175a438a5de1b39e749cec6ddbc8",
+      "scenario_sha256": "c8493467f9779897e7bb6001a86b7def9b25f579fcc65913e81c6dac963e7540",
+      "method_version": "decision_policy_v2",
+      "record_id": "historical:Net1_A3_C1:14fdb2165306128df0e748661449c3060917f84b60c5db4682b1219eef3451f9",
+      "record_path": "../02_CALISAN_REFERANS/Dogrulama/case_summary.json",
+      "record_sha256": "a5da3bd85ea50c1ceed28b22c495cd69ee74a2c12b4f828d79ec38f448c07907",
+      "record_selector": {
+        "case": "Net1_A3_C1",
+        "decision_sha256": "14fdb2165306128df0e748661449c3060917f84b60c5db4682b1219eef3451f9"
+      },
+      "physical_pass": true,
+      "baseline": "fifo",
+      "comparison": "proposal",
+      "comparison_order": [
+        "12",
+        "110",
+        "22"
+      ],
+      "baseline_order": [
+        "110",
+        "12",
+        "22"
+      ],
+      "baseline_metrics": {
+        "weighted_unmet_volume_m3": 386.11200196799996,
+        "unmet_demand_volume_m3": 386.11200196799996,
+        "critical_low_pressure_node_hours": 0.0,
+        "repair_completion_hour": 11.0
+      },
+      "comparison_metrics": {
+        "weighted_unmet_volume_m3": 215.76847168799998,
+        "unmet_demand_volume_m3": 215.76847168799998,
+        "critical_low_pressure_node_hours": 0.0,
+        "repair_completion_hour": 11.0
+      },
+      "strong_reference_metrics": {
+        "weighted_unmet_volume_m3": 386.11200196799996,
+        "unmet_demand_volume_m3": 386.11200196799996,
+        "critical_low_pressure_node_hours": 0.0,
+        "repair_completion_hour": 11.0
+      },
+      "scientific_scope": "Önceki 44 koşulluk tarihsel deney. Seçilmiş tek vakanın sonuçları. Yeni dış doğrulamanın paydasına girmez."
+    },
+    {
+      "mode": "recorded",
+      "label": "Kayıtlı ve doğrulanmış sonuç",
+      "source_stage": "historical",
+      "case_id": "Net3_A1_C1",
+      "network": "Net3",
+      "network_sha256": "ea3e825c4fef0b5cba47fb06301bc85253f18b6364dc96c44d9fb492c40faa52",
+      "scenario_sha256": "78cb74909e91955754205d9a80513b602228bd6e5ce76647c728fa5ebdc4a434",
+      "method_version": "decision_policy_v2",
+      "record_id": "historical:Net3_A1_C1:b0e6fa3b5fa331cc5a5e021a9af5fa18f99bf04e60c8ceb4e0ea6885b551af6b",
+      "record_path": "../02_CALISAN_REFERANS/Dogrulama/case_summary.json",
+      "record_sha256": "a5da3bd85ea50c1ceed28b22c495cd69ee74a2c12b4f828d79ec38f448c07907",
+      "record_selector": {
+        "case": "Net3_A1_C1",
+        "decision_sha256": "b0e6fa3b5fa331cc5a5e021a9af5fa18f99bf04e60c8ceb4e0ea6885b551af6b"
+      },
+      "physical_pass": true,
+      "baseline": "fifo",
+      "comparison": "proposal",
+      "comparison_order": [
+        "247",
+        "180",
+        "101"
+      ],
+      "baseline_order": [
+        "101",
+        "180",
+        "247"
+      ],
+      "baseline_metrics": {
+        "weighted_unmet_volume_m3": 398.4737638230076,
+        "unmet_demand_volume_m3": 398.4737638230076,
+        "critical_low_pressure_node_hours": 0.0,
+        "repair_completion_hour": 11.0
+      },
+      "comparison_metrics": {
+        "weighted_unmet_volume_m3": 192.19824181539272,
+        "unmet_demand_volume_m3": 192.19824181539272,
+        "critical_low_pressure_node_hours": 0.0,
+        "repair_completion_hour": 11.0
+      },
+      "strong_reference_metrics": {
+        "weighted_unmet_volume_m3": 192.19824181539272,
+        "unmet_demand_volume_m3": 192.19824181539272,
+        "critical_low_pressure_node_hours": 0.0,
+        "repair_completion_hour": 11.0
+      },
+      "scientific_scope": "Önceki 44 koşulluk tarihsel deney. Seçilmiş tek vakanın sonuçları. Yeni dış doğrulamanın paydasına girmez."
+    },
+    {
+      "case_id": "Net2_G4_C1",
+      "network": "Net2",
+      "network_sha256": "7c140a40f9d43ec54c155783085f9f6403df6ea7e93df1f9ad4bbf35b6c28fb0",
+      "scenario_sha256": "223901efeac0ef2ad48a12ee188873c7ca62d595bc761abef0d657cd74bb0da9",
+      "method_version": "s02-restoration-1",
+      "record_id": "efef66dd0e384da19b9dfaac2ca3445a",
+      "record_sha256": "2268f77cadb535ae7070ebf5ccd0c3863cf8a87d882591c589dcf08fe6f9613e",
+      "physical_pass": true,
+      "record_path": "KOSULAR/efef66dd0e384da19b9dfaac2ca3445a/result.json",
+      "mode": "recorded",
+      "label": "Kayıtlı ve doğrulanmış sonuç",
+      "source_stage": "SPRINT02",
+      "group": "internal_holdout",
+      "baseline": "greedy",
+      "comparison": "s02_b6",
+      "baseline_order": [
+        "9",
+        "12",
+        "18",
+        "17"
+      ],
+      "comparison_order": [
+        "12",
+        "9",
+        "17",
+        "18"
+      ],
+      "baseline_metrics": {
+        "weighted_unmet_volume_m3": 1509.0156231772833,
+        "unmet_demand_volume_m3": 1126.1324714695052,
+        "critical_low_pressure_node_hours": 34.5,
+        "repair_completion_hour": 16.0
+      },
+      "comparison_metrics": {
+        "weighted_unmet_volume_m3": 1437.0283257981134,
+        "unmet_demand_volume_m3": 1096.4859436764978,
+        "critical_low_pressure_node_hours": 31.5,
+        "repair_completion_hour": 16.0
+      },
+      "protocol_sha256": "86bf325f458d9010af444ed630df6a5daedd4cf7b97447583783e1eb78fe3729",
+      "scientific_scope": "internal_holdout, dört sabit arıza; 14 kayıtlı koşul. Seçili örneğin ölçümleri.",
+      "service_recovery": "not_evaluated",
+      "example_type": "WIN",
+      "reduction_percent": 4.770480588371786,
+      "absolute_reduction_m3": 71.98729737916983,
+      "subset_count": 4,
+      "full_primary_classifications": {
+        "WIN": 4,
+        "TIE": 10,
+        "LOSS": 0,
+        "SOLVER_ERROR": 0,
+        "TIMEOUT": 0,
+        "PHYSICAL_INVALID": 0,
+        "ORACLE_MISMATCH": 0,
+        "WORKER_ERROR": 0,
+        "NOT_EVALUATED": 0
+      },
+      "oracle_metrics": {
+        "weighted_unmet_volume_m3": 1437.0283257981134,
+        "unmet_demand_volume_m3": 1096.4859436764978,
+        "critical_low_pressure_node_hours": 31.5,
+        "repair_completion_hour": 16.0
+      },
+      "fifo_metrics": {
+        "weighted_unmet_volume_m3": 1538.9776075099503,
+        "unmet_demand_volume_m3": 1130.8408684508672,
+        "critical_low_pressure_node_hours": 34.75,
+        "repair_completion_hour": 16.0
+      }
+    },
+    {
+      "case_id": "Skeletonize_G1_C1",
+      "network": "Skeletonize",
+      "network_sha256": "d32534dfd2b4c8df310cd82887b2fd269b607999939ece2d81ba92d9a170f97d",
+      "scenario_sha256": "7cea6759b0abde8c0d03790a2885f7d0c5c0529d3c19fe7f617d9e9f3ac09e7f",
+      "method_version": "s02-restoration-1",
+      "record_id": "51bb2501b43c446f83f0bfe5257f9a46",
+      "record_sha256": "decb8880345e9f8ec66524846c6ddb31633782cd8e0514e62697762420655f23",
+      "physical_pass": true,
+      "record_path": "KOSULAR/51bb2501b43c446f83f0bfe5257f9a46/result.json",
+      "mode": "recorded",
+      "label": "Kayıtlı ve doğrulanmış sonuç",
+      "source_stage": "SPRINT02",
+      "group": "external_holdout",
+      "baseline": "greedy",
+      "comparison": "s02_b6",
+      "baseline_order": [
+        "54",
+        "11",
+        "64",
+        "69"
+      ],
+      "comparison_order": [
+        "54",
+        "11",
+        "64",
+        "69"
+      ],
+      "baseline_metrics": {
+        "weighted_unmet_volume_m3": 16.602816084624,
+        "unmet_demand_volume_m3": 13.150520537616002,
+        "critical_low_pressure_node_hours": 13.0,
+        "repair_completion_hour": 16.0
+      },
+      "comparison_metrics": {
+        "weighted_unmet_volume_m3": 16.602816084624,
+        "unmet_demand_volume_m3": 13.150520537616002,
+        "critical_low_pressure_node_hours": 13.0,
+        "repair_completion_hour": 16.0
+      },
+      "protocol_sha256": "86bf325f458d9010af444ed630df6a5daedd4cf7b97447583783e1eb78fe3729",
+      "scientific_scope": "external_holdout, dört sabit arıza; 14 kayıtlı koşul. Seçili örneğin ölçümleri.",
+      "service_recovery": "not_evaluated",
+      "example_type": "TIE",
+      "reduction_percent": 0.0,
+      "absolute_reduction_m3": 0.0,
+      "subset_count": 6,
+      "full_primary_classifications": {
+        "WIN": 4,
+        "TIE": 10,
+        "LOSS": 0,
+        "SOLVER_ERROR": 0,
+        "TIMEOUT": 0,
+        "PHYSICAL_INVALID": 0,
+        "ORACLE_MISMATCH": 0,
+        "WORKER_ERROR": 0,
+        "NOT_EVALUATED": 0
+      },
+      "oracle_metrics": {
+        "weighted_unmet_volume_m3": 16.602816084624,
+        "unmet_demand_volume_m3": 13.150520537616002,
+        "critical_low_pressure_node_hours": 13.0,
+        "repair_completion_hour": 16.0
+      },
+      "fifo_metrics": {
+        "weighted_unmet_volume_m3": 33.523606759104,
+        "unmet_demand_volume_m3": 26.891565313536002,
+        "critical_low_pressure_node_hours": 23.0,
+        "repair_completion_hour": 16.0
+      }
+    }
+  ],
+  "source_modes": {
+    "recorded": {
+      "label": "Kayıtlı ve doğrulanmış sonuç",
+      "requires": [
+        "record_id",
+        "record_path",
+        "record_sha256",
+        "physical_pass"
+      ],
+      "invalid_or_incomplete": "deny_export"
+    },
+    "live": {
+      "label": "Canlı hesapla",
+      "requires": [
+        "new_job_id",
+        "actual_solver",
+        "input_sha256",
+        "source_sha256",
+        "complete_physical_gate"
+      ],
+      "three_fault_product": "v2 (Net3)",
+      "four_fault_s02": "research CLI only",
+      "reuse_cached_id": false
+    }
+  },
+  "units": {
+    "weighted_unmet_volume_m3": "weighted m3",
+    "unmet_demand_volume_m3": "m3",
+    "critical_low_pressure_node_hours": "node-hour",
+    "repair_completion_hour": "hour since simulation start"
+  },
+  "scope": "Kayıt ve canlı iş kimlikleri ayrıdır. Araştırma modu belediye saha ölçümü içermez."
+}

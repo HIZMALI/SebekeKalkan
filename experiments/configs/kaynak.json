@@ -1,0 +1,12 @@
+{
+  "model": "data/networks/Net3.inp",
+  "sha256": "ea3e825c4fef0b5cba47fb06301bc85253f18b6364dc96c44d9fb492c40faa52",
+  "manifest": "data/metadata/net3.json",
+  "solver": "EPANET 2.2",
+  "pdd": {
+    "minimum_pressure_m": 0,
+    "required_pressure_m": 20,
+    "exponent": 0.5
+  },
+  "source_original_duration_hours": 168
+}

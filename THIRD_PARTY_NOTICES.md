@@ -1,0 +1,6 @@
+# Üçüncü taraf kaynakları
+
+- Net1, Net2, Net3 ve Skeletonize, WNTR dağıtımındaki mühendislik/test modelleri. Lisans metni, ağ kaynağı ve SHA-256 birlikte saklanır. WNTR Revised BSD bildirimi ve içerdiği EPANET MIT bildirimi kaynak dosyalarında korunur. [WNTR 1.5.0](https://github.com/USEPA/WNTR/tree/1.5.0) · [Lisans metni](data/reference/SPRINT02/MODELLER/WNTR-LICENSE.md) · [Ağ kaynak ve SHA-256 listesi](data/reference/SPRINT02/SOURCE_MANIFEST.json)
+- Net3 model kimliği ve kaynağı uygulamanın ağ metadata kaydında yer alır. Mu sentetik topolojileri, yayıncının sabit revizyonunda kayıtlıdır. Yalnız ŞebekeKalkan’ın hesapladığı seçili ölçümler ve karşılaştırma tablosu bu depoya girer. [Mu veri kaynağı](https://github.com/mutianwei521/wdsgpu/blob/1ad03901c25b7f404bc6c821a36948ad851e13c1/THIRD_PARTY.md#4-synthetic-networks-shipped-here)
+- React ve Vite bağımlılıkları sürüm kilitli. Başlıca bağımlılıklar React (MIT), Vite (MIT), FastAPI (MIT) ve WNTR (Revised BSD). Bağımlılık paketlerinin kendi bildirimleri geçerlidir. [npm kilidi](frontend/package-lock.json) · [Python kilidi](requirements-lock.txt)
+- PowerPoint ve web görsellerinde ŞebekeKalkan’ın kendi çizimleri, doğrulanmış ölçümleri ve ürün ekran görüntüsü kullanılır. Orijinal başvuru PDF’leri, etkinliğin kurum logoları ve kişisel iletişim bilgileri yayın kapsamının dışındadır.

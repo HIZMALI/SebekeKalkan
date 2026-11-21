@@ -1,0 +1,9 @@
+.git
+.calisma
+.cache
+.env*
+.venv*
+**/__pycache__
+**/node_modules
+presentation
+docs/competition/screens

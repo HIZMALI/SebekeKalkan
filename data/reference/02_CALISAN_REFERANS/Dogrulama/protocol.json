@@ -1,0 +1,1596 @@
+{
+  "version": "SK-EXTERNAL-STABILITY-20261031-v1",
+  "created_utc": "2026-10-31T10:24:00.333805+00:00",
+  "prior_knowledge": "R2 Net3 outcomes and EPANET divergence known. Net1 input inspected only; no new hydraulic solve before this protocol. Local, non-blind prospective registration.",
+  "question": "Do physical acceptance and decision findings transfer from Net3 to a second complete network, and how stable is the selected repair order?",
+  "hypotheses": {
+    "H1": {
+      "claim": "On each network, at least one of the nine main cases yields a strictly lower weighted customer-deficit volume than BOTH FIFO and single-impact greedy.",
+      "criterion": "strict >1e-6+1e-8*max(abs(a),abs(b)); report all ties, rejected and failures. This is finite benchmark evidence, never generalized superiority."
+    },
+    "H2": {
+      "claim": "The nominal selected repair order remains in the v2 best set in at least 80% of predefined sensitivity cases.",
+      "criterion": "26 attempts; failures count as not demonstrated, plus complete-case table separately. Compare frozen order in common perturbed candidate pool, not just canonical ID tie."
+    },
+    "H3": {
+      "claim": "The 60-minute estimate differs by no more than 5% from the 5-minute estimate.",
+      "criterion": "Each network A1_C2, same events/model; zero reference gives absolute difference and undefined percentage. No coarser-step benefit claim."
+    }
+  },
+  "planned_cases": 44,
+  "planned_main": 18,
+  "planned_sensitivity": 26,
+  "cases": [
+    {
+      "id": "Net3_A1_C1",
+      "network": "Net3",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A1 ekip 1",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C2",
+      "network": "Net3",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C3",
+      "network": "Net3",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A1 ekip 3",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A2_C1",
+      "network": "Net3",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A2 ekip 1",
+        "failures": [
+          {
+            "pipe_id": "103",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "181",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "249",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A2_C2",
+      "network": "Net3",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A2 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "103",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "181",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "249",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A2_C3",
+      "network": "Net3",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A2 ekip 3",
+        "failures": [
+          {
+            "pipe_id": "103",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "181",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "249",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A3_C1",
+      "network": "Net3",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A3 ekip 1",
+        "failures": [
+          {
+            "pipe_id": "105",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "183",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "251",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A3_C2",
+      "network": "Net3",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A3 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "105",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "183",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "251",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A3_C3",
+      "network": "Net3",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A3 ekip 3",
+        "failures": [
+          {
+            "pipe_id": "105",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "183",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "251",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C1",
+      "network": "Net1",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A1 ekip 1",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C2",
+      "network": "Net1",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C3",
+      "network": "Net1",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A1 ekip 3",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A2_C1",
+      "network": "Net1",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A2 ekip 1",
+        "failures": [
+          {
+            "pipe_id": "11",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "113",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "21",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A2_C2",
+      "network": "Net1",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A2 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "11",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "113",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "21",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A2_C3",
+      "network": "Net1",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A2 ekip 3",
+        "failures": [
+          {
+            "pipe_id": "11",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "113",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "21",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A3_C1",
+      "network": "Net1",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A3 ekip 1",
+        "failures": [
+          {
+            "pipe_id": "110",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "12",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "22",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 1,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A3_C2",
+      "network": "Net1",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A3 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "110",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "12",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "22",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A3_C3",
+      "network": "Net1",
+      "kind": "main",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A3 ekip 3",
+        "failures": [
+          {
+            "pipe_id": "110",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "12",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "22",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 3,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C2_step5",
+      "network": "Net3",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 5,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C2_step30",
+      "network": "Net3",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 30,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C2_step60",
+      "network": "Net3",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 60,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C2_duration-minus",
+      "network": "Net3",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 1.5
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 2.5
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 3.5
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C2_duration-plus",
+      "network": "Net3",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2.5
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3.5
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4.5
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C2_demand08",
+      "network": "Net3",
+      "kind": "sensitivity",
+      "model_changes": {
+        "demand_multiplier_scale": 0.8
+      },
+      "scenario": {
+        "name": "Net3 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C2_demand12",
+      "network": "Net3",
+      "kind": "sensitivity",
+      "model_changes": {
+        "demand_multiplier_scale": 1.2
+      },
+      "scenario": {
+        "name": "Net3 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C2_tank25",
+      "network": "Net3",
+      "kind": "sensitivity",
+      "model_changes": {
+        "tank_fraction": 0.25
+      },
+      "scenario": {
+        "name": "Net3 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C2_tank75",
+      "network": "Net3",
+      "kind": "sensitivity",
+      "model_changes": {
+        "tank_fraction": 0.75
+      },
+      "scenario": {
+        "name": "Net3 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C2_start0",
+      "network": "Net3",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C2_start6",
+      "network": "Net3",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 6,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C2_pressure15",
+      "network": "Net3",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 15,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net3_A1_C2_pressure30",
+      "network": "Net3",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net3 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "101",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "180",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "247",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 30,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "109": 3,
+          "101": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C2_step5",
+      "network": "Net1",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 5,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C2_step30",
+      "network": "Net1",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 30,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C2_step60",
+      "network": "Net1",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 60,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C2_duration-minus",
+      "network": "Net1",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 1.5
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 2.5
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 3.5
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C2_duration-plus",
+      "network": "Net1",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2.5
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3.5
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4.5
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C2_demand08",
+      "network": "Net1",
+      "kind": "sensitivity",
+      "model_changes": {
+        "demand_multiplier_scale": 0.8
+      },
+      "scenario": {
+        "name": "Net1 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C2_demand12",
+      "network": "Net1",
+      "kind": "sensitivity",
+      "model_changes": {
+        "demand_multiplier_scale": 1.2
+      },
+      "scenario": {
+        "name": "Net1 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C2_tank25",
+      "network": "Net1",
+      "kind": "sensitivity",
+      "model_changes": {
+        "tank_fraction": 0.25
+      },
+      "scenario": {
+        "name": "Net1 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C2_tank75",
+      "network": "Net1",
+      "kind": "sensitivity",
+      "model_changes": {
+        "tank_fraction": 0.75
+      },
+      "scenario": {
+        "name": "Net1 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C2_start0",
+      "network": "Net1",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 0,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C2_start6",
+      "network": "Net1",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 6,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 20,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C2_pressure15",
+      "network": "Net1",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 15,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    },
+    {
+      "id": "Net1_A1_C2_pressure30",
+      "network": "Net1",
+      "kind": "sensitivity",
+      "model_changes": {},
+      "scenario": {
+        "name": "Net1 A1 ekip 2",
+        "failures": [
+          {
+            "pipe_id": "10",
+            "repair_hours": 2
+          },
+          {
+            "pipe_id": "112",
+            "repair_hours": 3
+          },
+          {
+            "pipe_id": "122",
+            "repair_hours": 4
+          }
+        ],
+        "crews": 2,
+        "failure_start_hour": 2,
+        "horizon_hours": 16,
+        "step_minutes": 15,
+        "required_pressure_m": 30,
+        "low_pressure_m": 15,
+        "critical_weights": {
+          "22": 3,
+          "11": 2
+        },
+        "hydraulic_trials": 40,
+        "wntr_max_iterations": 3000
+      }
+    }
+  ],
+  "methods": [
+    "FIFO",
+    "single-fault impact divided by repair duration",
+    "v2 common-pool tolerant lexicographic selection"
+  ],
+  "fairness": "Same network, model perturbation, fault IDs/times/durations, crews and complete six-order pool. 16 physical plan pairs per case including baseline, 3 single-fault, 6 candidate, 6 independent fresh oracle.",
+  "planned_physical_plan_pairs": 704,
+  "selection_rule": "Existing v2 unchanged: weighted volume, critical low-pressure duration, exact final repair finish, canonical ID tie.",
+  "gates": "Existing unchanged WNTR/PDD gates for all internal-event tank mass/bounds, minimum outflow, finite/time completeness, PDD demand and closed/reopened pipes, coarse/dense pressure equality. Preserve/report negative pressures; a model warning is not vacuum/cavitation validation.",
+  "provider": "Only isolated experiment worker replaces model loader with checksum-pinned Net1 or Net3 model provider, then optional declared demand multiplier or initial tank fraction. Core functions and thresholds unchanged; application remains Net3. Source manifest and provider revision explicitly recorded.",
+  "triples_selection": "Lexicographically sorted eligible pipe IDs; quantile indices offset+i*N//3, offsets 0/1/2. Chosen without outcomes. Critical weights 3/2 to largest two input base-demand junctions. Not representative random failures.",
+  "time_limit_per_case_seconds": 180,
+  "failure_policy": "Record every planned failure and partial gates. No silent retry, solver relaxation, or post-result sample selection. A repair to experiment infrastructure requires dated separate amendment and fresh output path.",
+  "units": "m, m3/s, m3, node-hours, hours; WNTR converts original GPM/feet to SI.",
+  "scope": "Two engineering examples; not BASKI network, field leakage savings, new general algorithm or proof of EPANET binary repair. General scientific NO-GO remains absent independent broader evidence."
+}

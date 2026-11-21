@@ -1,0 +1,105 @@
+{
+  "name": "s02_b6-repeat",
+  "order": [
+    "54",
+    "11",
+    "64",
+    "69"
+  ],
+  "assignments": [
+    {
+      "pipe_id": "54",
+      "crew": 1,
+      "starts_at_h": 2.0,
+      "ends_at_h": 6.0
+    },
+    {
+      "pipe_id": "11",
+      "crew": 1,
+      "starts_at_h": 6.0,
+      "ends_at_h": 11.0
+    },
+    {
+      "pipe_id": "64",
+      "crew": 1,
+      "starts_at_h": 11.0,
+      "ends_at_h": 13.0
+    },
+    {
+      "pipe_id": "69",
+      "crew": 1,
+      "starts_at_h": 13.0,
+      "ends_at_h": 16.0
+    }
+  ],
+  "raw": "s02_b6-repeat.zip",
+  "status": "PASS",
+  "r1": {
+    "pass": true,
+    "finite": true,
+    "full_horizon_and_monotonic_time": true,
+    "tanks": {},
+    "pdd_pass": true,
+    "events": [
+      {
+        "pipe": "54",
+        "pass": true
+      },
+      {
+        "pipe": "11",
+        "pass": true
+      },
+      {
+        "pipe": "64",
+        "pass": true
+      },
+      {
+        "pipe": "69",
+        "pass": true
+      }
+    ],
+    "negative_pressure_samples_preserved": 0,
+    "scope": "Bu model/olay koşusunda kütle, sınır ve PDD denklemleri; saha basıncı, vakum/kavitasyon veya bütün ağlar için doğruluk sertifikası değildir.",
+    "converged": true,
+    "coarse_dense_pressure_delta_m": 3.552713678800501e-15,
+    "maxiter": 3000,
+    "solver_warnings_original": []
+  },
+  "extra": {
+    "pass": true,
+    "junction_mass_balance_max_m3s": 6.776263578034403e-20,
+    "closed_link_max_abs_flow_m3s": 0.0,
+    "equipment_pass": true,
+    "equipment": {},
+    "source_free_junction_event_samples": 644,
+    "source_free_max_positive_delivery_m3s": 0.0,
+    "raw_min_junction_pressure_m": 0.0,
+    "reservoir_count": 1,
+    "tank_count": 0,
+    "positive_delivery_in_zero_demand_island_limit_m3s": 2e-06
+  },
+  "metrics": {
+    "weighted_unmet_volume_m3": 16.602816084624,
+    "unmet_demand_volume_m3": 13.150520537616002,
+    "critical_low_pressure_node_hours": 13.0,
+    "repair_completion_hour": 16.0
+  },
+  "warnings": [],
+  "calls": [
+    {
+      "seq": 1,
+      "solver_status": "returned",
+      "wall_s": 0.15772169997217134,
+      "cpu_s": 0.15625
+    },
+    {
+      "seq": 2,
+      "solver_status": "returned",
+      "wall_s": 0.1048078999738209,
+      "cpu_s": 0.09375
+    }
+  ],
+  "wall_s": 0.5124302000040188,
+  "cpu_s": 0.328125,
+  "raw_sha256": "8b48bd23e312d449a54f19ff567a0dd3cfebf406bc0bee1b1fcf06a86255e51d"
+}

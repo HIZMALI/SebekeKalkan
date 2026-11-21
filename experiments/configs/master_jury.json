@@ -1,0 +1,33 @@
+{
+  "name": "T11_C2",
+  "failures": [
+    {
+      "pipe_id": "112",
+      "repair_hours": 2.0
+    },
+    {
+      "pipe_id": "193",
+      "repair_hours": 3.0
+    },
+    {
+      "pipe_id": "153",
+      "repair_hours": 4.0
+    }
+  ],
+  "crews": 2,
+  "failure_start_hour": 2.0,
+  "horizon_hours": 16,
+  "step_minutes": 15,
+  "required_pressure_m": 20.0,
+  "low_pressure_m": 15.0,
+  "hydraulic_trials": 40,
+  "critical_weights": {
+    "203": 3.0,
+    "215": 2.0
+  },
+  "manual_order": [
+    "153",
+    "193",
+    "112"
+  ]
+}

@@ -1,0 +1,160 @@
+{
+  "methods": {
+    "fifo": {
+      "status": "PASS",
+      "order": [
+        "64",
+        "69",
+        "54",
+        "11"
+      ],
+      "metrics": {
+        "weighted_unmet_volume_m3": 33.523606759104,
+        "unmet_demand_volume_m3": 26.891565313536002,
+        "critical_low_pressure_node_hours": 23.0,
+        "repair_completion_hour": 16.0
+      },
+      "record": "fifo-candidate",
+      "verification": [
+        "fifo-fresh",
+        "fifo-repeat"
+      ],
+      "physical_pass": true
+    },
+    "greedy": {
+      "status": "PASS",
+      "order": [
+        "54",
+        "11",
+        "64",
+        "69"
+      ],
+      "metrics": {
+        "weighted_unmet_volume_m3": 16.602816084624,
+        "unmet_demand_volume_m3": 13.150520537616002,
+        "critical_low_pressure_node_hours": 13.0,
+        "repair_completion_hour": 16.0
+      },
+      "record": "greedy-candidate",
+      "verification": [
+        "greedy-fresh",
+        "greedy-repeat"
+      ],
+      "physical_pass": true,
+      "single_scores_m3_per_h": {
+        "64": 0.0,
+        "69": 0.0,
+        "54": 18.612869741928,
+        "11": 2.6982415196352005
+      }
+    },
+    "s02_b6": {
+      "status": "PASS",
+      "order": [
+        "54",
+        "11",
+        "64",
+        "69"
+      ],
+      "metrics": {
+        "weighted_unmet_volume_m3": 16.602816084624,
+        "unmet_demand_volume_m3": 13.150520537616002,
+        "critical_low_pressure_node_hours": 13.0,
+        "repair_completion_hour": 16.0
+      },
+      "record": "s02_b6-candidate02",
+      "verification": [
+        "s02_b6-fresh",
+        "s02_b6-repeat"
+      ],
+      "physical_pass": true,
+      "budget": 6,
+      "unique_candidates": 6,
+      "unique_available": 24,
+      "mandatory_reference_signatures_included": true
+    },
+    "s02_b12": {
+      "status": "PASS",
+      "order": [
+        "54",
+        "11",
+        "64",
+        "69"
+      ],
+      "metrics": {
+        "weighted_unmet_volume_m3": 16.602816084624,
+        "unmet_demand_volume_m3": 13.150520537616002,
+        "critical_low_pressure_node_hours": 13.0,
+        "repair_completion_hour": 16.0
+      },
+      "record": "s02_b12-candidate02",
+      "verification": [
+        "s02_b12-fresh",
+        "s02_b12-repeat"
+      ],
+      "physical_pass": true,
+      "budget": 12,
+      "unique_candidates": 12,
+      "unique_available": 24,
+      "mandatory_reference_signatures_included": true
+    }
+  },
+  "costs": {
+    "fifo": {
+      "physical_trials": 3,
+      "wntr_calls": 6,
+      "solver_returns": 6,
+      "valid_trials": 3,
+      "invalid_trials": 0,
+      "preliminary_trials": 0,
+      "candidate_trials": 1,
+      "verification_trials": 2,
+      "wall_s": 1.7380668999976479,
+      "cpu_s": 1.265625,
+      "solver_cpu_s": 0.921875,
+      "solver_wall_s": 0.9118096000165679
+    },
+    "greedy": {
+      "physical_trials": 8,
+      "wntr_calls": 16,
+      "solver_returns": 16,
+      "valid_trials": 8,
+      "invalid_trials": 0,
+      "preliminary_trials": 5,
+      "candidate_trials": 1,
+      "verification_trials": 2,
+      "wall_s": 3.6488125000032596,
+      "cpu_s": 2.4375,
+      "solver_cpu_s": 1.671875,
+      "solver_wall_s": 1.6547447001212277
+    },
+    "s02_b6": {
+      "physical_trials": 13,
+      "wntr_calls": 26,
+      "solver_returns": 26,
+      "valid_trials": 13,
+      "invalid_trials": 0,
+      "preliminary_trials": 5,
+      "candidate_trials": 6,
+      "verification_trials": 2,
+      "wall_s": 7.070137600007001,
+      "cpu_s": 4.625,
+      "solver_cpu_s": 3.21875,
+      "solver_wall_s": 3.442363999725785
+    },
+    "s02_b12": {
+      "physical_trials": 19,
+      "wntr_calls": 38,
+      "solver_returns": 38,
+      "valid_trials": 19,
+      "invalid_trials": 0,
+      "preliminary_trials": 5,
+      "candidate_trials": 12,
+      "verification_trials": 2,
+      "wall_s": 10.470334700017702,
+      "cpu_s": 7.09375,
+      "solver_cpu_s": 4.78125,
+      "solver_wall_s": 5.083543399814516
+    }
+  }
+}

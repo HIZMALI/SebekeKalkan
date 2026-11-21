@@ -1,0 +1,270 @@
+{
+  "status": "PASS",
+  "methods": {
+    "fifo": {
+      "status": "PASS",
+      "order": [
+        "64",
+        "69",
+        "54",
+        "11"
+      ],
+      "metrics": {
+        "weighted_unmet_volume_m3": 33.523606759104,
+        "unmet_demand_volume_m3": 26.891565313536002,
+        "critical_low_pressure_node_hours": 23.0,
+        "repair_completion_hour": 16.0
+      },
+      "record": "fifo-candidate",
+      "verification": [
+        "fifo-fresh",
+        "fifo-repeat"
+      ],
+      "physical_pass": true,
+      "oracle_same_order_match": true,
+      "oracle_gap_m3": 16.92079067448
+    },
+    "greedy": {
+      "status": "PASS",
+      "order": [
+        "54",
+        "11",
+        "64",
+        "69"
+      ],
+      "metrics": {
+        "weighted_unmet_volume_m3": 16.602816084624,
+        "unmet_demand_volume_m3": 13.150520537616002,
+        "critical_low_pressure_node_hours": 13.0,
+        "repair_completion_hour": 16.0
+      },
+      "record": "greedy-candidate",
+      "verification": [
+        "greedy-fresh",
+        "greedy-repeat"
+      ],
+      "physical_pass": true,
+      "single_scores_m3_per_h": {
+        "64": 0.0,
+        "69": 0.0,
+        "54": 18.612869741928,
+        "11": 2.6982415196352005
+      },
+      "oracle_same_order_match": true,
+      "oracle_gap_m3": 0.0
+    },
+    "s02_b6": {
+      "status": "PASS",
+      "order": [
+        "54",
+        "11",
+        "64",
+        "69"
+      ],
+      "metrics": {
+        "weighted_unmet_volume_m3": 16.602816084624,
+        "unmet_demand_volume_m3": 13.150520537616002,
+        "critical_low_pressure_node_hours": 13.0,
+        "repair_completion_hour": 16.0
+      },
+      "record": "s02_b6-candidate02",
+      "verification": [
+        "s02_b6-fresh",
+        "s02_b6-repeat"
+      ],
+      "physical_pass": true,
+      "budget": 6,
+      "unique_candidates": 6,
+      "unique_available": 24,
+      "mandatory_reference_signatures_included": true,
+      "oracle_same_order_match": true,
+      "oracle_gap_m3": 0.0
+    },
+    "s02_b12": {
+      "status": "PASS",
+      "order": [
+        "54",
+        "11",
+        "64",
+        "69"
+      ],
+      "metrics": {
+        "weighted_unmet_volume_m3": 16.602816084624,
+        "unmet_demand_volume_m3": 13.150520537616002,
+        "critical_low_pressure_node_hours": 13.0,
+        "repair_completion_hour": 16.0
+      },
+      "record": "s02_b12-candidate02",
+      "verification": [
+        "s02_b12-fresh",
+        "s02_b12-repeat"
+      ],
+      "physical_pass": true,
+      "budget": 12,
+      "unique_candidates": 12,
+      "unique_available": 24,
+      "mandatory_reference_signatures_included": true,
+      "oracle_same_order_match": true,
+      "oracle_gap_m3": 0.0
+    }
+  },
+  "oracle": {
+    "status": "PASS",
+    "order": [
+      "54",
+      "11",
+      "64",
+      "69"
+    ],
+    "metrics": {
+      "weighted_unmet_volume_m3": 16.602816084624,
+      "unmet_demand_volume_m3": 13.150520537616002,
+      "critical_low_pressure_node_hours": 13.0,
+      "repair_completion_hour": 16.0
+    },
+    "record": "oracle-candidate07",
+    "verification": [
+      "oracle-fresh",
+      "oracle-repeat"
+    ],
+    "physical_pass": true,
+    "count": 24,
+    "valid": 24,
+    "unique": 24,
+    "minimum_weighted_unmet_volume_m3": 16.602816084624
+  },
+  "costs": {
+    "fifo": {
+      "physical_trials": 3,
+      "wntr_calls": 6,
+      "solver_returns": 6,
+      "valid_trials": 3,
+      "invalid_trials": 0,
+      "preliminary_trials": 0,
+      "candidate_trials": 1,
+      "verification_trials": 2,
+      "wall_s": 1.7380668999976479,
+      "cpu_s": 1.265625,
+      "solver_cpu_s": 0.921875,
+      "solver_wall_s": 0.9118096000165679
+    },
+    "greedy": {
+      "physical_trials": 8,
+      "wntr_calls": 16,
+      "solver_returns": 16,
+      "valid_trials": 8,
+      "invalid_trials": 0,
+      "preliminary_trials": 5,
+      "candidate_trials": 1,
+      "verification_trials": 2,
+      "wall_s": 3.6488125000032596,
+      "cpu_s": 2.4375,
+      "solver_cpu_s": 1.671875,
+      "solver_wall_s": 1.6547447001212277
+    },
+    "s02_b6": {
+      "physical_trials": 13,
+      "wntr_calls": 26,
+      "solver_returns": 26,
+      "valid_trials": 13,
+      "invalid_trials": 0,
+      "preliminary_trials": 5,
+      "candidate_trials": 6,
+      "verification_trials": 2,
+      "wall_s": 7.070137600007001,
+      "cpu_s": 4.625,
+      "solver_cpu_s": 3.21875,
+      "solver_wall_s": 3.442363999725785
+    },
+    "s02_b12": {
+      "physical_trials": 19,
+      "wntr_calls": 38,
+      "solver_returns": 38,
+      "valid_trials": 19,
+      "invalid_trials": 0,
+      "preliminary_trials": 5,
+      "candidate_trials": 12,
+      "verification_trials": 2,
+      "wall_s": 10.470334700017702,
+      "cpu_s": 7.09375,
+      "solver_cpu_s": 4.78125,
+      "solver_wall_s": 5.083543399814516
+    },
+    "oracle": {
+      "physical_trials": 26,
+      "wntr_calls": 52,
+      "solver_returns": 52,
+      "valid_trials": 26,
+      "invalid_trials": 0,
+      "preliminary_trials": 0,
+      "candidate_trials": 24,
+      "verification_trials": 2,
+      "wall_s": 15.10672409995459,
+      "cpu_s": 10.125,
+      "solver_cpu_s": 7.296875,
+      "solver_wall_s": 7.690850800019689
+    }
+  },
+  "decisions_sha256": "931b4a043f2b03abdc53869f0f708c6f8e2fd01f031442af6e35274c014557a8",
+  "recover_service": "not_evaluated",
+  "worker_cpu_s": 25.546875,
+  "physical_trials": 69,
+  "trial_statuses": {
+    "PASS": 69
+  },
+  "wntr_calls": 138,
+  "started_calls": 138,
+  "finished_calls": 138,
+  "run_id": "51bb2501b43c446f83f0bfe5257f9a46",
+  "batch": "bd6bc280d8524f91810cb03b6589fccd",
+  "task": {
+    "case_id": "Skeletonize_G1_C1",
+    "group": "external_holdout",
+    "stage": "comparison",
+    "model_id": "Skeletonize",
+    "model_sha256": "d32534dfd2b4c8df310cd82887b2fd269b607999939ece2d81ba92d9a170f97d",
+    "scenario": {
+      "name": "Skeletonize_G1_C1",
+      "failures": [
+        {
+          "pipe_id": "64",
+          "repair_hours": 2.0
+        },
+        {
+          "pipe_id": "69",
+          "repair_hours": 3.0
+        },
+        {
+          "pipe_id": "54",
+          "repair_hours": 4.0
+        },
+        {
+          "pipe_id": "11",
+          "repair_hours": 5.0
+        }
+      ],
+      "crews": 1,
+      "failure_start_hour": 2.0,
+      "horizon_hours": 24,
+      "step_minutes": 15,
+      "required_pressure_m": 20,
+      "low_pressure_m": 15,
+      "hydraulic_trials": 40,
+      "critical_weights": {
+        "58": 3.0,
+        "14": 2.0
+      },
+      "manual_order": null,
+      "wntr_max_iterations": 3000
+    },
+    "scenario_sha256": "7cea6759b0abde8c0d03790a2885f7d0c5c0529d3c19fe7f617d9e9f3ac09e7f"
+  },
+  "started_utc": "2026-11-20T13:33:29.066833+00:00",
+  "solver": "WNTRSimulator 1.5.0 / PDD",
+  "code_sha256": "a6cac10d72bc099230b0b5997d4ca94b0f42a8cb88016a35b8ee6c8ce668475a",
+  "method_version": "s02-restoration-1",
+  "protocol_lock_sha256": "86bf325f458d9010af444ed630df6a5daedd4cf7b97447583783e1eb78fe3729",
+  "limit_s": 180,
+  "wall_s": 42.16879049997078,
+  "finished_utc": "2026-11-20T13:34:11.239019+00:00"
+}

@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ŞebekeKalkan | Bilimsel kanıt</title>
+  <style>
+    :root{font:18px/1.55 "Aptos","Segoe UI",system-ui;color:#102e3d;background:#f5f6f1}body{margin:0}
+    main{width:min(960px,calc(100% - 40px));margin:40px auto 64px}
+    h1{font-size:clamp(40px,7vw,67px);line-height:1;letter-spacing:-.05em;margin:18px 0}
+    h2{font-size:28px;letter-spacing:-.025em;margin-top:36px}a{color:#16645d;text-underline-offset:4px}
+    .eyebrow{color:#16645d;font-weight:700;letter-spacing:.08em}
+    article{border-top:1px solid #b8ccc2;padding-top:8px;margin-top:24px}
+    code{overflow-wrap:anywhere;font-size:.9em}li+li{margin-top:8px}
+  </style>
+</head>
+<body><main>
+  <a href="../">Gösterime dön</a>
+  <h1>Bilimsel kanıt</h1>
+  <p class="eyebrow">ŞEBEKEKALKAN · BAÜN 2026</p>
+  <article>
+    <h2>Gösterilen iki kayıt</h2>
+    <p>Net2_G4_C1, dört arızalı iç değerlendirme vakası. Güçlü tekli etki/süre ile B6 karşılaştırmasında 1.509,015623 → 1.437,028326 ağırlıklı m³. Fark 71,987297 ağırlıklı m³ ve %4,77. Kritik düşük basınç 34,5 → 31,5 düğüm-saat. Son onarım her iki planda 16. saatte. Simülasyonun 08.00 adımındaki karşılanan müşteri talebi 8,97 → 11,03 L/s.</p>
+    <p>Kayıt <code>efef66dd0e384da19b9dfaac2ca3445a</code><br>Sonuç SHA-256 <code>2268f77cadb535ae7070ebf5ccd0c3863cf8a87d882591c589dcf08fe6f9613e</code></p>
+    <p>MuR0009_G02_C1, sonraki araştırmanın seçilmiş sentetik vakası. Aynı güçlü yöntemle 337,474573 → 306,909453 ağırlıklı m³. Fark 30,565120 ağırlıklı m³ ve %9,06. İki son onarım 16. saatte. WNTR çağrıları 16 → 26.</p>
+    <p>Kayıt <code>ce7196e615eb42ddbab7a3ab23c0405b</code><br>Sonuç SHA-256 <code>ee69a6b30052ac66f47d7646d7ce996fe7f16ef1191cd2ff6cfdc8737339f83c</code></p>
+  </article>
+  <article>
+    <h2>Araştırmanın bütün ana koşulları</h2>
+    <p>Ön kayıt, 15 arıza kümesini bir ve iki ekiple 30 bağlı koşulda sınadı. Birincil ölçütte 23/30 tam kıyas var. <strong>3 kazanım, 20 eşitlik, 0 birincil kayıp.</strong> Diğer 7 koşul 4 çözücü hatası, 2 fizik reddi ve 1 zaman aşımıdır. Tüm yöntemler 20 işte tamamlandı. Üç ek rastgele kontrol süre sınırına takıldı. Duyarlılıkta 28/36 tam kıyas var, ikincil olumsuz sonuçlar deney tablosunda yer alır.</p>
+    <p>Topolojiler ayrı, sentetik üretici ailesi aynı. MuR0006’da 10 kıyasta referans açığı sıfır. Önceki Skeletonize dış değerlendirmesindeki 6 koşulda B6 birincil ölçütte güçlü referansla eşit kaldı. Net2_G1_C1’de B6, dört işin 24 beklemesiz sırası arasındaki minimumu 898,169174 ağırlıklı m³ kaçırdı.</p>
+    <p>ŞebekeKalkan’ın simülasyonda belirli koşullarda ek değer sağladığı doğrulandı. Mevcut örneklem genel üstünlüğü veya saha tasarrufunu desteklemiyor. Ağırlıklı hizmet açığı, kritik müşteri ağırlıklarıyla hesaplanan model ölçümüdür. 24 sıra sayımı, seyahat, stok ve beklemeyi içeren saha optimizasyonunu kapsamaz.</p>
+    <ul><li><a href="tum-deneyler.csv">Ana ve duyarlılık koşullarının tamamı (CSV)</a></li><li><a href="iddia-kanit.csv">İddia ve kaynak kayıtları (CSV)</a></li></ul>
+  </article>
+  <article>
+    <h2>Başvuru ve final kapsamı</h2>
+    <p>Başvuru Net1 ve Net3’te üç arızalı 18 ana ve 26 duyarlılık koşulunu kapsıyordu. 18 ana koşulda güçlü referansa karşı 17 eşitlik ve bir Net1 kazanımı var. Sonraki Net2 üç arızalı örnekteki yaklaşık %40,2 FIFO’ya göredir. Güçlü yöntemle eşit kaldı. Dört arızalı çalışmada 14 koşul, yeni araştırmada ise ayrı bir 30 koşul tanımlandı. Başvuruda gönderilen poster ve metin kendi tarihsel kapsamını korur.</p>
+  </article>
+  <article>
+    <h2>Yöntem ve model kaynakları</h2>
+    <p>Basınca bağlı talep, kütle dengesi, depo limitleri, olay zamanları ve taze yeniden çözüm kontrol edilir. Tarihsel minimum depo davranışı ayrı kayıttadır. <a href="https://usepa.github.io/WNTR/hydraulics.html">WNTR hidrolik belgeleri</a> · <a href="https://github.com/OpenWaterAnalytics/EPANET/issues/623">EPANET #623</a></p>
+    <p>Dağıtımdaki ağlar mühendislik örneğidir. Yeni araştırmanın modelleri tek sentetik seriden gelir. <a href="https://usepa.github.io/WNTR/libraries.html">WNTR ağ kütüphanesi</a> · <a href="https://github.com/mutianwei521/wdsgpu/blob/1ad03901c25b7f404bc6c821a36948ad851e13c1/THIRD_PARTY.md#4-synthetic-networks-shipped-here">Mu sentetik veri kaynağı</a></p>
+    <p>Hidrolik simülasyon ve ekip planlaması için yöntem arka planı. <a href="https://www.osti.gov/servlets/purl/1399510">Klise ve diğerleri, 2017</a> · <a href="https://journals.vilniustech.lt/index.php/JCEM/article/view/625">Osman ve diğerleri, 2017</a></p>
+  </article>
+</main></body></html>

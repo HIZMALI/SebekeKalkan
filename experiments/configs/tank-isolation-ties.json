@@ -1,0 +1,27 @@
+{
+  "name": "Üç boru, iki ekip",
+  "failures": [
+    {
+      "pipe_id": "20",
+      "repair_hours": 2
+    },
+    {
+      "pipe_id": "40",
+      "repair_hours": 3
+    },
+    {
+      "pipe_id": "50",
+      "repair_hours": 4
+    }
+  ],
+  "crews": 2,
+  "failure_start_hour": 2,
+  "horizon_hours": 12,
+  "step_minutes": 15,
+  "required_pressure_m": 20,
+  "low_pressure_m": 15,
+  "critical_weights": {
+    "101": 3,
+    "109": 2
+  }
+}
