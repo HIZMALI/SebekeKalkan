@@ -46,7 +46,13 @@ export function difference(ref: number, next: number, key: string) {
 }
 
 export async function fetchJson<T>(url: string, init?: RequestInit): Promise<T> {
-  const r = await fetch(url, {...init, cache:'no-store'});
+  let r:Response;
+  try {
+    r = await fetch(url, {...init, cache:'no-store'});
+  } catch (cause) {
+    if (init?.signal?.aborted) throw cause;
+    throw new Error('WNTR bağlantısı kurulamadı. Sunucuyu kontrol edip yeniden deneyin.', {cause});
+  }
   if (!r.ok) {
     const payload: {message?:string} = await r.json().catch(()=>({}));
     throw new Error(payload.message || 'Yerel veri okunamadı.');

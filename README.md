@@ -8,6 +8,8 @@ Net2_G4_C1 örneğinde ŞebekeKalkan B6, güçlü tekli etki/süre yöntemine g�
 
 ## Bir dakikada deneyin
 
+[Kayıtlı web demosunu açın](https://hizmali.github.io/SebekeKalkan/demo/) · [Bilimsel kanıt](https://hizmali.github.io/SebekeKalkan/research/arastirma.html)
+
 1. Ana gösterimde **02.00**’ı seçin. Dört arızanın başlangıcını izleyin.
 2. **08.00**’a dönün ve **Güçlü referans** ile **ŞebekeKalkan B6** arasında geçin. Aynı saatte 8,97 ve 11,03 L/s karşılanan talep görünür.
 3. İki çizelgeyi ve vaka kaynağını açın. Zaman serisi CSV ve kanıt JSON olarak indirilebilir.
@@ -22,7 +24,7 @@ Python **3.12 x64** kuruluysa `RUN_LOCAL.cmd` dosyasını çalıştırın. Başl
 docker compose up --build
 ```
 
-Yerel gösterimden **Kendi senaryon** bölümünü açın. Net2 veya Skeletonize’da 3–4 boru, 1–2 ekip ve 2–5 saatlik sürelerle çalışın. Üç hazır girdi düzenlenebilir. Yeni iş, fizik denetimlerinden sonra JSON, CSV ve PDF verir. Bir iş sürerken ikinci iş beklemelidir. İnternet kesilirse etkinlik paketindeki **BASLA.html** ve sunum PDF’i kullanılabilir. [Sunum ve kısa demo](docs/competition/juri.md)
+Yerel gösterimden **Kendi senaryon** bölümünü açın. Net2 veya Skeletonize’da 3–4 boru, 1–2 ekip ve 2–5 saatlik sürelerle çalışın. Üç hazır girdi düzenlenebilir. Yeni iş, fizik denetimlerinden sonra JSON, CSV ve PDF verir. Bir iş sürerken ikinci iş beklemelidir. Web bağlantısı kayıtlı gösterimi açar. Yeni sonuçlar yerel WNTR’de hesaplanır. İnternet kesilirse etkinlik paketindeki **BASLA.html** ve sunum PDF’i kullanılabilir. [Sunum ve kısa demo](docs/competition/juri.md)
 
 ## Geliştirme ve doğrulama
 
