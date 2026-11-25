@@ -13,17 +13,9 @@ const cases = [
 
 export default function Research({researchPage}: {researchPage: string}) {
   return <>
-    <section className="section" id="nasil-calisir" aria-labelledby="steps-title">
-      <div className="section-heading"><h2 id="steps-title">Nasıl çalışır?</h2></div>
-      <ol className="method-steps">
-        <li><h3>Arızaları belirle</h3><p>Arızalı borular, ekip sayısı ve onarım süreleri tanımlanır.</p></li>
-        <li><h3>İki planı izle</h3><p>Aynı koşullarda farklı müdahale sıraları, kayıttaki saatler üzerinden izlenir.</p></li>
-        <li><h3>Su hizmetini karşılaştır</h3><p>Karşılanan talep, boru durumu ve onarım süreleri birlikte okunur.</p></li>
-      </ol>
-    </section>
     <section className="section" id="arastirma" aria-labelledby="research-title">
       <div className="section-heading">
-        <div><h2 id="research-title">Araştırma sonuçları</h2><p>Üç ayrı model vakasında ağırlıklı hizmet açığı farkı.</p></div>
+        <div><h2 id="research-title">Araştırma sonuçları</h2><p>Üç ayrı vakada ağırlıklı hizmet açığındaki düşüş.</p></div>
         <a className="text-link" href={researchPage}>Tüm deneyleri incele <span aria-hidden="true">↗</span></a>
       </div>
       <div className="research-cases">
@@ -48,21 +40,30 @@ export default function Research({researchPage}: {researchPage: string}) {
     </section>
     <section className="section local-context" aria-labelledby="local-title">
       <div>
-        <p className="eyebrow">Balıkesir</p>
-        <h2 id="local-title">Altyapıda öncelik kararı</h2>
+        <h2 id="local-title">Balıkesir’de altyapı arızaları</h2>
         <p className="local-total">88.802</p>
         <p><strong>2026’nın ilk yedi ayında toplam altyapı arıza kaydı.</strong></p>
-        <p>BASKİ’nin sayısı içme suyu, kanalizasyon, abone işleri, tarımsal sulama ve diğer altyapı arızalarını kapsıyor. ŞebekeKalkan’ın deneyleri örnek ağlarda yürütüldü.</p>
+      </div>
+      <div className="local-source">
+        <p>BASKİ kayıtları içme suyu, kanalizasyon, abone işleri, tarımsal sulama ve diğer altyapı arızalarını kapsıyor. ŞebekeKalkan deneyleri örnek şebekelerde yürütüldü.</p>
         <a className="text-link" href={baski}>BASKİ’nin 17 Ağustos 2026 açıklaması <span aria-hidden="true">↗</span></a>
+        <details className="pilot">
+          <summary>Önerilen saha pilotu</summary>
+          <ol>
+            <li>İzinli şebeke verilerini aktar.</li>
+            <li>Modeli gerçek ölçümlerle doğrula.</li>
+            <li>Onarım kararlarını aynı koşullarda karşılaştır.</li>
+          </ol>
+        </details>
       </div>
-      <div className="pilot">
-        <h3>Su idaresiyle önerilen saha pilotu</h3>
-        <ol>
-          <li>İzinli şebeke verilerini aktar.</li>
-          <li>Modeli gerçek ölçümlerle doğrula.</li>
-          <li>Onarım kararlarını aynı koşullarda karşılaştır.</li>
-        </ol>
-      </div>
+    </section>
+    <section className="section" id="nasil-calisir" aria-labelledby="steps-title">
+      <div className="section-heading"><h2 id="steps-title">Nasıl çalışır?</h2></div>
+      <ol className="method-steps">
+        <li><h3>Koşulları sabitle</h3><p>Aynı arızalar, ekip ve onarım süreleri.</p></li>
+        <li><h3>Onarım sırasını değiştir</h3><p>İki planı aynı saatte karşılaştır.</p></li>
+        <li><h3>Su hizmetine etkisini gör</h3><p>Karşılanan talebi ve onarım çizelgesini izle.</p></li>
+      </ol>
     </section>
   </>;
 }

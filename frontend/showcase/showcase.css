@@ -58,7 +58,7 @@ h1, h2, h3 {font-weight: 700; letter-spacing: -.026em}
 .recorded span {width: 7px; height: 7px; flex: none; border-radius: 50%; background: var(--positive)}
 h1 {font-size: clamp(31px, 3.25vw, 53px); line-height: 1.04; letter-spacing: -.043em; margin-bottom: 8px}
 .intro p:last-child {color: var(--muted); font-size: clamp(14px, 1.2vw, 18px); max-width: 76ch}
-.jury-entry, .jury-bar button, .button, .actions button {
+.jury-entry, .jury-bar button, .actions button {
   display: inline-flex; align-items: center; justify-content: center; gap: 8px;
   min-height: 42px; flex: none; padding: 8px 13px; border: 1px solid var(--control-line);
   border-radius: 7px; background: var(--surface); color: var(--text); font-weight: 700; font-size: 14px;
@@ -227,7 +227,7 @@ summary {color: var(--positive); font-weight: 680; cursor: pointer}
 .section {padding-block: 23px 0; margin-block: 28px 0; border-top: 1px solid var(--line)}
 .section h2 {font-size: clamp(25px, 3vw, 37px); line-height: 1.12}
 .section-heading {display: flex; justify-content: space-between; align-items: end; gap: 14px; margin-bottom: 16px}
-.section-heading p, .section > p, .case-baseline, .method-steps p {color: var(--muted)}
+.section-heading p, .case-baseline, .method-steps p {color: var(--muted)}
 .section-heading p {margin-top: 5px; font-size: 14px}
 .schedule-time {color: var(--muted); font-size: 13px; white-space: nowrap}
 .schedule-time strong {margin-left: 5px; color: var(--text); font-variant-numeric: tabular-nums}
@@ -261,7 +261,6 @@ summary {color: var(--positive); font-weight: 680; cursor: pointer}
   content: ""; position: absolute; left: 50%; top: -2px; transform: translateX(-50%);
   border: 4px solid transparent; border-top-color: var(--text);
 }
-.schedule-note {font-size: 13px; margin-top: 9px}
 .evidence-details {margin-top: 15px; padding: 11px 13px; border: 1px solid var(--line); border-radius: 8px; background: var(--chart)}
 .evidence-details p, .evidence-details dl {color: var(--muted); font-size: 14px; margin: 8px 0 12px}
 .evidence-details dt {color: var(--text); font-weight: 700}
@@ -283,17 +282,12 @@ code {overflow-wrap: anywhere}
 .case-result, .local-total {font-weight: 750; font-size: clamp(35px, 4.2vw, 65px); letter-spacing: -.05em; color: var(--positive)}
 .case-baseline {font-size: 14px}
 .local-context {display: grid; grid-template-columns: 1.25fr 1fr; gap: 24px}
-.local-context .eyebrow {margin-bottom: 5px}
 .local-context .local-total {line-height: 1.16; margin-top: 8px}
-.local-context p:not(.eyebrow, .local-total), .pilot ol, .scenario-link p {color: var(--muted); margin: 7px 0}
+.local-context p:not(.local-total), .pilot ol {color: var(--muted); margin: 7px 0}
 .local-context strong {color: var(--text)}
-.pilot {border-left: 1px solid var(--line); padding-left: 20px}
-.pilot h3 {font-size: 22px}
+.local-source {align-self: center; border-left: 1px solid var(--line); padding-left: 20px}
+.pilot {margin-top: 9px; font-size: 14px}
 .pilot ol {padding-left: 20px}
-.pilot li {margin-bottom: 7px}
-.scenario-link {display: flex; align-items: center; justify-content: space-between; gap: 15px}
-.scenario-link [role=status] {max-width: 360px}
-.button.primary {background: var(--positive); color: var(--base); border-color: var(--positive)}
 footer {
   display: flex; justify-content: space-between; align-items: center; gap: 12px; flex-wrap: wrap;
   margin-top: 28px; padding-block: 16px 25px; border-top: 1px solid var(--line); color: var(--muted); font-size: 13px;
@@ -390,8 +384,7 @@ footer .brand svg {width: 22px; height: 22px}
   .schedule-time {color: var(--muted)}
   .method-steps, .research-cases {grid-template-columns: 1fr}
   .local-context {grid-template-columns: 1fr; gap: 16px}
-  .pilot {padding-left: 13px}
-  .scenario-link {align-items: start; flex-direction: column}
+  .local-source {border-left: 0; padding-left: 0}
   .jury-bar {order: 0; padding-bottom: 9px}
   .jury-bar p {display: none}
   .workspace--jury .v4-network {height: clamp(215px, 31svh, 285px)}

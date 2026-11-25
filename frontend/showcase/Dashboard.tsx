@@ -155,7 +155,7 @@ export function Schedule({step, plan, compact = false}: {step: number; plan: Pla
   const percentage = (value: number) => `${100 * value / lastMinute}%`;
   return <section className={compact?'schedule schedule--compact':'section schedule'} aria-labelledby="schedule-title">
     <div className="section-heading">
-      <div><h2 id="schedule-title">Onarım çizelgesi</h2>{!compact&&<p>Her çubuk, borunun gerçek kayıtlı onarım aralığını gösterir.</p>}</div>
+      <h2 id="schedule-title">Onarım çizelgesi</h2>
       <span className="schedule-time">{!compact&&'Seçili zaman '}<strong>{clock(minute)}</strong></span>
     </div>
     <div className="gantt">
@@ -181,8 +181,7 @@ export function Schedule({step, plan, compact = false}: {step: number; plan: Pla
         </div>
       </div>)}
     </div>
-    {!compact&&<><p className="schedule-note">Şema, Net2 test ağına aittir. Renkler seçili kayıttaki düğüm basıncını gösterir.</p>
-    <details className="evidence-details">
+    {!compact&&<details className="evidence-details">
       <summary>Vaka kaynağı ve indirmeler</summary>
       <dl>
         <dt>Net2 vaka kodu</dt><dd>{net.id}</dd><dt>Kayıt kimliği</dt><dd><code>{net.run}</code></dd>
@@ -194,6 +193,6 @@ export function Schedule({step, plan, compact = false}: {step: number; plan: Pla
         <button type="button" onClick={downloadDemandCsv}>Zaman serisi CSV</button>
         <button type="button" onClick={()=>download('SebekeKalkan-dogrulanmis-kayit.json', JSON.stringify(proof, null, 2), 'application/json')}>Kanıt JSON</button>
       </div>
-    </details></>}
+    </details>}
   </section>;
 }

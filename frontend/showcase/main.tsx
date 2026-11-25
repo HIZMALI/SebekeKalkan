@@ -14,8 +14,8 @@ const route = window.location.pathname.replace(/index\.html$/, '');
 const researchPage = offline ? 'https://hizmali.github.io/SebekeKalkan/research/arastirma.html' :
   route !== '/demo/' && route.endsWith('/demo/') ? '../research/arastirma.html' : './research/arastirma.html';
 const navLinks = [
-  {href:'#gosterim', label:'Etkileşimli gösterim'}, {href:'#nasil-calisir', label:'Nasıl çalışır?'},
-  {href:'#arastirma', label:'Araştırma sonuçları'}, {href:github, label:'GitHub'},
+  {href:'#gosterim', label:'Etkileşimli gösterim'}, {href:'#arastirma', label:'Araştırma sonuçları'},
+  {href:'#nasil-calisir', label:'Nasıl çalışır?'}, {href:github, label:'GitHub'},
 ];
 const lastStep = timeline.length - 1;
 
@@ -45,7 +45,7 @@ function Header() {
 }
 
 function LiveLink() {
-  const [live,setLive] = useState<'checking' | 'local' | 'remote' | 'unavailable'>(local || apiBase ? 'checking' : 'unavailable');
+  const [live,setLive] = useState<'local' | 'remote' | null>(null);
   useEffect(()=>{
     if(!local && !apiBase) return;
     const controller = new AbortController();
@@ -53,17 +53,14 @@ function LiveLink() {
     fetch(apiBase + '/healthz', {signal:controller.signal, cache:'no-store'})
       .then(response=>response.ok ? response.json() : Promise.reject())
       .then(data=>setLive(data.solver === 'WNTR' && data.live === 'local' && local ? 'local' :
-        data.solver === 'WNTR' && data.live === 'isolated' && apiBase ? 'remote' : 'unavailable'))
-      .catch(()=>setLive('unavailable')).finally(()=>clearTimeout(timeout));
+        data.solver === 'WNTR' && data.live === 'isolated' && apiBase ? 'remote' : null))
+      .catch(()=>{}).finally(()=>clearTimeout(timeout));
     return ()=>{controller.abort(); clearTimeout(timeout);};
   }, []);
 
-  return <section className="section scenario-link" id="senaryo" aria-labelledby="live-title">
-    <div><h2 id="live-title">Kendi senaryon</h2><p>Yeni arıza, ekip ve süre girdileri gerçek WNTR oturumunda hesaplanır.</p></div>
-    {live === 'local' ? <a className="button primary" href="/final-v4/senaryo">Yerel WNTR moduna geç</a> :
-      live === 'remote' ? <a className="button primary" href={apiBase + '/final-v4/senaryo'}>Canlı WNTR moduna geç</a> :
-      <p role="status">{live === 'checking' ? 'WNTR bağlantısı kontrol ediliyor.' : 'Bu sayfa doğrulanmış bir simülasyon kaydını gösterir. Canlı WNTR bağlantısı yok.'}</p>}
-  </section>;
+  return live ? <a className="text-link" href={(live === 'remote' ? apiBase : '') + '/final-v4/senaryo'}>
+    {live === 'local' ? 'Yerel WNTR moduna geç' : 'Canlı WNTR moduna geç'}
+  </a> : null;
 }
 
 function Service() {
@@ -167,12 +164,13 @@ function Service() {
           onExit={leaveJury} exitRef={exitButton}/>
         {!jury&&<Schedule plan={plan} step={step}/>}
       </section>
-      {!jury&&<>
-        <Research researchPage={researchPage}/>
-        <LiveLink/>
-        <footer><a className="brand" href="#icerik"><Logo/>ŞebekeKalkan</a><span>Öğr. Gör. Enise Odabaş ve Öğr. Gör. Mert Hızmalı</span></footer>
-      </>}
+      {!jury&&<Research researchPage={researchPage}/>}
     </main>
+    {!jury&&<footer className="shell">
+      <a className="brand" href="#icerik"><Logo/>ŞebekeKalkan</a>
+      <span>Öğr. Gör. Enise Odabaş ve Öğr. Gör. Mert Hızmalı</span>
+      <LiveLink/>
+    </footer>}
   </>;
 }
 

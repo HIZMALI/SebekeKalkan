@@ -24,7 +24,7 @@ Python **3.12 x64** kuruluysa `RUN_LOCAL.cmd` dosyasını çalıştırın. Başl
 docker compose up --build
 ```
 
-Yerel gösterimden **Kendi senaryon** bölümünü açın. Net2 veya Skeletonize’da 3–4 boru, 1–2 ekip ve 2–5 saatlik sürelerle çalışın. Üç hazır girdi düzenlenebilir. Yeni iş, fizik denetimlerinden sonra JSON, CSV ve PDF verir. Bir iş sürerken ikinci iş beklemelidir. Web bağlantısı kayıtlı gösterimi açar. Yeni sonuçlar yerel WNTR’de hesaplanır. İnternet kesilirse etkinlik paketindeki **BASLA.html** ve sunum PDF’i kullanılabilir. [Sunum ve kısa demo](docs/competition/juri.md)
+Yerel gösterimin altındaki **Yerel WNTR moduna geç** bağlantısını açın. Net2 veya Skeletonize’da 3–4 boru, 1–2 ekip ve 2–5 saatlik sürelerle çalışın. Üç hazır girdi düzenlenebilir. Yeni iş, fizik denetimlerinden sonra JSON, CSV ve PDF verir. Bir iş sürerken ikinci iş beklemelidir. Web bağlantısı kayıtlı gösterimi açar. Yeni sonuçlar yerel WNTR’de hesaplanır. İnternet kesilirse etkinlik paketindeki **BASLA.html** ve sunum PDF’i kullanılabilir. [Sunum ve kısa demo](docs/competition/juri.md)
 
 ## Geliştirme ve doğrulama
 

@@ -1,5 +1,10 @@
 # Değişiklikler
 
+## Jüri gösteriminde içerik sadeleştirmesi · 25 Kasım 2026
+
+- Kayıtlı gösterimden “Kendi senaryon” bölümü ve bağlantı durum metinleri kaldırıldı. Çalışan WNTR oturumu varsa senaryo bağlantısı sayfa altında görünür.
+- Seçili araştırma sonuçları ve Balıkesir verisi öne alındı. Onarım çizelgesi açıklamaları kısaltıldı ve önerilen saha pilotu açılır ayrıntıya taşındı.
+
 ## BAÜN jüri demosu · 25 Kasım 2026
 
 - Net2 şeması ve 08.00 debi karşılaştırması masaüstü ve mobilde ilk ekrana taşındı. Anlık 2,06 L/s fark ile tüm sürecin %4,77’lik ağırlıklı hizmet açığı ayrı gösteriliyor.

@@ -47,7 +47,21 @@ test('sıfır girişle doğrulanmış şema, aynı saatte yöntem değişimi ve 
   expect((await file.path())?.length).toBeGreaterThan(0);
   await page.getByText('Araştırmanın kapsamı ve tüm sonuçlar',{exact:true}).click();
   await expect(page.getByText(/23 birincil kıyasta 3 kazanım, 20 eşitlik/)).toBeVisible();
-  await expect(page.getByRole('link',{name:'Yerel WNTR moduna geç'})).toHaveAttribute('href','/final-v4/senaryo');
   const dimensions=await page.evaluate(()=>[window.innerWidth,document.documentElement.scrollWidth]);
   expect(dimensions[1]).toBe(dimensions[0]);
+  const local=page.getByRole('contentinfo').getByRole('link',{name:'Yerel WNTR moduna geç'});
+  await expect(local).toHaveAttribute('href','/final-v4/senaryo');
+  await local.click();
+  await expect(page.getByRole('heading',{name:'Onarım senaryonu kur'})).toBeVisible();
+});
+
+test('WNTR yokken kayıtlı gösterimde senaryo bölümü ve bağlantı durumu yok', async ({page})=>{
+  await page.route('**/healthz', route=>route.fulfill({status:503}));
+  const response=page.waitForResponse(r=>r.url().endsWith('/healthz'));
+  await page.goto('/demo/');
+  expect((await response).status()).toBe(503);
+  await expect(page.getByRole('heading',{name:'Kendi senaryon',exact:true})).toHaveCount(0);
+  await expect(page.getByText(/Canlı WNTR bağlantısı yok|WNTR bağlantısı kontrol ediliyor/)).toHaveCount(0);
+  await expect(page.getByRole('link',{name:/WNTR moduna geç/})).toHaveCount(0);
+  await expect(page.getByTestId('main-gain')).toHaveText('%4,77');
 });
