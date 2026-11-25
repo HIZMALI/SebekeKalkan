@@ -1,5 +1,13 @@
 # Değişiklikler
 
+## BAÜN jüri demosu · 25 Kasım 2026
+
+- Net2 şeması ve 08.00 debi karşılaştırması masaüstü ve mobilde ilk ekrana taşındı. Anlık 2,06 L/s fark ile tüm sürecin %4,77’lik ağırlıklı hizmet açığı ayrı gösteriliyor.
+- Zaman ve yöntem denetimleri, kayıtlı boru durumu ve basınçla birlikte gerçek süreli iki onarım çizelgesini güncelliyor. Boru inceleme, işaretler, yakınlaştırma ve klavye erişimi eklendi.
+- Jüri modunda şema, karşılaştırma ve çizelge birlikte açılıyor. Tam ekran izin kısıtında sayfa içi görünüm çalışıyor.
+- BASKİ’nin 88.802 toplam altyapı arıza kaydı doğru kapsamıyla bağlandı. Net1, Net2 ve MuR0009 seçili vakaları kendi referanslarıyla ayrı sunuluyor.
+- Kayıtlı CSV ve JSON, bilimsel ek, GitHub Pages adresi ve yerel WNTR akışı doğrulandı. Beş ekran boyutu, tam ekran ve donmuş kayda karşı indirme regresyonları eklendi.
+
 ## BAÜN final yayın kopyası · 21 Kasım 2026
 
 - V4.1’den küçük ve kaynak kimlikleri sabit bir dağıtım kopyası üretildi.

@@ -4,15 +4,15 @@
 
 Net2_G4_C1 örneğinde ŞebekeKalkan B6, güçlü tekli etki/süre yöntemine göre ağırlıklı hizmet açığını **%4,77** düşürdü. İki plan 16. saatte tamamlandı. Yeni araştırmada seçilen MuR0009_G02_C1 örneğinde aynı ölçüt **%9,06** daha düşük. Bu yüzdeler iki ayrı simülasyon koşuluna aittir. [Tam sonuçlar, eşitlikler ve sınırlar](docs/research/arastirma.html)
 
-![ŞebekeKalkan, Net2 kaydı ve saat 08.00’de iki yöntem için karşılanan müşteri talebi](docs/competition/screens/Net2-1280.png)
+![ŞebekeKalkan, Net2 kaydı ve saat 08.00’de iki yöntem için karşılanan müşteri talebi](docs/competition/screens/Net2-juri-1366.png)
 
 ## Bir dakikada deneyin
 
 [Kayıtlı web demosunu açın](https://hizmali.github.io/SebekeKalkan/demo/) · [Bilimsel kanıt](https://hizmali.github.io/SebekeKalkan/research/arastirma.html)
 
-1. Ana gösterimde **02.00**’ı seçin. Dört arızanın başlangıcını izleyin.
-2. **08.00**’a dönün ve **Güçlü referans** ile **ŞebekeKalkan B6** arasında geçin. Aynı saatte 8,97 ve 11,03 L/s karşılanan talep görünür.
-3. İki çizelgeyi ve vaka kaynağını açın. Zaman serisi CSV ve kanıt JSON olarak indirilebilir.
+1. **Jüri modu** ile şebekeyi ve karşılaştırmayı tam ekrana alın. **02.00**’da dört arızanın başlangıcını izleyin.
+2. **08.00**’a dönün ve **Güçlü referans** ile **ŞebekeKalkan** arasında geçin. Aynı adımda 8,97 ve 11,03 L/s karşılanan talep görünür. Tüm süreçteki %4,77’lik hizmet açığı farkı ayrıca gösterilir.
+3. **Son onarım** ile 16. saate gidin. Normal görünümde **Vaka kaynağı ve indirmeler** bölümünden zaman serisi CSV ve kanıt JSON dosyalarını alın.
 
 ## Windows’ta çalıştırın
 

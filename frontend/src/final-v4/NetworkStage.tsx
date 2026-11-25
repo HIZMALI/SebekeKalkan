@@ -14,13 +14,18 @@ export function band(pressure: number) {
 const BAR_LABELS: Record<string, string> = {fault:'Arızalı · kapalı', work:'Onarılıyor · kapalı',
   repaired:'Onarıldı · açık', pending:'Arıza öncesi · açık', selected:'Seçili arıza'};
 export type PipeMark = {kind: string; label: string; description?: string};
+const initialCamera = {x:0,y:0,z:1};
 
-export default function NetworkStage({diagram, name, pressures, marks, eligible, onSelect}:{
+export default function NetworkStage({diagram, name, pressures, marks, eligible, onSelect, onInspect, inspectedPipe}:{
   diagram: Diagram; name: string; pressures?: Record<string, number>; marks: Record<string, PipeMark>;
   eligible?: ReadonlySet<string>; onSelect?: (id: string) => void;
+  onInspect?: (id: string) => void; inspectedPipe?: string | null;
 }) {
-  const [camera,setCamera] = useState({x:0,y:0,z:1});
+  const [camera,setCamera] = useState(initialCamera);
   const drag = useRef<Point|null>(null);
+  const choose = onSelect??onInspect;
+  const minZoom = onInspect?1:.8;
+  const maxZoom = onInspect?4:7;
   const coords = [...Object.values(diagram.nodes), ...Object.values(diagram.pipes).flat(), ...diagram.other_links.flat()];
   const minX = Math.min(...coords.map(p=>p[0])), minY = Math.min(...coords.map(p=>p[1]));
   const spanX = Math.max(...coords.map(p=>p[0]))-minX || 1, spanY = Math.max(...coords.map(p=>p[1]))-minY || 1;
@@ -32,9 +37,12 @@ export default function NetworkStage({diagram, name, pressures, marks, eligible,
   };
   const path = (points:Point[]) => points.map(p=>point(p).join(',')).join(' ');
   const width=(pressures?(rotate?spanY:spanX)*scale+90:1120)/camera.z;
-  const height=(pressures?(rotate?spanX:spanY)*scale+128:900)/camera.z;
+  const height=(pressures?(rotate?spanX:spanY)*scale+(onInspect?104:128):900)/camera.z;
   const view=[camera.x-width/2,camera.y-height/2,width,height].join(' ');
-  const zoom = (factor:number)=>setCamera(c=>({...c,z:Math.min(7,Math.max(.8,c.z*factor))}));
+  const zoom = (factor:number)=>setCamera(c=>{
+    const z=Math.min(maxZoom,Math.max(minZoom,c.z*factor));
+    return onInspect&&z===minZoom?initialCamera:{...c,z};
+  });
   const move = (dx:number,dy:number)=>setCamera(c=>({...c,x:c.x+dx,y:c.y+dy}));
   function key(e:KeyboardEvent<SVGSVGElement>) {
     if (e.target!==e.currentTarget) return;
@@ -50,16 +58,21 @@ export default function NetworkStage({diagram, name, pressures, marks, eligible,
     drag.current=[e.clientX,e.clientY];
   }
   return <div className="v4-map">
-    <svg className="v4-network" tabIndex={0} role={onSelect?'group':'img'}
+    <svg className="v4-network" tabIndex={0} role={choose?'group':'img'} data-zoom={onInspect?camera.z:undefined}
       aria-label={name+' şebeke şeması. Ok tuşlarıyla kaydırın.'} viewBox={view} onKeyDown={key}
-      onPointerDown={e=>{if(!e.isPrimary||e.button!==0)return;e.currentTarget.setPointerCapture(e.pointerId);drag.current=[e.clientX,e.clientY];}}
+      onPointerDown={e=>{
+        if(!e.isPrimary||e.button!==0||(onInspect&&camera.z===minZoom))return;
+        e.currentTarget.setPointerCapture(e.pointerId);
+        drag.current=[e.clientX,e.clientY];
+      }}
       onPointerMove={pointer} onLostPointerCapture={()=>{drag.current=null;}}>
       <g className="v4-edges">
         {diagram.other_links.map((points,i)=><polyline key={i} className="device" vectorEffect="non-scaling-stroke" points={path(points)}/>)}
         {Object.entries(diagram.pipes).map(([id,points])=>{
           const active=marks[id];
           return <polyline key={id} data-pipe={id} data-kind={active?.kind}
-            className={active?.kind||''} vectorEffect="non-scaling-stroke" points={path(points)}>
+            className={[active?.kind,inspectedPipe===id?'inspected':null].filter(Boolean).join(' ')}
+            vectorEffect="non-scaling-stroke" points={path(points)}>
             <title>{'Boru '+id+(active?' · '+BAR_LABELS[active.kind]:'')+(active?.description?' · '+active.description:'')}</title>
           </polyline>;
         })}
@@ -78,26 +91,29 @@ export default function NetworkStage({diagram, name, pressures, marks, eligible,
           if(!p) return null;
           const a=p[Math.floor((p.length-1)/2)], b=p[Math.ceil((p.length-1)/2)];
           const [x,y]=point([(a[0]+b[0])/2,(a[1]+b[1])/2]), size=(pressures?26:17)/camera.z;
-          return <g key={id} className={mark.kind} transform={`translate(${x} ${y})`}>
+          return <g key={id} className={mark.kind} transform={`translate(${x} ${y})`}
+            onPointerDown={onInspect?e=>e.stopPropagation():undefined} onClick={onInspect?()=>onInspect(id):undefined}>
             <circle cy={-size*1.2} r={size} vectorEffect="non-scaling-stroke"/>
             <text x="0" y={-size*.88} fontSize={size*.95} textAnchor="middle">{mark.label}</text>
+            {onInspect&&mark.kind==='repaired'&&<path className="repair-tick" vectorEffect="non-scaling-stroke"
+              d={`M ${size*.55} ${size*-.44} l ${size*.24} ${size*.25} l ${size*.51} ${size*-.6}`}/>}
           </g>;
         })}
       </g>
-      {onSelect&&<g className="v4-eligible">
-        {Object.entries(diagram.pipes).filter(([id])=>eligible?.has(id)).map(([id,p])=>
-          <polyline key={id} points={path(p)} vectorEffect="non-scaling-stroke" tabIndex={0}
-            role="button" aria-label={'Boru '+id} aria-pressed={Boolean(marks[id])}
-            onPointerDown={e=>e.stopPropagation()} onClick={()=>onSelect(id)}
-            onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();onSelect(id);}}}>
-            <title>Boru {id} · izolasyona uygun</title>
+      {choose&&<g className={onInspect?'v4-inspect':'v4-eligible'}>
+        {Object.entries(diagram.pipes).filter(([id])=>onInspect||eligible?.has(id)).map(([id,p])=>
+          <polyline key={id} points={path(p)} vectorEffect="non-scaling-stroke" tabIndex={onInspect&&!marks[id]?-1:0}
+            role="button" aria-label={'Boru '+id} aria-pressed={onInspect?inspectedPipe===id:Boolean(marks[id])}
+            onPointerDown={e=>e.stopPropagation()} onClick={()=>choose(id)}
+            onKeyDown={e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();choose(id);}}}>
+            <title>Boru {id} · {onInspect?'durumu incele':'izolasyona uygun'}</title>
           </polyline>)}
       </g>}
     </svg>
     <div className="v4-map-controls" aria-label="Şema yakınlığı">
-      <button type="button" aria-label="Yakınlaştır" onClick={()=>zoom(1.3)}>+</button>
-      <button type="button" aria-label="Uzaklaştır" onClick={()=>zoom(1/1.3)}>−</button>
-      <button type="button" onClick={()=>setCamera({x:0,y:0,z:1})}>Sıfırla</button>
+      <button type="button" aria-label="Yakınlaştır" disabled={onInspect?camera.z>=maxZoom:undefined} onClick={()=>zoom(1.3)}>+</button>
+      <button type="button" aria-label="Uzaklaştır" disabled={onInspect?camera.z<=minZoom:undefined} onClick={()=>zoom(1/1.3)}>−</button>
+      <button type="button" onClick={()=>setCamera(initialCamera)}>Sıfırla</button>
     </div>
   </div>;
 }

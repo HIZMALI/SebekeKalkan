@@ -30,7 +30,7 @@ test('dosya doğrulanırken düzenleme bekler, sonraki ekip girdisi kaybolmaz', 
 
 test('sıfır girişle doğrulanmış şema, aynı saatte yöntem değişimi ve gerçek CSV', async ({page})=>{
   await page.goto('/demo/');
-  await expect(page.getByRole('heading',{level:1})).toContainText('Su şebekesinde önce hangi arızaya');
+  await expect(page.getByRole('heading',{level:1})).toHaveText('Doğru müdahale, doğru sırayla başlar.');
   await expect(page.getByTestId('main-gain')).toHaveText('%4,77');
   await expect(page.locator('[data-mode]')).toHaveAttribute('data-mode','recorded_verified');
   await expect(page.locator('[data-kind]')).toHaveCount(4);
